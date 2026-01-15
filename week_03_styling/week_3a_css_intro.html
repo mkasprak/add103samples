@@ -1,0 +1,258 @@
+<div
+    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+    <!-- HEADER -->
+    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 3A: Intro to CSS &
+            Typography</h1>
+        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+            Design | Spring 2026</div>
+    </header>
+
+    <!-- QM ALIGNMENT STRIP -->
+    <div
+        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
+        <span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Apply CSS to style HTML elements using
+            selectors, colors, and fonts."</span>
+    </div>
+
+    <!-- 1. OVERVIEW -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            Overview</h2>
+        <p>HTML provides the structure, but <strong>CSS (Cascading Style Sheets)</strong> provides the voice. The fonts
+            you choose, the colors you apply, and the size of your text dramatically change how a user "hears" your
+            content.</p>
+        <p>Today, we will learn the basics of CSS selectors and dive deep into <strong>Typography</strong>, including
+            how to import professional fonts from Google.</p>
+
+        <div
+            style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
+            <strong>♿ Accessibility Note:</strong> Contrast is key. Text must be legible against its background. Light
+            gray text on a white background is a major accessibility violation.
+        </div>
+    </div>
+
+    <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            📖 The Textbook: CSS Basics</h2>
+        <p>Click below to understand how the browser decides what to show.</p>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                1. The Syntax (Rule Set)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p><strong>Selector:</strong> Who are we styling? (e.g., `h1`)</p>
+                <p><strong>Property:</strong> What are we changing? (e.g., `color`)</p>
+                <p><strong>Value:</strong> How are we changing it? (e.g., `blue`)</p>
+                <p><em>Example:</em> <code>h1 { color: blue; }</code></p>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                2. Defining Typography</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p>Text is styled using specific properties:</p>
+                <ul>
+                    <li><code>font-family</code>: The font itself (e.g., "Arial", "Times New Roman").</li>
+                    <li><code>font-size</code>: How big? (e.g., 16px, 1.5rem).</li>
+                    <li><code>font-weight</code>: How thick? (e.g., bold, normal, 700).</li>
+                    <li><code>text-align</code>: Alignment (left, center, right).</li>
+                </ul>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                3. The "Cascade" (Priority)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p>What happens if one rule says "Make H1 Blue" and another says "Make H1 Red"?</p>
+                <p>The <strong>Cascade</strong> decides. Generally, the rule that comes <em>last</em> wins. It flows
+                    down like a waterfall. Specificity (IDs vs Classes) also plays a big role.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- 3. TEACH BY EXAMPLE: GOOGLE FONTS -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            👀 Look & Learn: Google Fonts</h2>
+        <p>System fonts like Arial are boring. Professional designers use <strong>Google Fonts</strong>.</p>
+
+        <h3
+            style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Step 1: The Setup (HTML)</h3>
+        <p>First, you must "import" the font. This always goes in the <code>&lt;head&gt;</code> of your HTML file,
+            usually before your own stylesheet.</p>
+
+        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+            <pre
+                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+&lt;head&gt;
+    &lt;!-- 1. Connect to Google Fonts --&gt;
+    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    
+    &lt;!-- 2. Load the specific font (e.g., Roboto) --&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
+
+    &lt;!-- 3. Link your own CSS last --&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+            </pre>
+        </div>
+
+        <h3
+            style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Step 2: The Usage (CSS)</h3>
+        <p>Now that the browser has downloaded the font, you can ask for it in your CSS.</p>
+
+        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+            <pre
+                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+/* Apply Roboto to everything */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Or just to headers */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Use the bold version */
+}
+            </pre>
+            <div style="padding: 15px;">
+                <strong>Note:</strong> We always include <code>sans-serif</code> as a backup. If Google crashes
+                (unlikely), the browser will use its default cleaner font.
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. GUIDED PRACTICE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            💻 Try It Yourself: The Style Guide</h2>
+        <p>You are going to create a "Brand Style Guide" page to experiment with typography.</p>
+
+        <h3
+            style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Step 1: The Content (HTML)</h3>
+        <ol>
+            <li>Create <code>style-guide.html</code> and `style.css`.</li>
+            <li>Link them together.</li>
+            <li>In HTML, write an <code>&lt;h1&gt;</code> that says "My Brand Styles".</li>
+            <li>Write an <code>&lt;h2&gt;</code> for "Sub-Heading Example".</li>
+            <li>Write two <code>&lt;p&gt;</code> paragraphs with dummy text (Lorem Ipsum).</li>
+        </ol>
+
+        <h3
+            style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Step 2: Google Fonts (Required)</h3>
+        <ol>
+            <li>Go to <a href="https://fonts.google.com" target="_blank"
+                    style="color: #582C83; font-weight: bold;">fonts.google.com</a>.</li>
+            <li>Search for a font you like (e.g., 'Open Sans', 'Lato', 'Merriweather').</li>
+            <li>Click <strong>"Get Font"</strong> > <strong>"Get Embed Code"</strong>.</li>
+            <li>Copy the code they give you and paste it into the <code>&lt;head&gt;</code> of your HTML.</li>
+        </ol>
+
+        <h3
+            style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Step 3: The Style (CSS)</h3>
+        <p>In your CSS file, implement the following requirements:</p>
+        <ol>
+            <li><strong>Global:</strong> Set the <code>body</code> to use your new <strong>Google Font</strong>.</li>
+            <li><strong>Background:</strong> Use a light background color (e.g., <code>#f0f0f0</code>).</li>
+            <li><strong>H1:</strong> Make it Centered, Large (3rem), and a deep color (Navy, DarkRed, etc.).</li>
+            <li><strong>H2:</strong> Give it a bottom border and a different color than the H1.</li>
+            <li><strong>P:</strong> Make the font size 1.1rem and increase line-height to 1.8.</li>
+        </ol>
+
+        <p><strong>Self-Check:</strong> Does your page look "designed" or does it still look like default browser
+            styles?</p>
+    </div>
+
+    <!-- 5. DIG DEEPER -->
+    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            ⛏️ Dig Deeper (Resources)</h2>
+        <p>CSS is huge. Here are the best references.</p>
+        <ul>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://fonts.google.com/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">Google Fonts</a> (Browse thousands of free fonts)</li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://css-tricks.com/almanac/properties/f/font-family/"
+                    target="_blank" style="color: #582C83; font-weight: bold;">CSS-Tricks: Font Family</a></li>
+        </ul>
+    </div>
+
+    <!-- 6. RUBRIC -->
+    <div
+        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            🏆 Grading Rubric</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
+            <caption
+                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
+                Grading Rubric</caption>
+            <thead>
+                <tr>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                        Criteria</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Points</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Setup:</strong> External
+                        <code>style.css</code> linked correctly. Page has Background Color.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">2 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Google Fonts:</strong> A custom Google
+                        Font is successfully imported and applied to the Body.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">3 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Typography:</strong> Distinct styles
+                        defined for H1 and H2 (Colors, Alignment, Borders).</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">3 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Readability:</strong> Paragraph text has
+                        appropriate size and line-height.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">2 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer
+        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+
+</div>

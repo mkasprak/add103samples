@@ -1,0 +1,171 @@
+<div
+    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+    <!-- HEADER -->
+    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 1B: The Time Capsule (Git)
+        </h1>
+        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+            Design | Spring 2026</div>
+    </header>
+
+    <!-- QM ALIGNMENT STRIP -->
+    <div
+        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
+        <span><strong>Learning Objective Alignment:</strong> Deploy (LO8) — "Publish and manage live websites using
+            hosting platforms and version control."</span>
+    </div>
+
+    <!-- 1. OVERVIEW -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            Overview</h2>
+        <p>Professional developers don't just "save" files. We build histories. <strong>Git</strong> is a time machine.
+            It allows you to save "checkpoints" of your code so you can always go back if you break something.</p>
+        <p>Today you will set up your GitHub account and build a content pipeline to your live server.</p>
+
+        <div
+            style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
+            <strong>♿ Accessibility Note:</strong> GitHub's interface now supports dark mode and high-contrast themes,
+            making it more accessible for users with visual impairments.
+        </div>
+    </div>
+
+    <!-- 2. TEACH BY EXAMPLE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            👀 Look & Learn: The Data Pipeline</h2>
+        <p>This is how your code travels from your brain to the world.</p>
+
+        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+            <pre
+                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap; font-size: 1.2rem; text-align: center;">
+YOU (Local) 
+⬇ (Push)
+GitHub (The Cloud) 
+⬇ (Pull/Clone)
+The Internet (Live Site)
+            </pre>
+            <div style="padding: 15px;">
+                <strong>The Logic:</strong>
+                <ul>
+                    <li><strong>Repo:</strong> A folder that is tracked by Git.</li>
+                    <li><strong>Commit:</strong> A "Save Point" in history.</li>
+                    <li><strong>Push:</strong> Uploading your commits to the cloud.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. GUIDED PRACTICE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            💻 Project: The Time Capsule</h2>
+        <p>You will create a repository and prove you can update it live.</p>
+
+        <h3
+            style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Phase 1: The Launch</h3>
+        <ol>
+            <li>Create a <strong>Public</strong> GitHub repo named <code>ADD103</code>.</li>
+            <li>Connect it to cPanel (as detailed in the course videos).</li>
+            <li>Upload your <code>manifesto.html</code> from Lesson 1A.</li>
+            <li>Verify it appears on your live student URL (e.g.,
+                <em>yourname.mccstudent.com/ADD103/week_01/manifesto.html</em>).</li>
+        </ol>
+
+        <h3
+            style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Phase 2: The Update (Breaking the Seal)</h3>
+        <p>A website is never finished. We need to change it.</p>
+        <ol>
+            <li>Back on your computer, open `manifesto.html`.</li>
+            <li>Add a new line at the bottom:
+                <code>"Timestamp: I have successfully deployed this site on [Date]!"</code></li>
+            <li>Save, Commit, and Push the change to GitHub.</li>
+            <li>Go to your live URL. <strong>Refresh the page.</strong></li>
+        </ol>
+        <p><em>Did the new text appear? If so, you have mastered the infinite loop of web development.</em></p>
+    </div>
+
+    <!-- 4. DIG DEEPER -->
+    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            ⛏️ Dig Deeper (Resources)</h2>
+        <p>Mastering Git is the single most valuable skill for getting hired.</p>
+        <ul>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://learngitbranching.js.org/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">Learn Git Branching</a> (A visual, addictive puzzle game
+                to learn Git)</li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://education.github.com/pack" target="_blank"
+                    style="color: #582C83; font-weight: bold;">GitHub Student Developer Pack</a> (Get free pro tools
+                with your .edu email)</li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://docs.github.com/en/get-started" target="_blank"
+                    style="color: #582C83; font-weight: bold;">GitHub Docs: Hello World</a></li>
+        </ul>
+    </div>
+
+    <!-- 5. RUBRIC -->
+    <div
+        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            🏆 Grading Rubric</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
+            <caption
+                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
+                Grading Rubric</caption>
+            <thead>
+                <tr>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                        Criteria</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Points</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Repo Setup:</strong> Public
+                        <code>ADD103</code> repository exists on GitHub with <code>manifesto.html</code> inside.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Live Deploy:</strong> The live link loads
+                        successfully without 404 errors.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>The Update:</strong> The live file
+                        contains the timestamp update (proving a second commit was made).</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>15 pts</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer
+        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+
+</div>

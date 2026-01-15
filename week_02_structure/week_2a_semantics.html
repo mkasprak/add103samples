@@ -1,0 +1,264 @@
+<div
+    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+    <!-- HEADER -->
+    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 2A: Semantics & Structure
+        </h1>
+        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+            Design | Spring 2026</div>
+    </header>
+
+    <!-- QM ALIGNMENT STRIP -->
+    <div
+        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
+        <span><strong>Learning Objective Alignment:</strong> Structure (LO1) — "Create properly structured HTML5
+            documents using semantic elements."</span>
+    </div>
+
+    <!-- 1. OVERVIEW -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            Overview</h2>
+        <p>Last week, we wrote a basic "Hello World" page. But professional websites aren't just random text. They have
+            a <strong>structure</strong>.</p>
+        <p>Today, we learn <strong>Semantic HTML</strong>: using tags that describe <em>what</em> the content is, not
+            just how it looks.</p>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">✨ Why this matters</h3>
+        <p>Google relies on semantic tags to know what your page is about (SEO). More importantly, screen readers rely
+            on them to navigate. If you use generic tags for everything, you are building a digital maze that excludes
+            users with disabilities.</p>
+    </div>
+
+    <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            📖 The Textbook: Building Structure</h2>
+        <p>Click the sections below to read about the "Big 4" Semantic Tags.</p>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                1. The Header (&lt;header&gt;)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p><strong>Definition:</strong> The introductory content for a page or section.</p>
+                <p>Think of the header as the "Welcome Mat" of your website. It typically contains:</p>
+                <ul>
+                    <li>The Logo or Site Name</li>
+                    <li>Main Navigation Links</li>
+                    <li>A Search Bar</li>
+                </ul>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                2. The Main Content (&lt;main&gt;)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p><strong>Definition:</strong> The dominant content of the document.</p>
+                <p>This is unique to the page. You should only have <strong>one</strong> <code>&lt;main&gt;</code> tag
+                    per page.</p>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                3. The Article (&lt;article&gt;) vs Section (&lt;section&gt;)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p>This is where it gets tricky:</p>
+                <ul>
+                    <li><code>&lt;article&gt;</code>: Independent content. If you took it out of the page and put it in
+                        a newspaper, it would still make sense (e.g., a blog post, a news story).</li>
+                    <li><code>&lt;section&gt;</code>: A thematic grouping of content. Usually has a heading.</li>
+                </ul>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                4. The Footer (&lt;footer&gt;)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p><strong>Definition:</strong> Content at the bottom of the document.</p>
+                <p>Footers are the "safety net" of a webpage. Contains Copyright info, Contact details, social links.
+                </p>
+            </div>
+        </details>
+    </div>
+
+    <!-- 3. TEACH BY EXAMPLE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            👀 Look & Learn</h2>
+        <p>Study the code below. This is the <strong>Standard Layout</strong> used by 99% of websites.</p>
+
+        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+            <pre
+                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+&lt;!-- =========================================
+     EXAMPLE: The 'Holy Grail' Structure
+     ========================================= --&gt;
+&lt;body&gt;
+
+    &lt;!-- 1. TOP SECTION --&gt;
+    &lt;header&gt;
+        &lt;h1&gt;The Daily Tech News&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href="index.html"&gt;Home&lt;/a&gt; | &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;!-- 2. CONTENT SECTION (Unique Stuff) --&gt;
+    &lt;main&gt;
+        
+        &lt;!-- Primary Article --&gt;
+        &lt;article&gt;
+            &lt;h2&gt;New iPhone Released&lt;/h2&gt;
+            &lt;p&gt;Today Apple announced...&lt;/p&gt;
+        &lt;/article&gt;
+
+        &lt;!-- Another Article --&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Web Design Trends 2026&lt;/h2&gt;
+            &lt;p&gt;Inline styles are back in fashion...&lt;/p&gt;
+        &lt;/article&gt;
+
+    &lt;/main&gt;
+
+    &lt;!-- 3. BOTTOM SECTION --&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2026 Meri Kasprak&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+            </pre>
+            <div style="padding: 15px;">
+                <strong>Observation:</strong>
+                <ul>
+                    <li>Notice how <code>header</code>, <code>main</code>, and <code>footer</code> are siblings? They
+                        don't go inside each other.</li>
+                    <li>The <code>nav</code> tag is nested <em>inside</em> the <code>header</code>. This is common
+                        practice.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. GUIDED PRACTICE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            💻 Project: The Semantic Biography</h2>
+        <p>You are updated your "Hello World" page into a structured Bio Page.</p>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
+        <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
+            <li>Open your <code>ADD103/week_01/index.html</code> (or create `week_02/bio.html`).</li>
+            <li>Delete the old content inside <code>&lt;body&gt;</code>.</li>
+            <li><strong>Header:</strong> Create a <code>&lt;header&gt;</code> that contains an <code>&lt;h1&gt;</code>
+                with your full name and a <code>&lt;nav&gt;</code> with 3 links (dummy links like `#` are fine).</li>
+            <li><strong>Main:</strong> Create a <code>&lt;main&gt;</code> section. Inside it, create two separate
+                <code>&lt;section&gt;</code> blocks:
+                <ul>
+                    <li>Section 1: "About Me" (Intro Paragraph)</li>
+                    <li>Section 2: "My Hobbies" (A list of 3 things you love)</li>
+                </ul>
+            </li>
+            <li><strong>Footer:</strong> Create a <code>&lt;footer&gt;</code> that says "&copy; 2026 [Your Name] |
+                Contact me at [Email]".</li>
+        </ol>
+
+        <div
+            style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
+            <strong>Self-Check:</strong> Right-click and "Inspect" in Chrome. Collapse the <code>header</code>,
+            <code>main</code>, and <code>footer</code> tags. Do they fold up neatly? If yes, your hierarchy is perfect.
+        </div>
+    </div>
+
+    <!-- 5. DIG DEEPER -->
+    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            ⛏️ Dig Deeper & Extra Credit</h2>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
+        <ul>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://validator.w3.org/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">The W3C Validator</a> (Check your code for errors)</li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+                    target="_blank" style="color: #582C83; font-weight: bold;">MDN: What is Semantics?</a></li>
+        </ul>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">⭐ Extra Credit Challenge (5 pts)
+        </h3>
+        <p><strong>The "Aside" Challenge:</strong> Add an `&lt;aside&gt;` tag inside your `&lt;main&gt;` section that
+            contains a "Fun Fact" about yourself. Style it or just put it in bold.</p>
+    </div>
+
+    <!-- 6. RUBRIC -->
+    <div
+        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            🏆 Grading Rubric</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
+            <caption
+                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
+                Grading Rubric</caption>
+            <thead>
+                <tr>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                        Criteria</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Points</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Semantics:</strong> Page uses
+                        <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and
+                        <code>&lt;footer&gt;</code> correctly.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Content:</strong> All content sections
+                        (Bio, Hobbies, Contact) are populated.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Code Quality:</strong> Indentation is
+                        clean and nested correctly.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>20 pts</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer
+        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+
+</div>

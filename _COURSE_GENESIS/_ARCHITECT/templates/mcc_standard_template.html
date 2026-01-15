@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCC Module Template</title>
+    <!-- 
+        MCC Color Palette 
+        Primary Purple: #582C83
+        Primary Gold: #FFC629
+        Background Light: #f9f9f9
+    -->
+    <style>
+        :root {
+            --mcc-purple: #582C83;
+            --mcc-gold: #FFC629;
+            --text-dark: #333333;
+            --bg-light: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-top: 10px solid var(--mcc-gold);
+            /* Gold Top Border */
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--mcc-purple);
+            color: #ffffff;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 5px;
+            font-weight: 300;
+        }
+
+        /* QM ALIGNMENT BADGE */
+        .qm-alignment {
+            background-color: #f0f7ff;
+            border-bottom: 1px solid #cce5ff;
+            padding: 15px 30px;
+            font-size: 0.9rem;
+            color: #004085;
+            display: flex;
+            align-items: center;
+        }
+
+        .qm-icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* DISCUSSION SECTION */
+        .discussion-box {
+            background-color: #fff0f5;
+            /* Lavender Blush */
+            border-left: 5px solid #d81b60;
+            /* Deep Pink */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .discussion-title {
+            color: #d81b60;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .discussion-title::before {
+            content: "🗣️";
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+
+        /* TEXTBOOK EXPANSION */
+        details {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        summary {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--mcc-purple);
+            border-bottom: 1px solid transparent;
+            transition: background-color 0.2s;
+            list-style: none;
+            /* Hide default arrow */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary:hover {
+            background-color: #f0f0f0;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--mcc-gold);
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #ddd;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        .details-content {
+            padding: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* SECTIONS */
+        .content-section {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        h2 {
+            color: var(--mcc-purple);
+            border-left: 5px solid var(--mcc-gold);
+            padding-left: 15px;
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 25px;
+            font-size: 1.3rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        /* ACCESSIBILITY CHECK */
+        .a11y-check {
+            background-color: #e8f5e9;
+            border: 1px solid #c8e6c9;
+            color: #1b5e20;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        /* EDUCATIONAL CALLOUTS */
+        .teach-by-example {
+            background-color: #fff;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .code-block {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 20px;
+            font-family: 'Consolas', monospace;
+            overflow-x: auto;
+            border-radius: 4px;
+        }
+
+        /* DIG DEEPER */
+        .dig-deeper {
+            background-color: #fff8e1;
+            /* Gold Tint */
+            border-top: 4px solid var(--mcc-gold);
+            padding: 30px;
+        }
+
+        /* RUBRIC TABLE */
+        .rubric-section {
+            margin-top: 40px;
+            border-top: 5px solid var(--mcc-purple);
+            padding-top: 20px;
+        }
+
+        table.rubric {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+
+        table.rubric caption {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            text-align: left;
+            color: var(--mcc-purple);
+        }
+
+        table.rubric th {
+            background-color: var(--mcc-purple);
+            color: #ffffff;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid var(--mcc-purple);
+        }
+
+        table.rubric td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        table.rubric tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        a {
+            color: var(--mcc-purple);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>[Week X: Lesson Title]</h1>
+            <div class="subtitle">ADD 103: Introduction to Web Design | Spring 2026</div>
+        </header>
+
+        <!-- QM ALIGNMENT STRIP -->
+        <div class="qm-alignment">
+            <span class="qm-icon">🎯</span>
+            <strong>Learning Objective Alignment:</strong>&nbsp;This lesson maps to Course Objective [X]: "[Text of
+            Objective]".
+        </div>
+
+        <!-- 1. OVERVIEW -->
+        <div class="content-section">
+            <h2>Overview</h2>
+            <p>[Brief introduction to the specific topic. Connect this back to previous lessons.]</p>
+
+            <div class="a11y-check">
+                <strong>♿ Accessibility Note:</strong> [Why does this topic matter for disabled users? e.g., "Semantic
+                tags help screen readers navigate..."]
+            </div>
+        </div>
+
+        <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+        <div class="content-section">
+            <h2>📖 The Textbook: [Topic Name]</h2>
+            <p>Click the sections below to read the full details for today's lesson.</p>
+
+            <details>
+                <summary>Concept 1: [Key Term]</summary>
+                <div class="details-content">
+                    <p><strong>Definition:</strong> [Clear definition]</p>
+                    <p>[Detailed explanation, analogies, and the 'Why' behind the concept. Write this like a book
+                        chapter.]</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>Concept 2: [Key Term]</summary>
+                <div class="details-content">
+                    <p><strong>Definition:</strong> [Clear definition]</p>
+                    <p>[Detailed explanation...]</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- 3. TEACH BY EXAMPLE (WATCH ONE) -->
+        <div class="content-section">
+            <h2>👀 Look & Learn</h2>
+            <p>Study the example below. Notice how [key concept] is used and documented.</p>
+
+            <div class="teach-by-example">
+                <div class="code-block">
+                    &lt;!-- =========================================
+                    EXAMPLE: [Topic Name]
+                    Date: Spring 2026
+                    ========================================= --&gt;
+
+                    &lt;!-- The 'container' class centers our content --&gt;
+                    &lt;div class="container"&gt;
+
+                    &lt;!-- Main Heading for the section --&gt;
+                    &lt;h1&gt;Header&lt;/h1&gt;
+
+                    &lt;/div&gt; &lt;!-- End container --&gt;
+                </div>
+                <div style="padding: 15px;">
+                    <strong>Observation:</strong>
+                    <ul>
+                        <li>Notice point A...</li>
+                        <li>Notice point B...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. GUIDED PRACTICE (DO ONE) -->
+        <div class="content-section">
+            <h2>💻 Try It Yourself</h2>
+            <p>Open VS Code. We will build this page step-by-step.</p>
+            <ol>
+                <li>Create a file named <code>[filename].html</code>.</li>
+                <li>Copy the boiler plate structure.</li>
+                <li>Add the [tags/styles] discussed above.</li>
+                <li><strong>Self-Check:</strong> Does your page look like the screenshot below?</li>
+            </ol>
+            <!-- Placeholder for Screenshot -->
+            <div style="border: 1px dashed #ccc; padding: 20px; text-align: center; color: #999;">
+                [Screenshot of Expected Output]
+            </div>
+        </div>
+
+        <!-- 4. DIG DEEPER / RESOURCES -->
+        <div class="content-section dig-deeper">
+            <h2>⛏️ Dig Deeper (Resources)</h2>
+            <p>Expand your knowledge with these industry-standard resources:</p>
+            <ul>
+                <li>🔗 <a href="https://www.w3schools.com" target="_blank">W3Schools Tutorial</a> (Reference)</li>
+                <li>🔗 <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> (Detailed Documentation)
+                </li>
+            </ul>
+        </div>
+
+        <!-- 5. DISCUSSION & PEER REVIEW -->
+        <div class="content-section">
+            <h2>💬 Discussion: [Topic Name]</h2>
+            <p><strong>Reciprocity Principle:</strong> We learn best when we learn together. Share your work and give
+                feedback to your peers.</p>
+
+            <div class="discussion-box">
+                <div class="discussion-title">Part 1: Initial Post (Due [Date])</div>
+                <p>[Prompt: What should they post? e.g., "Post a screenshot of your CSS Box Model..."]</p>
+                <ul>
+                    <li><strong>Upload:</strong> [Requirement]</li>
+                    <li><strong>Reflect:</strong> [Question]</li>
+                </ul>
+            </div>
+
+            <div class="discussion-box" style="border-left-color: #4caf50; background-color: #e8f5e9;">
+                <div class="discussion-title" style="color: #2e7d32;">Part 2: Peer Review (Due [Date])</div>
+                <p>Reply to at least <strong>2 classmates</strong>. Use the "Sandwich Method" (Positive - Constructive -
+                    Positive).</p>
+                <ul>
+                    <li>What did they do well?</li>
+                    <li>What code suggestion can you offer?</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 6. GRADING RUBRIC -->
+        <div class="content-section rubric-section">
+            <h2>🏆 Grading Rubric</h2>
+            <p>Your work will be evaluated based on the following criteria:</p>
+
+            <table class="rubric">
+                <caption>Grading Rubric</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 60%">Criteria</th>
+                        <th scope="col" style="width: 20%">Points</th>
+                        <th scope="col" style="width: 20%">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Standard 1:</strong> Description of requirement.</td>
+                        <td>5 pts</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Standard 2:</strong> Description of requirement.</td>
+                        <td>5 pts</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>10 pts</strong></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
+        </footer>
+    </div>
+
+</body>
+
+</html>

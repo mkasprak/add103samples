@@ -1,0 +1,241 @@
+<div
+    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+    <!-- HEADER -->
+    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 2B: Content & Multimedia
+        </h1>
+        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+            Design | Spring 2026</div>
+    </header>
+
+    <!-- QM ALIGNMENT STRIP -->
+    <div
+        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
+        <span><strong>Learning Objective Alignment:</strong> Structure (LO1) — "Incorporate hyperlinks and images,
+            ensuring accessibility through alt attributes."</span>
+    </div>
+
+    <!-- 1. OVERVIEW -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            Overview</h2>
+        <p>The "Web" is named for its connections. Without links, the internet is just a collection of lonely documents.
+            Without images, it is just a wall of text.</p>
+        <p>Today, we will master the <strong>Anchor Tag</strong> (<code>&lt;a&gt;</code>) and the <strong>Image
+                Tag</strong> (<code>&lt;img&gt;</code>), while learning the critical importance of file paths.</p>
+
+        <div
+            style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
+            <strong>♿ Accessibility Note:</strong> Images MUST have an <code>alt</code> attribute. This text describes
+            the image to blind users. Without it, a screen reader just says "Image" (which is useless).
+        </div>
+    </div>
+
+    <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            📖 The Textbook: Connecting Content</h2>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                1. The Anchor Tag (&lt;a&gt;)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p><strong>Use:</strong> Creates a hyperlink to another page or site.</p>
+                <p><strong>Key Attribute:</strong> <code>href="..."</code> (Hypertext Reference). This is the
+                    destination.</p>
+                <p><em>Mnemonic:</em> "<strong>A</strong>nchor to <strong>H</strong>ref (Hypertext reference)."</p>
+                <p><strong>Opening in New Tabs:</strong> Use <code>target="_blank"</code> for external links (like
+                    Google) so you don't lose your user.</p>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                2. The Image Tag (&lt;img&gt;)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p><strong>Use:</strong> Embeds an image file.</p>
+                <p><strong>Attributes:</strong></p>
+                <ul>
+                    <li><code>src="..."</code>: The source path (Where is the file?).</li>
+                    <li><code>alt="..."</code>: Alternative text (What is the picture?).</li>
+                </ul>
+                <p><em>Note:</em> The <code>&lt;img&gt;</code> tag is self-closing. It has no closing tag.</p>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                3. Understanding Paths (Relative vs. Absolute)</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p><strong>Absolute Path:</strong> A full URL like <code>https://google.com</code>. Use this for
+                    <em>other peoples'</em> websites.</p>
+                <p><strong>Relative Path:</strong> A local path like <code>images/cat.jpg</code>. Use this for <em>your
+                        own</em> files.</p>
+                <p><em>Tip:</em> <code>../</code> means "Go up one folder".</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- 3. TEACH BY EXAMPLE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            👀 Look & Learn</h2>
+        <p>Observe how we link to Google (external) vs linking to our own contact page (internal), and how we display an
+            image.</p>
+
+        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+            <pre
+                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+&lt;!-- 1. TEXT LINKS --&gt;
+&lt;p&gt;
+    Visit &lt;a href="https://google.com" target="_blank"&gt;Google&lt;/a&gt; for search.
+    Or, go to my &lt;a href="contact.html"&gt;Contact Page&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;!-- 2. IMAGE --&gt;
+&lt;!-- 
+     src: Look inside 'images' folder, find 'logo.png'
+     alt: Description for screen readers
+--&gt;
+&lt;img src="images/logo.png" alt="McHenry County College Logo" width="200"&gt;
+
+&lt;!-- 3. IMAGE AS A LINK --&gt;
+&lt;a href="index.html"&gt;
+    &lt;img src="images/home-icon.png" alt="Go to Home"&gt;
+&lt;/a&gt;
+            </pre>
+            <div style="padding: 15px;">
+                <strong>Observation:</strong>
+                <ul>
+                    <li><code>target="_blank"</code> forces the link to open in a new tab. Great for external links!
+                    </li>
+                    <li>Notice the image path <code>images/logo.png</code>. This only works if you actually have a
+                        folder named 'images'.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. GUIDED PRACTICE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            💻 Project: The Multimedia Resume</h2>
+        <p>Transform your "Semantic Biography" into a fully connected, multimedia experience.</p>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
+        <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
+            <li><strong>Images:</strong> Create an <code>images</code> subfolder. Download a photo of yourself (or a
+                placeholder avatar) and save it there.</li>
+            <li><strong>Embed:</strong> In your "About Me" section, use an <code>&lt;img&gt;</code> tag to display your
+                photo.
+                <ul>
+                    <li><em>Requirement:</em> You MUST include an <code>alt</code> description.</li>
+                </ul>
+            </li>
+            <li><strong>External Links:</strong> Creating a "Socials" list. Add links to 3 external sites (e.g.,
+                LinkedIn, GitHub, MCC Home Page).
+                <ul>
+                    <li><em>Requirement:</em> These MUST open in a new tab using <code>target="_blank"</code>.</li>
+                </ul>
+            </li>
+            <li><strong>Internal Links:</strong> Create a new file called <code>portfolio.html</code> (it can be blank
+                for now). Add a link in your bio that says "View my Portfolio" that points to this file.</li>
+        </ol>
+
+        <div
+            style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
+            <strong>Test your paths:</strong> Breaking links is the #1 error in this course. Click every single link
+            before you submit. If you get a "File Not Found", check your spelling.
+        </div>
+    </div>
+
+    <!-- 5. DIG DEEPER -->
+    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            ⛏️ Dig Deeper & Extra Credit</h2>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
+        <ul>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://unsplash.com/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">Unsplash (Free High-Res Photos)</a></li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://webaim.org/techniques/alttext/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">WebAIM: Alt Text Best Practices</a></li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://tinypng.com/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">TinyPNG (Image Optimizer)</a></li>
+        </ul>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">⭐ Extra Credit Challenge (5 pts)
+        </h3>
+        <p><strong>The "Favicon" Challenge:</strong> A Favicon is the tiny icon in the browser tab. Research how to add
+            one to your site and implement it. (Hint: It goes in the <code>&lt;head&gt;</code>).</p>
+    </div>
+
+    <!-- 6. RUBRIC -->
+    <div
+        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            🏆 Grading Rubric</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
+            <caption
+                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
+                Grading Rubric</caption>
+            <thead>
+                <tr>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                        Criteria</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Points</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Links:</strong> 3 External links (new
+                        tab) and 1 Internal link work perfectly.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Images:</strong> Image displays correctly
+                        and file organization (images folder) is used.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Accessibility:</strong> Proper specific
+                        <code>alt</code> text is present on the image.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>20 pts</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer
+        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+
+</div>

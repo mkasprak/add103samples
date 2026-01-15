@@ -1,94 +1,115 @@
-# Canvas Lesson Style Checklist & Guide
+# ADD 103: Canvas Lesson Style Guide & Specs
 
-Use this checklist to validate all new Canvas pages.
+**Last Updated:** Spring 2026
+**Course:** ADD 103 - Introduction to Web Design
+**Role:** Jeanie (Course Architect)
 
-## 🎨 Visual Identity
-- [ ] **Container**: Max-width `800px`, centered margin, font-family `'Segoe UI', Tahoma, ...`.
-- [ ] **Colors**:
-    -   Primary Purple: `#4b3190` (Headers, buttons, borders)
-    -   Accent Yellow/Gold: `#fdbb30` (Key term borders, underlines)
-    -   Backgrounds: `#ffffff` (Main), `#f9f9f9` (Sections), `#bcbcbc` (Code block bg - wait, check exact hex). *Correction: Code bg is `#282c34` or `#2d3748`.*
-- [ ] **Headers**:
-    -   `<h2>` with purple background (`#4b3190`) and white text. Rounded corners (`10px`).
-    -   `<h3>` with purple text and yellow bottom border (`#fdbb30`).
-- [ ] **Icons/Emojis**: Use consistent emojis in headers (e.g., ℹ️, 🎤, 🔑, 🚀).
+This document defines the strict requirements for generating lesson pages that are compatible with **Instructure Canvas** and meet the **Quality Matters (QM)** rigor requested by the user.
 
-## 🦆 "Monty Pyduck" Narrative Elements
-- [ ] **The Mascot**: Include an image of the "Duck in a hoodie/glasses" where appropriate (e.g., "Welcome", "Beyond the Index").
-- [ ] **The Voice**:
-    -   Professional but accessible.
-    -   Use "Mallard" puns regarding security or rules (e.g., "Mallard Security Rule", "Mallard Guard").
-    -   **User Warnings**: Any note/warning from "You" (the Professor) gets a Duck emoji (🦆).
-    -   **Jeanie Notes**: Any note from "Me" (Jeanie/AI) gets a Star emoji (✨, 🌟).
-    -   Reference "Jeanie" (the AI tutor) if relevant.
-- [ ] **Signature**:
-    -   Footer must include: `&copy; 2026 Meri Kasprak, Ph.D. 🦆`
-    -   Line 2: `In collaboration with Gemini ✨`
+---
 
-## 📄 Structure: Lessons (Assignments)
-Every lesson page should follow this flow:
-1.  **Header Topic**: `[Emoji] Assignment [Num][Letter]: [Topic]`
-2.  **Introduction Block**:
-    -   White background.
-    -   Hooks the student (Why is "Hello World" boring?).
-    -   Duck image float-right.
-    -   **Stats Badge**: `[Time Estimate]` `[Points]` (Light purple bg `#efeaf6`).
-3.  **"The Mission" / "The Challenge"**:
-    -   Grey/Off-white background box.
-    -   Clear Goal, Challenge, and Requirements.
-    -   **Extra Credit**: Highlighted in light blue/yellow.
-4.  **Instructions & Videos**:
-    -   **Mandatory**: Two videos per page.
-        1.  **Overview Video**: "Watch: [Topic] Overview"
-        2.  **Coding Sample**: "Watch: [Me] Coding the Solution/Example"
-    -   Use `<details>` block or inline frames as appropriate.
-    -   Step-by-step headers (Step 1, Step 2...).
-5.  **Code Examples**:
-    -   Dark theme block (`#282c34`).
-    -   Font: `'Courier New', monospace`.
-    -   **Note**: Ensure syntax highlighting is applied (colored spans) if possible, or consistent distinct color.
-6.  **Dig Deeper** (Optional):
-    -   `<details>` element.
-    -   Summary style: `#fff3e0` (orange tint) or `#efeaf6` (purple tint).
-7.  **Submission**:
-    -   Clear file naming requirement (e.g., `joke.py`).
-    -   "Can't find your file?" help block.
-8.  **Grading Rubric**:
-    -   **Standard**: Detailed Grid format (Criteria | Distinguished | Proficient | Emerging).
-    -   **ADA Compliance**:
-        -   Must include a `<caption>` or table note identifying it as a "Grading Rubric".
-        -   Use proper column spans (`colspan`) and scope attributes (`scope="col"`, `scope="row"`) for headers.
-    -   Header: Purple background, white text.
+## 🎨 1. Technical Constraints (Canvas Compatibility)
+Canvas is finicky. We must adhere to these rules to prevent layout breakage.
 
-## 📄 Structure: Modules
-1.  **Header**: `[Emoji] Module [Num]: [Title]`
-2.  **Overview**: "Before You Begin" / Context.
-3.  **Key Terms**: Yellow/Gold accent box (`#fff8e1` bg, `#fdbb30` border-left).
-4.  **Content**: Sections defined by `<h3>` with under-borders.
-5.  **Deliverables Checklist**: Boxed summary at the bottom.
+*   **⚠️ INLINE STYLES ONLY**: Never use `<style>` blocks in the `<head>` or `<body>`. Canvas strips them. Every single visual property must be in `style="..."`.
+*   **Container Width**: All content must be wrapped in a main `<div>` with `max-width: 800px; margin: 0 auto;`.
+*   **Code Blocks**: Must use `<pre>` tags with `white-space: pre-wrap;` to preserve indentation.
+    *   *Bad:* `<div class="code">...</div>`
+    *   *Good:* `<pre style="background: #282c34; color: #abb2bf; ...">...</pre>`
+*   **Images**: All `<img>` tags **MUST** have an `alt="..."` attribute for accessibility.
 
-## ⚠️ Resolved Standards
--   **Rubric Style**: **Detailed Grid** is the standard (unless a very minor check).
--   **Code Block Theme**: **Dark Theme (`#282c34`)** with syntax coloring.
--   **Title Format**: "Assignment [Num][Letter]: [Topic]" (e.g., "Assignment 8A: Dictionaries").
+---
 
-## 🧱 HTML Components Snippets
-**Standard Header:**
+## 🖌️ 2. Visual Identity (MCC Branding)
+We use the McHenry County College palette.
+
+| Element | Color | Hex Code | Usage |
+| :--- | :--- | :--- | :--- |
+| **Primary** | MCC Purple | `#582C83` | Headers, Rubric Table Headers, Links |
+| **Accent** | MCC Gold | `#FFC629` | Top Border, Bullet Points, Highlights |
+| **Text** | Dark Grey | `#333333` | Body Text (Never use pure black #000) |
+| **Background** | Off-White | `#f9f9f9` | Page Background |
+| **Code Bg** | Atom Dark | `#282c34` | Code Blocks |
+
+---
+
+## 📝 3. Page Structure (The Template)
+Every Lesson Page MUST follow this exact sequence:
+
+### A. The Container
 ```html
-<h2 style="color: #ffffff; background-color: #4b3190; margin: 0; padding: 15px; border-radius: 10px;">
-    🚀 Title Here
-</h2>
+<div style="max-width: 800px; margin: 0 auto; ... border-top: 10px solid #FFC629;">
 ```
 
-**Code Block (Dark):**
-```html
-<pre style="background-color: #282c34; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace;">
-print("Hello World")
-</pre>
-```
+### B. Header
+*   Purple Background (`#582C83`).
+*   **H1**: "Week X: [Topic]"
+*   **Subtitle**: "ADD 103: Introduction to Web Design | Spring 2026"
 
-**Mallard Security Rule (Alert):**
-```html
-<h4 style="color: #c62828;">🛡️ Mallard Security Rule: [Rule Name]</h4>
-<p>Description...</p>
-```
+### C. QM Alignment Strip
+*   Light Blue Background (`#f0f7ff`).
+*   **Icon**: 🎯
+*   **Text**: "Learning Objective Alignment: [LO Name] — '[Description]'"
+
+### D. Overview ("Why This Matters")
+*   **H2**: "Overview" (Purple text, Gold left-border).
+*   **Content**: High-level intro. "Why are we learning this?"
+*   **Accessibility Note**: Green box (`#e8f5e9`) explaining the A11y implication of the topic.
+
+### E. The Textbook (Deep Dive)
+*   **H2**: "📖 The Textbook: [Topic Title]"
+*   **Function**: Expandable `<details>` sections for theory.
+*   **Style**: `<summary>` with bold text and `+` icon logic (via CSS content if possible, but standard arrow is fine).
+
+### F. Teach by Example (Look & Learn)
+*   **H2**: "👀 Look & Learn"
+*   **Content**: A realistic code scenario.
+*   **The Code Block**:
+    ```html
+    <div style="background-color: #fff; border: 2px solid #eee; ...">
+        <pre style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; white-space: pre-wrap;">
+        <!-- CODE GOES HERE -->
+        </pre>
+    </div>
+    ```
+*   **Observation**: A bulleted list explaining *what* to look at in the code.
+
+### G. Guided Practice (The Project)
+*   **H2**: "💻 Project: [Creative Title]"
+    *   *Examples:* "The Developer Manifesto", "The Multimedia Resume", "The Semantic Biography".
+*   **Rigor**: Assignments must be multi-step and college-level.
+    *   *Step 1*: Setup/Files.
+    *   *Step 2*: The Code/Implementation.
+    *   *Step 3*: Verification/Publishing.
+
+### H. Dig Deeper (Resources & Extra Credit)
+*   **Style**: Yellow tint background (`#fff8e1`).
+*   **H2**: "⛏️ Dig Deeper (Resources)"
+*   **Links**: List of MDN/W3Schools links.
+*   **⭐ Extra Credit Challenge**: A specific, optional task worth 5pts (e.g., "The Favicon Challenge").
+
+### I. Grading Rubric
+*   **H2**: "🏆 Grading Rubric"
+*   **Table**: Full HTML table.
+    *   **Headers**: Criteria (60%), Points (20%), Notes (20%).
+    *   **Style**: Purple header cells, zebra-striped body rows.
+    *   **Content**: Specific criteria (e.g., "Semantics: Correct use of `<header>`...").
+
+### J. Footer
+*   Dark Background (`#333`).
+*   Text: `&copy; 2026 Dr. Meri Kasprak in collaboration with Gemini`
+
+---
+
+## 🧠 4. Pedagogy & Tone
+*   **Tone**: Professional but encouraging. "We are building reality."
+*   **Emojis**: Use them as wayfinding icons (🎯, 📖, 👀, 💻, ⛏️, 🏆).
+*   **Reciprocity**: If applicable, include a "Discussion" block where students share an analogy or critique.
+*   **Google Fonts**: In Week 3+, enforce the use of Google Fonts.
+
+---
+
+## 🛠️ 5. Implementation Rules
+1.  **Strict File Naming**: `week_X_topic.html` (lowercase, underscores).
+2.  **Comments**: Code examples must be heavily commented (`<!-- Like this -->` or `/* Like this */`).
+3.  **Validation**: Always "Inspect" the code mentally to ensure tags are closed.
