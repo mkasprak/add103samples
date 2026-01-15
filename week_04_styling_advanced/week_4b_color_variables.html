@@ -3,7 +3,8 @@
 
     <!-- HEADER -->
     <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 3B: The Box Model</h1>
+        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 4B: Color Theory & Variables
+        </h1>
         <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
             Design | Spring 2026</div>
     </header>
@@ -12,8 +13,8 @@
     <div
         style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
         <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
-        <span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Demonstrate an understanding of the CSS
-            Box Model (margin, border, padding)."</span>
+        <span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Apply advanced color theory and meet Web
+            Content Accessibility Guidelines (WCAG) for contrast."</span>
     </div>
 
     <!-- 1. OVERVIEW -->
@@ -21,21 +22,22 @@
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-        <p>In web design, <strong>everything is a box</strong>. Every paragraph, every header, every image is inside a
-            rectangular box.</p>
-        <p>Today, we learn the most important concept in layout: <strong>The Box Model</strong>. Mastering margins,
-            padding, and borders is the difference between specific design and a messy pile of text.</p>
+        <p>A website can have great structure, but if it looks ugly, no one sits at the table. <strong>Color</strong> is
+            the soul of design.</p>
+        <p>Today, we move beyond basic 'blue' and 'red'. We will learn modern Hex Codes, Opacity (RGBa), and the
+            revolutionary <strong>CSS Variables</strong> that make managing large sites easy.</p>
 
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">✨ Why this matters</h3>
-        <p>This is the leading cause of "Why doesn't my button look right?" frustration. If you don't understand the
-            difference between Padding (Inner Space) and Margin (Outer Space), you will struggle to lay out even simple
-            pages.</p>
+        <div
+            style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
+            <strong>♿ Accessibility Note:</strong> Low contrast text is the #1 accessibility violation on the web. We
+            will learn to use checking tools to ensure everyone can read our words.
+        </div>
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;">🎥 Watch the Lesson</h3>
         <div
             style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
             <strong>[VIDEO PLACEHOLDER]</strong><br>
-            Topic: The CSS Box Model<br>
+            Topic: Color Theory & Variables<br>
             <em>(User to embed Panopto/YouTube Iframe here)</em>
         </div>
     </div>
@@ -44,48 +46,45 @@
     <div style="padding: 30px; border-bottom: 1px solid #eee;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            📖 The Textbook: Inside the Box</h2>
-        <p>Click below to unbox the layers.</p>
+            📖 The Textbook: Modern Color</h2>
 
         <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
             <summary
                 style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                1. Content (The Center)</summary>
+                1. The Formats (Hex vs RGBa)</summary>
             <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The actual text or image you see.</p>
-                <p><strong>Controlled by:</strong> <code>width</code> and <code>height</code>.</p>
+                <ul>
+                    <li><strong>Hex Code (`#ff0000`):</strong> The standard for solid colors. 6 digits.</li>
+                    <li><strong>RGBa (`rgba(255, 0, 0, 0.5)`):</strong> Red, Green, Blue, Alpha (Transparency). Use this
+                        when you want see-through elements!</li>
+                </ul>
             </div>
         </details>
 
         <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
             <summary
                 style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                2. Padding (Inner Space)</summary>
+                2. CSS Variables (Custom Properties)</summary>
             <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The space <em>between</em> the content and the border.</p>
-                <p>Padding clears an area around the content. It is <em>inside</em> the box background color.</p>
-                <p><em>Think of it like bubble wrap protecting the item inside the box.</em></p>
+                <p>Imagine changing a brand color on 500 pages. Nightmare? Not with variables.</p>
+                <p><strong>Step 1: Define</strong></p>
+                <code>:root { --primary-color: #582C83; }</code>
+                <p><strong>Step 2: Use</strong></p>
+                <code>h1 { color: var(--primary-color); }</code>
             </div>
         </details>
 
         <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
             <summary
                 style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                3. Border (The Edge)</summary>
+                3. The 60-30-10 Rule</summary>
             <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> A line that goes around the padding and content.</p>
-                <p>Code: <code>border: 1px solid black;</code></p>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                4. Margin (Outer Space)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The space <em>outside</em> the border.</p>
-                <p>Margin separates this element from its neighbors. It is transparent.</p>
-                <p><em>Think of it like the personal space bubble between two people.</em></p>
+                <p>A classic design principle:</p>
+                <ul>
+                    <li><strong>60%</strong> Neutral Background (White, Light Grey, Cream)</li>
+                    <li><strong>30%</strong> Secondary Color (Brand Color)</li>
+                    <li><strong>10%</strong> Accent Color (Call to Action Buttons - make them pop!)</li>
+                </ul>
             </div>
         </details>
     </div>
@@ -94,81 +93,77 @@
     <div style="padding: 30px; border-bottom: 1px solid #eee;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            👀 Look & Learn</h2>
-        <p>See how Padding and Margin affect the layout of two cards.</p>
+            👀 Look & Learn: Variables in Action</h2>
+        <p>This is how pros structure their CSS files.</p>
 
         <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
             <pre
                 style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
-/* The Card Style */
-.card {
-    background-color: lightblue;
-    border: 2px solid darkblue;
-    
-    /* PADDING: pushes the text AWAY from the border */
-    padding: 20px;
+/* 1. DEFINE THE PALETTE */
+:root {
+    --brand-dark: #333333;
+    --brand-light: #f4f4f4;
+    --accent-pop: #ff4081; /* Hot Pink */
+}
 
-    /* MARGIN: pushes the whole card AWAY from other cards */
-    margin-bottom: 30px;
-    
-    width: 300px;
+/* 2. APPLY THE VARIABLES */
+body {
+    background-color: var(--brand-light);
+    color: var(--brand-dark);
+}
+
+button {
+    background-color: var(--accent-pop); /* Use the variable */
+    border: none;
+    color: white;
 }
             </pre>
             <div style="padding: 15px;">
                 <strong>Observation:</strong>
                 <ul>
-                    <li>Without <code>padding</code>, the text would be uncomfortably stuck to the border line.</li>
-                    <li>Without <code>margin</code>, the cards would touch each other.</li>
+                    <li>If we want to change the pink to green later, we only change it in <strong>one place</strong>
+                        (the `:root`).</li>
+                    <li>This prevents "Frankenstein" designs where you have 15 different shades of the same color.</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- 4. DISCUSSION (RECIPROCITY) -->
-    <div
-        style="background-color: #fff0f5; border-left: 5px solid #d81b60; padding: 20px; margin: 20px 0; border-radius: 4px;">
-        <div
-            style="color: #d81b60; font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; margin-bottom: 10px;">
-            <span style="font-size: 1.4rem; margin-right: 10px;">🗣️</span> Discussion: Margin vs Padding
-        </div>
-        <p>It's the most common confusion for new developers.</p>
-        <p><strong>Prompt:</strong> Find a physical object in your room (like a framed picture or a book). Describe it
-            using Box Model terms. What is the content? What is the padding? What is the border? Share your analogy in
-            the Canvas Discussion board.</p>
-    </div>
-
-    <!-- 5. GUIDED PRACTICE -->
+    <!-- 4. GUIDED PRACTICE -->
     <div style="padding: 30px; border-bottom: 1px solid #eee;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            💻 Project: The Product Collection</h2>
-        <p>You have been hired to build a product display for an e-commerce store. You need to build a row of 3
-            identical "Product Cards".</p>
+            💻 Project: The Accessible Dashboard</h2>
+        <p>You have inherited a website with <em>terrible</em> color choices. Your job is to fix it.</p>
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
         <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
-            <li><strong>Class vs ID:</strong> Because we are making <em>multiple</em> cards, you must use a Class
-                (<code>.product-card</code>), not an ID.</li>
-            <li><strong>HTML Structure:</strong> Create 3 `div`s, each with the class `product-card`. Inside each, put
-                an `h3` (Product Name), a `p` (Description), and a `button` (Buy Now).</li>
-            <li><strong>The CSS Challenge:</strong>
+            <li><strong>Setup:</strong> Create <code>dashboard.html</code>.</li>
+            <li><strong>The "Bad" Code (Copy this first):</strong>
                 <ul>
-                    <li>Give the cards a border and a background color.</li>
-                    <li>Add <strong>20px padding</strong> so the text isn't cramp.</li>
-                    <li>Add <strong>20px margin</strong> so the cards have space between them.</li>
-                    <li>Make the button look clickable (add padding to the button itself!).</li>
+                    <li>Create an `h1` and a `button`.</li>
+                    <li>Style the `h1` with <code>color: #cccccc</code> (light grey) on a white background. (Notice how
+                        hard it is to read).</li>
+                    <li>Style the `button` with <code>background-color: blue; color: black;</code>.</li>
                 </ul>
             </li>
+            <li><strong>The Audit:</strong> Go to <a href="https://webaim.org/resources/contrastchecker/"
+                    target="_blank">WebAIM Contrast Checker</a>. Test your colors. They will fail.</li>
+            <li><strong>The Fix (CSS Variables):</strong>
+                <ul>
+                    <li>Define a `:root` variable called <code>--safe-text</code> and find a hex code that passes WCAG
+                        AA standards (Contrast Ratio > 4.5:1).</li>
+                    <li>Define a <code>--button-bg</code> variable that contrasts securely with white text.</li>
+                    <li>Apply these variables to your elements.</li>
+                </ul>
+            </li>
+            <li><strong>Gradient Bonus:</strong> Add a linear gradient to the page background:
+                <code>background: linear-gradient(to right, var(--brand-light), white);</code>
+            </li>
         </ol>
-
-        <div
-            style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
-            <strong>Pro Tip:</strong> Professional designers use "rem" instead of "px" for padding. Try using
-            <code>padding: 1rem;</code> instead of <code>16px</code>. It scales better!
-        </div>
     </div>
 
-    <!-- 6. DIG DEEPER -->
+    <!-- 5. DIG DEEPER -->
     <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
@@ -176,22 +171,19 @@
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
         <ul>
-            <li style="margin-bottom: 10px;">🔗 <a
-                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
-                    target="_blank" style="color: #582C83; font-weight: bold;">MDN: The Box Model</a></li>
-            <li style="margin-bottom: 10px;">🔗 <a href="https://css-tricks.com/the-css-box-model/" target="_blank"
-                    style="color: #582C83; font-weight: bold;">CSS-Tricks: Box Model Specs</a></li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://coolors.co/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">Coolors.co (Palette Generator)</a></li>
+            <li style="margin-bottom: 10px;">🔗 <a href="https://webaim.org/resources/contrastchecker/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">WebAIM Contrast Checker</a></li>
         </ul>
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">⭐ Extra Credit Challenge (5 pts)
         </h3>
-        <p><strong>The "Hover" Challenge:</strong> Use the <code>:hover</code> pseudo-class to make your "Buy Now"
-            button change color when the mouse goes over it. (e.g.,
-            <code>button:hover { background-color: gold; }</code>).
-        </p>
+        <p><strong>The "Dark Mode" Challenge:</strong> Use a media query to flip your variables when the user prefers
+            dark mode. <br><code>@media (prefers-color-scheme: dark) { :root { --brand-light: #222; } }</code></p>
     </div>
 
-    <!-- 7. RUBRIC -->
+    <!-- 6. RUBRIC -->
     <div
         style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
         <h2
@@ -217,20 +209,20 @@
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Box Model:</strong> Cards demonstrate
-                        distinct Padding (inner) and Margin (outer).</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>CSS Variables:</strong> At least 2 custom
+                        properties (<code>--name</code>) defined in <code>:root</code> and used.</td>
                     <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
                     <td style="padding: 12px; border: 1px solid #ddd;"></td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Classes:</strong> Used a single class
-                        (<code>.product-card</code>) to style all 3 items efficiently.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Accessibility:</strong> Final colors pass
+                        WCAG AA Contrast standards (readable).</td>
                     <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
                     <td style="padding: 12px; border: 1px solid #ddd;"></td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Peer Review:</strong> Posted Box Model
-                        analogy to Discussion board.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Modern Syntax:</strong> Evidence of
+                        gradients or RGBA transparency.</td>
                     <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
                     <td style="padding: 12px; border: 1px solid #ddd;"></td>
                 </tr>

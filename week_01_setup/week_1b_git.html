@@ -17,6 +17,12 @@
             hosting platforms and version control."</span>
     </div>
 
+    <!-- STATS BADGE -->
+    <div
+        style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
+        ⏱️ Time: 30m Study / 60m Project | 🏆 Points: 15 | 📅 Due: Sunday 11:59PM
+    </div>
+
     <!-- 1. OVERVIEW -->
     <div style="padding: 30px; border-bottom: 1px solid #eee;">
         <h2
@@ -30,6 +36,14 @@
             style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
             <strong>♿ Accessibility Note:</strong> GitHub's interface now supports dark mode and high-contrast themes,
             making it more accessible for users with visual impairments.
+        </div>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;">🎥 Watch the Lesson</h3>
+        <div
+            style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+            <strong>[VIDEO PLACEHOLDER]</strong><br>
+            Topic: Git & GitHub Setup<br>
+            <em>(User to embed Panopto/YouTube Iframe here)</em>
         </div>
     </div>
 
@@ -72,10 +86,49 @@ The Internet (Live Site)
             Phase 1: The Launch</h3>
         <ol>
             <li>Create a <strong>Public</strong> GitHub repo named <code>ADD103</code>.</li>
-            <li>Connect it to cPanel (as detailed in the course videos).</li>
+            <li>Connect it to cPanel:
+                <details
+                    style="margin-top: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
+                    <summary style="cursor: pointer; font-weight: bold; color: #582C83;">Click for cPanel Connection
+                        Guide ⬇️</summary>
+
+                    <h4 style="color: #4b3190; margin-top: 15px;">Step A: Get the Clone URL</h4>
+                    <ol style="font-size: 0.9em;">
+                        <li>Go to your repo on GitHub.</li>
+                        <li>Click the green <strong>Code</strong> button.</li>
+                        <li>Select <strong>HTTPS</strong>.</li>
+                        <li>Copy the URL (e.g., <code>https://github.com/user/ADD103.git</code>).</li>
+                    </ol>
+
+                    <h4 style="color: #4b3190; margin-top: 15px;">Step B: Git Version Control in cPanel</h4>
+                    <ol style="font-size: 0.9em;">
+                        <li>Log in to cPanel and find <strong>Git Version Control</strong>.</li>
+                        <li>Click <strong>Create</strong>.</li>
+                        <li><strong>Clone URL:</strong> Paste your GitHub URL.</li>
+                        <li><strong>Repository Path:</strong> Enter <code>public_html/ADD103</code>.</li>
+                        <li><strong>Repository Name:</strong> Enter <code>ADD103</code>.</li>
+                        <li>Click <strong>Create</strong>.</li>
+                    </ol>
+
+                    <h4 style="color: #4b3190; margin-top: 15px;">Step C: Fix Permissions (Crucial!)</h4>
+                    <div
+                        style="background-color: #fff3cd; border: 1px solid #ffc107; padding: 10px; margin: 10px 0; font-size: 0.9em;">
+                        ⚠️ <strong>Warning:</strong> Git uploads files with restricted permissions. You must fix this or
+                        your site will return 403 Forbidden.
+                    </div>
+                    <ol style="font-size: 0.9em;">
+                        <li>Go to <strong>File Manager</strong> in cPanel.</li>
+                        <li>Navigate to <code>public_html/ADD103</code>.</li>
+                        <li>Select all files/folders.</li>
+                        <li>Right-click -> <strong>Permissions</strong> or <strong>Change Permissions</strong>.</li>
+                        <li>Set to <strong>755</strong> (User: RWE, Group: RE, World: RE).</li>
+                    </ol>
+                </details>
+            </li>
             <li>Upload your <code>manifesto.html</code> from Lesson 1A.</li>
             <li>Verify it appears on your live student URL (e.g.,
-                <em>yourname.mccstudent.com/ADD103/week_01/manifesto.html</em>).</li>
+                <em>yourname.mccstudent.com/ADD103/week_01/manifesto.html</em>).
+            </li>
         </ol>
 
         <h3
@@ -85,7 +138,8 @@ The Internet (Live Site)
         <ol>
             <li>Back on your computer, open `manifesto.html`.</li>
             <li>Add a new line at the bottom:
-                <code>"Timestamp: I have successfully deployed this site on [Date]!"</code></li>
+                <code>"Timestamp: I have successfully deployed this site on [Date]!"</code>
+            </li>
             <li>Save, Commit, and Push the change to GitHub.</li>
             <li>Go to your live URL. <strong>Refresh the page.</strong></li>
         </ol>
@@ -137,7 +191,8 @@ The Internet (Live Site)
             <tbody>
                 <tr>
                     <td style="padding: 12px; border: 1px solid #ddd;"><strong>Repo Setup:</strong> Public
-                        <code>ADD103</code> repository exists on GitHub with <code>manifesto.html</code> inside.</td>
+                        <code>ADD103</code> repository exists on GitHub with <code>manifesto.html</code> inside.
+                    </td>
                     <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
                     <td style="padding: 12px; border: 1px solid #ddd;"></td>
                 </tr>

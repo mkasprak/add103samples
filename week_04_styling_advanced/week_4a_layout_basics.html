@@ -3,7 +3,8 @@
 
     <!-- HEADER -->
     <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 3B: The Box Model</h1>
+        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 4A: The Flow & Positioning
+        </h1>
         <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
             Design | Spring 2026</div>
     </header>
@@ -12,8 +13,8 @@
     <div
         style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
         <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
-        <span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Demonstrate an understanding of the CSS
-            Box Model (margin, border, padding)."</span>
+        <span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Utilize CSS positioning (static, relative,
+            absolute, fixed) to control layout."</span>
     </div>
 
     <!-- 1. OVERVIEW -->
@@ -21,21 +22,20 @@
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-        <p>In web design, <strong>everything is a box</strong>. Every paragraph, every header, every image is inside a
-            rectangular box.</p>
-        <p>Today, we learn the most important concept in layout: <strong>The Box Model</strong>. Mastering margins,
-            padding, and borders is the difference between specific design and a messy pile of text.</p>
+        <p>By default, HTML elements follow gravity. They stack one on top of another, from top to bottom. This is
+            called the <strong>Normal Flow</strong>.</p>
+        <p>But what if you want a navigation bar to stick to the top? Or a caption to sit <em>on top</em> of an image?
+            To do that, we must break the flow using <strong>CSS Positioning</strong>.</p>
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">✨ Why this matters</h3>
-        <p>This is the leading cause of "Why doesn't my button look right?" frustration. If you don't understand the
-            difference between Padding (Inner Space) and Margin (Outer Space), you will struggle to lay out even simple
-            pages.</p>
+        <p>Positioning is the "Special Forces" of CSS. You don't use it for everything (that's what Flexbox is for), but
+            when you need to pin, overlay, or stick an element, nothing else will do.</p>
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;">🎥 Watch the Lesson</h3>
         <div
             style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
             <strong>[VIDEO PLACEHOLDER]</strong><br>
-            Topic: The CSS Box Model<br>
+            Topic: Display, Position & Flow<br>
             <em>(User to embed Panopto/YouTube Iframe here)</em>
         </div>
     </div>
@@ -44,48 +44,51 @@
     <div style="padding: 30px; border-bottom: 1px solid #eee;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            📖 The Textbook: Inside the Box</h2>
-        <p>Click below to unbox the layers.</p>
+            📖 The Textbook: Display & Position</h2>
+        <p>Click below to understand how elements behave.</p>
 
         <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
             <summary
                 style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                1. Content (The Center)</summary>
+                1. The Display Property (Block vs Inline)</summary>
             <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The actual text or image you see.</p>
-                <p><strong>Controlled by:</strong> <code>width</code> and <code>height</code>.</p>
+                <p>Every element has a default "Display" mode:</p>
+                <ul>
+                    <li><strong>Block (`div`, `p`, `h1`):</strong> Takes up the full width. Starts on a new line.</li>
+                    <li><strong>Inline (`span`, `a`, `strong`):</strong> Takes up only what it needs. Sits inside text.
+                    </li>
+                    <li><strong>None (`display: none`):</strong> Removes the element completely from the document.</li>
+                </ul>
             </div>
         </details>
 
         <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
             <summary
                 style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                2. Padding (Inner Space)</summary>
+                2. Relative vs Absolute (The Dynamic Duo)</summary>
             <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The space <em>between</em> the content and the border.</p>
-                <p>Padding clears an area around the content. It is <em>inside</em> the box background color.</p>
-                <p><em>Think of it like bubble wrap protecting the item inside the box.</em></p>
+                <p>These two almost always work together:</p>
+                <ul>
+                    <li><code>position: relative;</code>: "I am the reference point." (Usually set on the Parent
+                        Container).</li>
+                    <li><code>position: absolute;</code>: "I move freely inside my parent." (Set on the Child).</li>
+                </ul>
+                <p><em>Rule of Thumb:</em> If you want to overlay text on an image, the Image Container gets
+                    <code>relative</code>, the Text gets <code>absolute</code>.
+                </p>
             </div>
         </details>
 
         <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
             <summary
                 style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                3. Border (The Edge)</summary>
+                3. Fixed & Sticky</summary>
             <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> A line that goes around the padding and content.</p>
-                <p>Code: <code>border: 1px solid black;</code></p>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                4. Margin (Outer Space)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The space <em>outside</em> the border.</p>
-                <p>Margin separates this element from its neighbors. It is transparent.</p>
-                <p><em>Think of it like the personal space bubble between two people.</em></p>
+                <ul>
+                    <li><code>position: fixed;</code>: Glued to the browser window. Even if you scroll, it stays there.
+                        (Used for Chat Bubbles, Nav Bars).</li>
+                    <li><code>position: sticky;</code>: Scrolls until it hits a threshold, then sticks.</li>
+                </ul>
             </div>
         </details>
     </div>
@@ -94,81 +97,95 @@
     <div style="padding: 30px; border-bottom: 1px solid #eee;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            👀 Look & Learn</h2>
-        <p>See how Padding and Margin affect the layout of two cards.</p>
+            👀 Look & Learn: The Overlay</h2>
+        <p>This is the most common use case: Placing a text caption ON TOP of an image.</p>
+
+        <div style="margin-bottom: 20px;">
+            <a href="../samples/sample_04_positioning.html" target="_blank"
+                style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold;">🔗
+                View Live Sample: The Concert Poster</a>
+        </div>
 
         <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
             <pre
                 style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
-/* The Card Style */
-.card {
-    background-color: lightblue;
-    border: 2px solid darkblue;
-    
-    /* PADDING: pushes the text AWAY from the border */
-    padding: 20px;
-
-    /* MARGIN: pushes the whole card AWAY from other cards */
-    margin-bottom: 30px;
-    
+/* 1. THE PARENT (The Frame) */
+.card-container {
+    position: relative; /* Defines the boundaries */
     width: 300px;
+}
+
+/* 2. THE IMAGE */
+.card-image {
+    width: 100%; /* Fills the container */
+    display: block;
+}
+
+/* 3. THE TEXT (The Overlay) */
+.card-caption {
+    position: absolute; /* Breaks gravity! */
+    bottom: 10px;       /* 10px from bottom */
+    left: 10px;         /* 10px from left */
+    
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: white;
+    padding: 5px;
 }
             </pre>
             <div style="padding: 15px;">
                 <strong>Observation:</strong>
                 <ul>
-                    <li>Without <code>padding</code>, the text would be uncomfortably stuck to the border line.</li>
-                    <li>Without <code>margin</code>, the cards would touch each other.</li>
+                    <li>If we removed <code>position: relative</code> from the parent, the caption would fly out to the
+                        bottom of the entire webpage!</li>
+                    <li><code>bottom</code> and <code>left</code> are coordinate pins.</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- 4. DISCUSSION (RECIPROCITY) -->
-    <div
-        style="background-color: #fff0f5; border-left: 5px solid #d81b60; padding: 20px; margin: 20px 0; border-radius: 4px;">
-        <div
-            style="color: #d81b60; font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; margin-bottom: 10px;">
-            <span style="font-size: 1.4rem; margin-right: 10px;">🗣️</span> Discussion: Margin vs Padding
-        </div>
-        <p>It's the most common confusion for new developers.</p>
-        <p><strong>Prompt:</strong> Find a physical object in your room (like a framed picture or a book). Describe it
-            using Box Model terms. What is the content? What is the padding? What is the border? Share your analogy in
-            the Canvas Discussion board.</p>
-    </div>
-
-    <!-- 5. GUIDED PRACTICE -->
+    <!-- 4. GUIDED PRACTICE -->
     <div style="padding: 30px; border-bottom: 1px solid #eee;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            💻 Project: The Product Collection</h2>
-        <p>You have been hired to build a product display for an e-commerce store. You need to build a row of 3
-            identical "Product Cards".</p>
+            💻 Project: The Magazine Cover</h2>
+        <p>You are the editor of "Code Monthly". You need to design a clickable magazine cover using absolute
+            positioning.</p>
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
         <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
-            <li><strong>Class vs ID:</strong> Because we are making <em>multiple</em> cards, you must use a Class
-                (<code>.product-card</code>), not an ID.</li>
-            <li><strong>HTML Structure:</strong> Create 3 `div`s, each with the class `product-card`. Inside each, put
-                an `h3` (Product Name), a `p` (Description), and a `button` (Buy Now).</li>
-            <li><strong>The CSS Challenge:</strong>
+            <li><strong>Setup:</strong> Create <code>cover.html</code>. Find a high-quality vertical portrait image (use
+                Unsplash).</li>
+            <li><strong>Structure:</strong>
                 <ul>
-                    <li>Give the cards a border and a background color.</li>
-                    <li>Add <strong>20px padding</strong> so the text isn't cramp.</li>
-                    <li>Add <strong>20px margin</strong> so the cards have space between them.</li>
-                    <li>Make the button look clickable (add padding to the button itself!).</li>
+                    <li>Create a `div` with class <code>cover-container</code>.</li>
+                    <li>Inside it, place your `img` (The Cover Model).</li>
+                    <li>Inside it, place an `h1` (The Title: "CODE").</li>
+                    <li>Inside it, place a `div` with class `badge` (The Price/Date).</li>
                 </ul>
             </li>
+            <li><strong>The CSS (Positioning):</strong>
+                <ul>
+                    <li>Set <code>.cover-container</code> to <code>position: relative</code>.</li>
+                    <li><strong>The Title:</strong> Use
+                        <code>position: absolute; top: 20px; width: 100%; text-align: center;</code> to center it at the
+                        top.
+                    </li>
+                    <li><strong>The Badge:</strong> Use <code>position: absolute; bottom: 50px; right: 20px;</code> to
+                        pin it to the corner. Make it round (`border-radius: 50%`) and red!</li>
+                </ul>
+            </li>
+            <li><strong>Challenge:</strong> Make the image behave nicely. Give the container a fixed width (e.g., 400px)
+                and ensure the image is `width: 100%`.</li>
         </ol>
 
         <div
             style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
-            <strong>Pro Tip:</strong> Professional designers use "rem" instead of "px" for padding. Try using
-            <code>padding: 1rem;</code> instead of <code>16px</code>. It scales better!
+            <strong>Pro Tip:</strong> Text over images can be hard to read. Use
+            <code>text-shadow: 2px 2px 5px black;</code> to make your white text pop against any background.
         </div>
     </div>
 
-    <!-- 6. DIG DEEPER -->
+    <!-- 5. DIG DEEPER -->
     <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
         <h2
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
@@ -177,21 +194,19 @@
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
         <ul>
             <li style="margin-bottom: 10px;">🔗 <a
-                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
-                    target="_blank" style="color: #582C83; font-weight: bold;">MDN: The Box Model</a></li>
-            <li style="margin-bottom: 10px;">🔗 <a href="https://css-tricks.com/the-css-box-model/" target="_blank"
-                    style="color: #582C83; font-weight: bold;">CSS-Tricks: Box Model Specs</a></li>
+                    href="https://css-tricks.com/absolute-positioning-inside-relative-positioning/" target="_blank"
+                    style="color: #582C83; font-weight: bold;">CSS-Tricks: Absolute inside Relative (Visual Guide)</a>
+            </li>
         </ul>
 
         <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">⭐ Extra Credit Challenge (5 pts)
         </h3>
-        <p><strong>The "Hover" Challenge:</strong> Use the <code>:hover</code> pseudo-class to make your "Buy Now"
-            button change color when the mouse goes over it. (e.g.,
-            <code>button:hover { background-color: gold; }</code>).
-        </p>
+        <p><strong>The "Z-Index" Challenge:</strong> Create two colored squares using absolute positioning. Make them
+            overlap. Use the <code>z-index</code> property to force the "bottom" square to appear ON TOP of the other
+            one.</p>
     </div>
 
-    <!-- 7. RUBRIC -->
+    <!-- 6. RUBRIC -->
     <div
         style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
         <h2
@@ -217,20 +232,20 @@
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Box Model:</strong> Cards demonstrate
-                        distinct Padding (inner) and Margin (outer).</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Relative/Absolute:</strong> Correct
+                        implementation of the Container (Rel) / Child (Abs) relationship.</td>
                     <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
                     <td style="padding: 12px; border: 1px solid #ddd;"></td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Classes:</strong> Used a single class
-                        (<code>.product-card</code>) to style all 3 items efficiently.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Visuals:</strong> Text is readable over
+                        the image (using shadows or contrast).</td>
                     <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
                     <td style="padding: 12px; border: 1px solid #ddd;"></td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Peer Review:</strong> Posted Box Model
-                        analogy to Discussion board.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Badge:</strong> "Price" Badge is
+                        positioned in a corner using bottom/right coordinates.</td>
                     <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
                     <td style="padding: 12px; border: 1px solid #ddd;"></td>
                 </tr>

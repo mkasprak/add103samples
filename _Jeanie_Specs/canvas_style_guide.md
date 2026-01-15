@@ -56,6 +56,18 @@ Every Lesson Page MUST follow this exact sequence:
 *   **Content**: High-level intro. "Why are we learning this?"
 *   **Accessibility Note**: Green box (`#e8f5e9`) explaining the A11y implication of the topic.
 
+### D2. Required Video (The Lecture)
+*   **H2**: "🎥 Watch the Lesson"
+*   **Content**: A placeholder for the Panopto embed.
+*   **Snippet**:
+    ```html
+    <div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+        <strong>[VIDEO PLACEHOLDER]</strong><br>
+        Topic: Lesson Walkthrough<br>
+        <em>(User to embed Panopto/YouTube Iframe here)</em>
+    </div>
+    ```
+
 ### E. The Textbook (Deep Dive)
 *   **H2**: "📖 The Textbook: [Topic Title]"
 *   **Function**: Expandable `<details>` sections for theory.

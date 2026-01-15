@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week 3 Sample: Styling</title>
+    <!-- INTERNAL CSS (Taught in Week 3) -->
+    <style>
+        /* 1. Global Styles */
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdfbf7;
+            /* Cream background */
+            color: #3e3e3e;
+            max-width: 700px;
+            margin: 0 auto;
+            /* Centering the page */
+            padding: 20px;
+            border-left: 10px solid #8b0000;
+            /* Dark Red border */
+            border-right: 10px solid #8b0000;
+        }
+
+        /* 2. Typography */
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: #8b0000;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            border-bottom: 2px solid #3e3e3e;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Arial', sans-serif;
+            color: #d2691e;
+            /* Chocolate */
+            border-left: 5px solid #d2691e;
+            padding-left: 10px;
+            margin-top: 40px;
+        }
+
+        /* 3. The Box Model (Classes) */
+        .item {
+            background-color: white;
+            padding: 15px;
+            /* Inner Space */
+            margin-bottom: 15px;
+            /* Outer Space */
+            border: 1px dotted #ccc;
+            /* Border */
+        }
+
+        .price {
+            font-weight: bold;
+            float: right;
+            /* Old school positioning (Valid for Week 3) */
+            color: #2e8b57;
+            /* SeaGreen */
+        }
+
+        .description {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Le Petit Bistro</h1>
+
+    <h2>Appetizers</h2>
+    <div class="item">
+        <span class="price">$12</span>
+        <strong>French Onion Soup</strong>
+        <div class="description">Caramelized onions, beef broth, topped with melted gruyère.</div>
+    </div>
+    <div class="item">
+        <span class="price">$14</span>
+        <strong>Escargot</strong>
+        <div class="description">Snails cooked in garlic butter and parsley.</div>
+    </div>
+
+    <h2>Main Courses</h2>
+    <div class="item">
+        <span class="price">$28</span>
+        <strong>Coq au Vin</strong>
+        <div class="description">Chicken braised with wine, lardons, mushrooms, and garlic.</div>
+    </div>
+    <div class="item">
+        <span class="price">$32</span>
+        <strong>Steak Frites</strong>
+        <div class="description">Ribeye steak served with endless golden fries.</div>
+    </div>
+
+    <center style="margin-top: 50px; font-size: 0.8rem; color: #999;">
+        &copy; 2026 Le Petit Bistro. Est. 1920.
+    </center>
+
+</body>
+
+</html>

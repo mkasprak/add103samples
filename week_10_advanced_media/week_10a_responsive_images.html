@@ -1,0 +1,132 @@
+<!-- 
+    CANVAS LESSON: WEEK 10A
+    Topic: Responsive Images
+-->
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; color: #333;">
+
+    <!-- HEADER BLOCK -->
+    <div
+        style="background-color: #4b3190; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
+        <h1 style="margin: 0;">🦆 Module 10A: Responsive Images</h1>
+        <p style="margin: 5px 0 0 0; color: #ddd;">One Size Does Not Fit All</p>
+    </div>
+
+    <!-- STATS BADGE -->
+    <div
+        style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
+        ⏱️ Time: 45 Minutes | 🏆 Points: 10 | 📅 Due: Sunday 11:59PM
+    </div>
+
+    <!-- MAIN INTRODUCTION -->
+    <div style="padding: 20px; background-color: white; border: 1px solid #ddd; border-top: none;">
+
+        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">👋 Overview</h3>
+        <p>
+            Images are the heaviest part of any website. If you load a 4K desktop photo on a tiny mobile screen, you are
+            wasting the user's data and slowing down your site. Today, we learn to serve the "just right" image for
+            every device using <code>srcset</code> and the <code>&lt;picture&gt;</code> element.
+        </p>
+
+        <!-- THE MISSION BOX -->
+        <div style="background-color: #f9f9f9; border-left: 5px solid #4b3190; padding: 15px; margin: 20px 0;">
+            <h4 style="margin-top: 0; color: #4b3190;">🎯 The Mission</h4>
+            <p>
+                Create a "Gallery" page that serves different image resolutions based on the screen size.
+            </p>
+            <ul>
+                <li><strong>Requirement 1:</strong> Use <code>srcset</code> to serve 3 different sizes of an image
+                    (small, medium, large).</li>
+                <li><strong>Requirement 2:</strong> Use the <code>&lt;picture&gt;</code> tag for "Art Direction"
+                    (changing the crop on mobile).</li>
+                <li><strong>Requirement 3:</strong> Convert one image to <strong>WebP</strong> format for optimization.
+                </li>
+            </ul>
+        </div>
+
+        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">📺 Instructions & Videos</h3>
+
+        <div style="margin-bottom: 20px;">
+            <h4>1. The Secret to Fast Images</h4>
+            <p><em>(Video Placeholder: Explaining pixel density and bandwidth)</em></p>
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <h4>2. Coding with Dr. K: The Picture Tag</h4>
+            <p><em>(Video Placeholder: Live coding demo)</em></p>
+        </div>
+
+        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">💻 Code Sample</h3>
+
+        <div
+            style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto;">
+            <pre style="margin: 0;">
+&lt;!-- METHOD 1: Resolution Switching (Same image, different sizes) --&gt;
+&lt;img src="dog-medium.jpg"
+     srcset="dog-small.jpg 500w,
+             dog-medium.jpg 1000w,
+             dog-large.jpg 2000w"
+     alt="A cute puppy"&gt;
+
+&lt;!-- METHOD 2: Art Direction (Different image entirely) --&gt;
+&lt;picture&gt;
+    &lt;source media="(max-width: 600px)" srcset="dog-close-up-portrait.jpg"&gt;
+    &lt;source media="(min-width: 601px)" srcset="dog-wide-landscape.jpg"&gt;
+    &lt;img src="dog-fallback.jpg" alt="A cute puppy"&gt;
+&lt;/picture&gt;
+            </pre>
+        </div>
+
+        <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+            <summary style="cursor: pointer; font-weight: bold; color: #4b3190;">🦆 Dig Deeper: WebP vs JPG</summary>
+            <p style="margin-top: 10px;">
+                WebP is a modern image format that provides superior lossless and lossy compression for images on the
+                web. It is now supported by all major browsers and is typically 25-30% smaller than a comparable JPEG.
+            </p>
+        </details>
+
+        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">📤 Submission</h3>
+        <p>
+            Upload your file named <code>week_10a_gallery.html</code>.
+        </p>
+
+    </div>
+
+    <!-- RUBRIC TABLE -->
+    <div style="margin-top: 20px;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left;">
+            <caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Grading Rubric</caption>
+            <thead style="background-color: #4b3190; color: white;">
+                <tr>
+                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Criteria</th>
+                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Points</th>
+                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Resolution Switching</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">4 pts</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Correct use of <code>srcset</code>.</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Art Direction</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">4 pts</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;"><code>&lt;picture&gt;</code> tag changes image at
+                        breakpoint.</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Accessibility</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">2 pts</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">All images have <code>alt</code> text.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <div
+        style="text-align: center; margin-top: 30px; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
+        &copy; 2026 Meri Kasprak, Ph.D. 🦆 | In collaboration with Gemini ✨
+    </div>
+
+</div>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week 4 Sample: Positioning</title>
+    <style>
+        body {
+            background-color: #111;
+            font-family: 'Impact', sans-serif;
+            display: flex;
+            /* Preview of Week 5, used here just to center the poster */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* THE CONTAINER (Reference Point) */
+        .poster {
+            position: relative;
+            /* RELATIVE: I am the anchor */
+            width: 400px;
+            height: 600px;
+            background-image: url('https://placehold.co/400x600/333/666?text=Concert+Image');
+            background-size: cover;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.2);
+            border: 5px solid white;
+        }
+
+        /* THE LAYERS (Absolute Children) */
+
+        .title {
+            position: absolute;
+            /* ABSOLUTE: I move freely */
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 5px 5px 0px #ff00ff;
+            /* Neon Shadow */
+            letter-spacing: 2px;
+        }
+
+        .band-name {
+            position: absolute;
+            /* ABSOLUTE */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Perfect Center Trick */
+            font-size: 4rem;
+            color: #00ffff;
+            /* Cyan */
+            text-transform: uppercase;
+            border: 5px solid #00ffff;
+            padding: 10px 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+        }
+
+        .date-badge {
+            position: absolute;
+            /* ABSOLUTE */
+            top: 20px;
+            right: 20px;
+            background-color: #ff00ff;
+            color: white;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            /* Circle */
+            text-align: center;
+            line-height: 80px;
+            /* Vertically Centers text */
+            transform: rotate(15deg);
+            /* Jaunty angle */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer-info {
+            position: absolute;
+            /* ABSOLUTE */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="poster">
+        <!-- 1. The Badge -->
+        <div class="date-badge">JUL 15</div>
+
+        <!-- 2. The Title -->
+        <div class="title">LIVE IN CHICAGO</div>
+
+        <!-- 3. The Band -->
+        <div class="band-name">NEON<br>RATS</div>
+
+        <!-- 4. The Footer -->
+        <div class="footer-info">GET TICKETS AT NEONRATS.COM</div>
+    </div>
+
+</body>
+
+</html>

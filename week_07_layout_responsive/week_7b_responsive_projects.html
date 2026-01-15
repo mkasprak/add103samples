@@ -1,0 +1,228 @@
+<div
+    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+
+    <!-- HEADER -->
+    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 7B: Responsive Layout
+            Patterns</h1>
+        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+            Design | Spring 2026</div>
+    </header>
+
+    <!-- QM ALIGNMENT STRIP -->
+    <div
+        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
+        <span><strong>Learning Objective Alignment:</strong> Layout (LO3) — "Refactor static Grids/Flex containers into
+            adaptive response structures."</span>
+    </div>
+
+    <!-- 1. OVERVIEW -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            Overview</h2>
+        <p>You know Grid (Week 6). You know Media Queries (Week 7A). Now, we combine them to solve the hardest problem
+            in web design: <strong>The 12-Column Problem</strong>.</p>
+        <p>Today, we take a rigid Grid (like your Photo Gallery) and make it fluid. 1 column on phone, 2 on tablet, 4 on
+            desktop.</p>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;">🎥 Watch the Lesson</h3>
+        <div
+            style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+            <strong>[VIDEO PLACEHOLDER]</strong><br>
+            Topic: Responsive Grid & Flex Patterns<br>
+            <em>(User to embed Panopto/YouTube Iframe here)</em>
+        </div>
+    </div>
+
+    <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            📖 The Textbook: Common Patterns</h2>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                1. The Grid Drop</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p>To change a grid from 1 column to 3, you just change one line.</p>
+                <pre style="background: #eee; padding: 10px;">
+.container { grid-template-columns: 1fr; } /* Mobile */
+
+@media (min-width: 768px) {
+  .container { grid-template-columns: 1fr 1fr 1fr; } /* Tablet+ */
+}
+                </pre>
+            </div>
+        </details>
+
+        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+            <summary
+                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                2. The Sidebar Drop</summary>
+            <div style="padding: 20px; line-height: 1.8; color: #444;">
+                <p>On Desktop, sidebars are on the side. On Mobile, they usually fall to the <strong>bottom</strong> of
+                    the page (so the main content comes first).</p>
+                <p>We achieve this by changing `flex-direction: column` (Mobile) to `flex-direction: row` (Desktop), as
+                    seen in 7A.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- 3. TEACH BY EXAMPLE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            👀 Look & Learn: The Responsive Gallery</h2>
+        <p>This is standard code for e-commerce product listings.</p>
+
+        <div style="margin-bottom: 20px;">
+            <a href="../samples/sample_07_responsive.html" target="_blank"
+                style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold;">🔗
+                View Live Sample: The Responsive Gallery</a>
+        </div>
+
+        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+            <pre
+                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+/* MOBILE (Default) - 1 Column */
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+}
+
+/* TABLET - 2 Columns */
+@media (min-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* DESKTOP - 4 Columns */
+@media (min-width: 1000px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+            </pre>
+            <div style="padding: 15px;">
+                <strong>Observation:</strong>
+                <ul>
+                    <li>Notice we have THREE states.</li>
+                    <li>The gaps stay the same (20px) but the column count scales.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. GUIDED PRACTICE -->
+    <div style="padding: 30px; border-bottom: 1px solid #eee;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            💻 Project: The Responsive Photo Wall</h2>
+        <p>Remember the Photo Wall from Week 6? It was stuck at 3 columns. Let's fix it.</p>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
+        <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
+            <li><strong>Setup:</strong> Reuse your `photo-wall` code from Week 6A.</li>
+            <li><strong>Refactor (Go Mobile First):</strong>
+                <ul>
+                    <li>Delete the old `grid-template-columns: repeat(3, 1fr);` line.</li>
+                    <li>Replace it with `grid-template-columns: 1fr;` (Single column).</li>
+                    <li>Check your browser. It should be a vertical stack of big images. Good for phones!</li>
+                </ul>
+            </li>
+            <li><strong>Add Breakpoints:</strong>
+                <ul>
+                    <li>Add a media query for `min-width: 600px` -> Change to `repeat(2, 1fr)`.</li>
+                    <li>Add a media query for `min-width: 900px` -> Change to `repeat(3, 1fr)`.</li>
+                    <li>Add a media query for `min-width: 1200px` -> Change to `repeat(4, 1fr)`.</li>
+                </ul>
+            </li>
+            <li><strong>Test:</strong> Grab the corner of your browser window and drag it back and forth. Watch your
+                grid adapt instantly. This is "Fluid" design.</li>
+        </ol>
+    </div>
+
+    <!-- 5. DIG DEEPER -->
+    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            ⛏️ Dig Deeper & Extra Credit</h2>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
+        <ul>
+            <li style="margin-bottom: 10px;">🔗 <a
+                    href="https://developers.google.com/search/mobile-sites/mobile-first-indexing" target="_blank"
+                    style="color: #582C83; font-weight: bold;">Google: Mobile-First Indexing</a> (Why we do this).</li>
+        </ul>
+
+        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">⭐ Extra Credit Challenge (5 pts)
+        </h3>
+        <p><strong>The "No Media Query" Grid:</strong> Search for <code>auto-fit</code> and <code>minmax</code>. You can
+            actually create a responsive grid that wraps automatically without writing a SINGLE media query! Try to
+            implement it.</p>
+    </div>
+
+    <!-- 6. RUBRIC -->
+    <div
+        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            🏆 Grading Rubric</h2>
+
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
+            <caption
+                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
+                Grading Rubric</caption>
+            <thead>
+                <tr>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                        Criteria</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Points</th>
+                    <th scope="col"
+                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
+                        Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Fluid Grid:</strong> The grid changes
+                        column count at least 3 times (1 -> 2 -> 3/4).</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Mobile First:</strong> The default CSS
+                        targets the smallest screen (1 column), and queries ADD complexity.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>No Broken Layout:</strong> At no point
+                        during resize does the horizontal scrollbar appear.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>20 pts</strong></td>
+                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- FOOTER -->
+    <footer
+        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+
+</div>
