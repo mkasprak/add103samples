@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD 103: Live Sample Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 5px solid #FFC629;
+            /* MCC Gold */
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #582C83;
+            /* MCC Purple */
+            margin: 0;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .sample-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #582C83;
+            transition: transform 0.2s;
+        }
+
+        .sample-card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #582C83;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #4b3190;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Live Sample Gallery</h1>
+        <div class="subtitle">Examples for ADD 103: Introduction to Web Design</div>
+    </header>
+
+    <div class="gallery-grid">
+
+        <!-- WEEK 1 -->
+        <article class="sample-card">
+            <h2>Week 1: The Basics</h2>
+            <p>Pure HTML5. No styling. Lists and Headings.</p>
+            <a href="sample_01_basics.html" class="btn">View "Letter Home"</a>
+        </article>
+
+        <!-- WEEK 2 -->
+        <article class="sample-card">
+            <h2>Week 2: Semantics</h2>
+            <p>Structuring content with &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;.</p>
+            <a href="sample_02_semantics.html" class="btn">View "Birdwatcher"</a>
+        </article>
+
+        <!-- WEEK 3 -->
+        <article class="sample-card">
+            <h2>Week 3: Styling Intro</h2>
+            <p>Colors, Fonts, and the Box Model.</p>
+            <a href="sample_03_styling.html" class="btn">View "Bistro Menu"</a>
+        </article>
+
+        <!-- WEEK 4 -->
+        <article class="sample-card">
+            <h2>Week 4: Positioning</h2>
+            <p>Relative and Absolute positioning layers.</p>
+            <a href="sample_04_positioning.html" class="btn">View "Concert Poster"</a>
+        </article>
+
+        <!-- WEEK 5 -->
+        <article class="sample-card">
+            <h2>Week 5: Flexbox</h2>
+            <p>One-dimensional layouts (Rows & Columns).</p>
+            <a href="sample_05_flex.html" class="btn">View "Team Page"</a>
+        </article>
+
+        <!-- WEEK 6 -->
+        <article class="sample-card">
+            <h2>Week 6: CSS Grid</h2>
+            <p>Two-dimensional layouts and specific placement.</p>
+            <a href="sample_06_grid.html" class="btn">View "The Daily News"</a>
+        </article>
+
+        <!-- WEEK 7 -->
+        <article class="sample-card">
+            <h2>Week 7: Responsiveness</h2>
+            <p>Media Queries adapting to mobile screens.</p>
+            <a href="sample_07_responsive.html" class="btn">View "Responsive News"</a>
+        </article>
+
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; color: #888; font-size: 0.8rem;">
+        &copy; 2026 McHenry County College
+    </footer>
+
+</body>
+
+</html>
