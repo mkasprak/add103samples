@@ -1,111 +1,86 @@
-<div
-    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-
-    <!-- HEADER -->
-    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 3B: The Box Model</h1>
-        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+<div class_="main-content" lang="en"><div style="max-width: 950px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<!-- HEADER -->
+<header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 3B: The Box Model</h2>
+<div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
             Design | Spring 2026</div>
-    </header>
-
-    <!-- QM ALIGNMENT STRIP -->
-    <div
-        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
-        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
-        <span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Demonstrate an understanding of the CSS
+</header>
+<!-- QM ALIGNMENT STRIP -->
+<div style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+<span style="font-size: 1.2rem; margin-right: 10px;"><span aria-label="Direct Hit" role="img">🎯</span></span>
+<span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Demonstrate an understanding of the CSS
             Box Model (margin, border, padding)."</span>
+</div>
+<!-- STATS BADGE -->
+<div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
+        ⏱️ Time: 15m Study / 90m Project | <span aria-label="Trophy" role="img">🏆</span> Points: 20 | <span aria-label="Calendar" role="img">📅</span> Due: Sunday 11:59PM
     </div>
-
-    <!-- STATS BADGE -->
-    <div
-        style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
-        ⏱️ Time: 15m Study / 90m Project | 🏆 Points: 20 | 📅 Due: Sunday 11:59PM
-    </div>
-
-    <!-- 1. OVERVIEW -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+<!-- 1. OVERVIEW -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-        <p>In web design, <strong>everything is a box</strong>. Every paragraph, every header, every image is inside a
+<p>In web design, <strong>everything is a box</strong>. Every paragraph, every header, every image is inside a
             rectangular box.</p>
-        <p>Today, we learn the most important concept in layout: <strong>The Box Model</strong>. Mastering margins,
+<p>Today, we learn the most important concept in layout: <strong>The Box Model</strong>. Mastering margins,
             padding, and borders is the difference between specific design and a messy pile of text.</p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">✨ Why this matters</h3>
-        <p>This is the leading cause of "Why doesn't my button look right?" frustration. If you don't understand the
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">✨ Why this matters</h3>
+<p>This is the leading cause of "Why doesn't my button look right?" frustration. If you don't understand the
             difference between Padding (Inner Space) and Margin (Outer Space), you will struggle to lay out even simple
             pages.</p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;">🎥 Watch the Lesson</h3>
-        <div
-            style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
-            <strong>[VIDEO PLACEHOLDER]</strong><br>
-            Topic: The CSS Box Model<br>
-            <em>(User to embed Panopto/YouTube Iframe here)</em>
-        </div>
-    </div>
-
-    <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            📖 The Textbook: Inside the Box</h2>
-        <p>Click below to unbox the layers.</p>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Topic: The CSS Box Model<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
+</div>
+<!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Open Book" role="img">📖</span> The Textbook: Inside the Box</h2>
+<p>Click below to unbox the layers.</p>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 1. Content (The Center)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The actual text or image you see.</p>
-                <p><strong>Controlled by:</strong> <code>width</code> and <code>height</code>.</p>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p><strong>What is it?</strong> The actual text or image you see.</p>
+<p><strong>Controlled by:</strong> <code>width</code> and <code>height</code>.</p>
+</div>
+</details>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 2. Padding (Inner Space)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The space <em>between</em> the content and the border.</p>
-                <p>Padding clears an area around the content. It is <em>inside</em> the box background color.</p>
-                <p><em>Think of it like bubble wrap protecting the item inside the box.</em></p>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p><strong>What is it?</strong> The space <em>between</em> the content and the border.</p>
+<p>Padding clears an area around the content. It is <em>inside</em> the box background color.</p>
+<p><em>Think of it like bubble wrap protecting the item inside the box.</em></p>
+</div>
+</details>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 3. Border (The Edge)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> A line that goes around the padding and content.</p>
-                <p>Code: <code>border: 1px solid black;</code></p>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p><strong>What is it?</strong> A line that goes around the padding and content.</p>
+<p>Code: <code>border: 1px solid black;</code></p>
+</div>
+</details>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 4. Margin (Outer Space)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p><strong>What is it?</strong> The space <em>outside</em> the border.</p>
-                <p>Margin separates this element from its neighbors. It is transparent.</p>
-                <p><em>Think of it like the personal space bubble between two people.</em></p>
-            </div>
-        </details>
-    </div>
-
-    <!-- 3. TEACH BY EXAMPLE -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            👀 Look & Learn</h2>
-        <p>See how Padding and Margin affect the layout of two cards.</p>
-
-        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
-            <pre
-                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p><strong>What is it?</strong> The space <em>outside</em> the border.</p>
+<p>Margin separates this element from its neighbors. It is transparent.</p>
+<p><em>Think of it like the personal space bubble between two people.</em></p>
+</div>
+</details>
+</div>
+<!-- 3. TEACH BY EXAMPLE -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn</h2>
+<p>See how Padding and Margin affect the layout of two cards.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
 /* The Card Style */
 .card {
     background-color: lightblue;
@@ -119,217 +94,184 @@
     
     width: 300px;
 }
-            </pre>
-            <div style="padding: 15px;">
-                <strong>Observation:</strong>
-                <ul>
-                    <li>Without <code>padding</code>, the text would be uncomfortably stuck to the border line.</li>
-                    <li>Without <code>margin</code>, the cards would touch each other.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- 4. THE INSPECTOR -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            🕵️ The Inspector (Your Superpower)</h2>
-        <p>Stop guessing why your spacing looks wrong. <strong>See it.</strong></p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔬 How to X-Ray a Web Page</h3>
-        <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
-            <li><strong>Right-Click</strong> on any element (like the blue card above) and choose
+            </pre></div>
+<div style="padding: 15px;">
+<strong>Observation:</strong>
+<ul>
+<li>Without <code>padding</code>, the text would be uncomfortably stuck to the border line.</li>
+<li>Without <code>margin</code>, the cards would touch each other.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 4. THE INSPECTOR -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Sleuth Or Spy" role="img">🕵</span>️ The Inspector (Your Superpower)</h2>
+<p>Stop guessing why your spacing looks wrong. <strong>See it.</strong></p>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;"><span aria-label="Microscope" role="img">🔬</span> How to X-Ray a Web Page</h3>
+<ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
+<li><strong>Right-Click</strong> on any element (like the blue card above) and choose
                 <strong>Inspect</strong>.
             </li>
-            <li>In the panel that opens (Chrome DevTools), look for the <strong>Styles</strong> tab.</li>
-            <li>Scroll to the very bottom of that tab. You will see a colorful diagram of concentric squares.</li>
-        </ol>
-
-        <div
-            style="display: flex; gap: 20px; align-items: center; background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 8px; margin-top: 20px;">
-            <div style="flex: 1;">
-                <h4 style="margin-top: 0; color: #d81b60;">The Color Code:</h4>
-                <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-                    <li><span style="color: #2196F3; font-weight: bold;">🟦 Blue Area</span> = The Content
+<li>In the panel that opens (Chrome DevTools), look for the <strong>Styles</strong> tab.</li>
+<li>Scroll to the very bottom of that tab. You will see a colorful diagram of concentric squares.</li>
+</ol>
+<div style="display: flex; gap: 20px; align-items: center; background-color: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 8px; margin-top: 20px;">
+<div style="flex: 1;">
+<h4 style="margin-top: 0; color: #d81b60;">The Color Code:</h4>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
+<li><span style="color: #0073d0; font-weight: bold;"><span aria-label="Large Blue Square" role="img">🟦</span> Blue Area</span> = The Content
                         (Width/Height)
                     </li>
-                    <li><span style="color: #4CAF50; font-weight: bold;">🟩 Green Area</span> = The Padding</li>
-                    <li><span style="color: #fdbb30; font-weight: bold;">🟨 Orange Area</span> = The Margin</li>
-                </ul>
-            </div>
-            <div style="flex: 1; text-align: center; font-style: italic; color: #666;">
+<li><span style="color: #1f8223; font-weight: bold;"><span aria-label="Large Green Square" role="img">🟩</span> Green Area</span> = The Padding</li>
+<li><span style="color: #a36100; font-weight: bold;"><span aria-label="Large Yellow Square" role="img">🟨</span> Orange Area</span> = The Margin</li>
+</ul>
+</div>
+<div style="flex: 1; text-align: center; font-style: italic; color: #666;">
                 (Hover over these colors in DevTools to highlight them on the actual page!)
             </div>
-        </div>
-
-        <p style="margin-top: 20px;"><strong>Try it now:</strong> Inspect the "Blue Card" in the section above. Can you
+</div>
+<p style="margin-top: 20px;"><strong>Try it now:</strong> Inspect the "Blue Card" in the section above. Can you
             find the green padding?</p>
-    </div>
-
-    <!-- 5. DISCUSSION (RECIPROCITY) -->
-    <div
-        style="background-color: #fff0f5; border-left: 5px solid #d81b60; padding: 20px; margin: 20px 0; border-radius: 4px;">
-        <div
-            style="color: #d81b60; font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; margin-bottom: 10px;">
-            <span style="font-size: 1.4rem; margin-right: 10px;">🗣️</span> Discussion: Margin vs Padding
+</div>
+<!-- 5. DISCUSSION (RECIPROCITY) -->
+<div style="background-color: #fff0f5; border-left: 5px solid #d81b60; padding: 20px; margin: 20px 0; border-radius: 4px;">
+<div style="color: #d3165b; font-weight: bold; font-size: 1.1rem; display: flex; align-items: center; margin-bottom: 10px;">
+<span style="font-size: 1.4rem; margin-right: 10px;"><span aria-label="Speaking Head In Silhouette" role="img">🗣</span>️</span> Discussion: Margin vs Padding
         </div>
-        <p>It's the most common confusion for new developers.</p>
-        <p><strong>Prompt:</strong> Find a physical object in your room (like a framed picture or a book). Describe it
+<p>It's the most common confusion for new developers.</p>
+<p><strong>Prompt:</strong> Find a physical object in your room (like a framed picture or a book). Describe it
             using Box Model terms. What is the content? What is the padding? What is the border? Share your analogy in
             the Canvas Discussion board.</p>
-    </div>
-
-    <!-- 6. GUIDED PRACTICE -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            💻 Project: The Product Collection</h2>
-        <p>You have been hired to build a product display for an e-commerce store. You need to build a row of 3
+</div>
+<!-- 6. GUIDED PRACTICE -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Personal Computer" role="img">💻</span> Project: The Product Collection</h2>
+<p>You have been hired to build a product display for an e-commerce store. You need to build a row of 3
             identical "Product Cards".</p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
-        <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
-            <li><strong>Class vs ID:</strong> Because we are making <em>multiple</em> cards, you must use a Class
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;"><span aria-label="Clipboard" role="img">📋</span> Directions</h3>
+<ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
+<li><strong>Class vs ID:</strong> Because we are making <em>multiple</em> cards, you must use a Class
                 (<code>.product-card</code>), not an ID.</li>
-            <li><strong>HTML Structure:</strong> Create 3 `div`s, each with the class `product-card`. Inside each, put
+<li><strong>HTML Structure:</strong> Create 3 `div`s, each with the class `product-card`. Inside each, put
                 an `h3` (Product Name), a `p` (Description), and a `button` (Buy Now).</li>
-            <li><strong>The CSS Challenge:</strong>
-                <ul>
-                    <li>Give the cards a border and a background color.</li>
-                    <li>Add <strong>20px padding</strong> so the text isn't cramp.</li>
-                    <li>Add <strong>20px margin</strong> so the cards have space between them.</li>
-                    <li>Make the button look clickable (add padding to the button itself!).</li>
-                </ul>
-            </li>
-        </ol>
-
-        <div
-            style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
-            <strong>Pro Tip:</strong> Professional designers use "rem" instead of "px" for padding. Try using
+<li><strong>The CSS Challenge:</strong>
+<ul>
+<li>Give the cards a border and a background color.</li>
+<li>Add <strong>20px padding</strong> so the text isn't cramp.</li>
+<li>Add <strong>20px margin</strong> so the cards have space between them.</li>
+<li>Make the button look clickable (add padding to the button itself!).</li>
+</ul>
+</li>
+</ol>
+<div style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
+<strong>Pro Tip:</strong> Professional designers use "rem" instead of "px" for padding. Try using
             <code>padding: 1rem;</code> instead of <code>16px</code>. It scales better!
         </div>
-    </div>
-
-    <!-- 7. DIG DEEPER -->
-    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+</div>
+<!-- 7. DIG DEEPER -->
+<div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             ⛏️ Dig Deeper</h2>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
-        <ul>
-            <li style="margin-bottom: 10px;">🔗 <a
-                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
-                    target="_blank" style="color: #582C83; font-weight: bold;">MDN: The Box Model</a></li>
-            <li style="margin-bottom: 10px;">🔗 <a href="https://css-tricks.com/the-css-box-model/" target="_blank"
-                    style="color: #582C83; font-weight: bold;">CSS-Tricks: Box Model Specs</a></li>
-        </ul>
-
-
-    </div>
-
-    <!-- 8. RUBRIC -->
-    <div
-        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            🏆 Grading Rubric</h2>
-
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
-            <thead>
-                <tr>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;"><span aria-label="Link Symbol" role="img">🔗</span> Resources</h3>
+<ul>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" style="color: #582C83; font-weight: bold;" target="_blank">MDN: The Box Model</a></li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://css-tricks.com/the-css-box-model/" style="color: #582C83; font-weight: bold;" target="_blank">CSS-Tricks: Box Model Specs</a></li>
+</ul>
+</div>
+<!-- 8. RUBRIC -->
+<div style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Trophy" role="img">🏆</span> Grading Rubric</h2>
+<table border="1" style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;"><caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Data Table</caption>
+<thead>
+<tr>
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Criteria</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Distinguished</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Proficient</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Emerging</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Box Model Implementation <br>
-                        <span style="font-size:0.8em; color:#666;">(10 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2:
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Box Model Implementation <br/>
+<span style="font-size:0.8em; color:#666;">(10 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2:
                             Box Model</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>10 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>10 pts</strong><br/>
                         Cards demonstrate perfect usage of Padding (inner) and Margin (outer). Spacing is consistent and
                         visually matches the mock-up.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>7-9 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>7-9 pts</strong><br/>
                         Padding and Margin are used, but sizing may be slightly off or inconsistent between cards.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-6 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-6 pts</strong><br/>
                         Padding or Margin is missing, confusing the two, or the layout is broken.
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        CSS Efficiency (Classes) <br>
-                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2:
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        CSS Efficiency (Classes) <br/>
+<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2:
                             Efficiency</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>5 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>5 pts</strong><br/>
                         Used a single class (<code>.product-card</code>) to style all 3 items efficiently. No ID
                         selectors used for styling multiple items.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>3-4 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>3-4 pts</strong><br/>
                         Used classes, but may have redundant code or unnecessary ID selectors mixed in.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-2 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-2 pts</strong><br/>
                         Failed to use classes efficiently; styled elements individually or inline.
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Metacognition (Peer Review) <br>
-                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Metacognition (Peer Review) <br/>
+<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
                             Critique</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>5 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>5 pts</strong><br/>
                         Posted a clear, accurate Box Model analogy to the Discussion board.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>3-4 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>3-4 pts</strong><br/>
                         Posted to discussion, but analogy was unclear or brief.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-2 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-2 pts</strong><br/>
                         Did not post to the discussion board.
                     </td>
-                </tr>
-                <tr>
-                    <td colspan="3"
-                        style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+</tr>
+<tr>
+<td colspan="3" style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
                         Score:</td>
-                    <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
+<td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
                         pts</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- FOOTER -->
-    <footer
-        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
-        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
-    </footer>
-
+</tr>
+</tbody>
+</table>
 </div>
+<!-- FOOTER -->
+<footer style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        © 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+</div></div>

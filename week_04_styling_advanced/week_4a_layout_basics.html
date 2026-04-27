@@ -1,120 +1,95 @@
-<div
-    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-
-    <!-- HEADER -->
-    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 4A: The Flow & Positioning
-        </h1>
-        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+<div class_="main-content" lang="en"><div style="max-width: 950px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<!-- HEADER -->
+<header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 4A: The Flow &amp; Positioning
+        </h2>
+<div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
             Design | Spring 2026</div>
-    </header>
-
-    <!-- QM ALIGNMENT STRIP -->
-    <div
-        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
-        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
-        <span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Utilize CSS positioning (static, relative,
+</header>
+<!-- QM ALIGNMENT STRIP -->
+<div style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+<span style="font-size: 1.2rem; margin-right: 10px;"><span aria-label="Direct Hit" role="img">🎯</span></span>
+<span><strong>Learning Objective Alignment:</strong> Styling (LO2) — "Utilize CSS positioning (static, relative,
             absolute, fixed) to control layout."</span>
+</div>
+<!-- STATS BADGE -->
+<div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
+        ⏱️ Time: 30m Study / 45m Project | <span aria-label="Trophy" role="img">🏆</span> Points: 20 | <span aria-label="Calendar" role="img">📅</span> Due: Sunday 11:59PM
     </div>
-
-    <!-- STATS BADGE -->
-    <div
-        style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
-        ⏱️ Time: 30m Study / 45m Project | 🏆 Points: 20 | 📅 Due: Sunday 11:59PM
-    </div>
-
-    <!-- 1. OVERVIEW -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+<!-- 1. OVERVIEW -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-        <p>By default, HTML elements follow gravity. They stack one on top of another, from top to bottom. This is
+<p>By default, HTML elements follow gravity. They stack one on top of another, from top to bottom. This is
             called the <strong>Normal Flow</strong>.</p>
-        <p>But what if you want a navigation bar to stick to the top? Or a caption to sit <em>on top</em> of an image?
+<p>But what if you want a navigation bar to stick to the top? Or a caption to sit <em>on top</em> of an image?
             To do that, we must break the flow using <strong>CSS Positioning</strong>.</p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">✨ Why this matters</h3>
-        <p>Positioning is the "Special Forces" of CSS. You don't use it for everything (that's what Flexbox is for), but
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">✨ Why this matters</h3>
+<p>Positioning is the "Special Forces" of CSS. You don't use it for everything (that's what Flexbox is for), but
             when you need to pin, overlay, or stick an element, nothing else will do.</p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;">🎥 Watch the Lesson</h3>
-        <div
-            style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
-            <strong>[VIDEO PLACEHOLDER]</strong><br>
-            Topic: Display, Position & Flow<br>
-            <em>(User to embed Panopto/YouTube Iframe here)</em>
-        </div>
-    </div>
-
-    <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            📖 The Textbook: Display & Position</h2>
-        <p>Click below to understand how elements behave.</p>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Topic: Display, Position &amp; Flow<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
+</div>
+<!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Open Book" role="img">📖</span> The Textbook: Display &amp; Position</h2>
+<p>Click below to understand how elements behave.</p>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 1. The Display Property (Block vs Inline)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p>Every element has a default "Display" mode:</p>
-                <ul>
-                    <li><strong>Block (`div`, `p`, `h1`):</strong> Takes up the full width. Starts on a new line.</li>
-                    <li><strong>Inline (`span`, `a`, `strong`):</strong> Takes up only what it needs. Sits inside text.
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p>Every element has a default "Display" mode:</p>
+<ul>
+<li><strong>Block (`div`, `p`, `h1`):</strong> Takes up the full width. Starts on a new line.</li>
+<li><strong>Inline (`span`, `a`, `strong`):</strong> Takes up only what it needs. Sits inside text.
                     </li>
-                    <li><strong>None (`display: none`):</strong> Removes the element completely from the document.</li>
-                </ul>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<li><strong>None (`display: none`):</strong> Removes the element completely from the document.</li>
+</ul>
+</div>
+</details>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 2. Relative vs Absolute (The Dynamic Duo)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p>These two almost always work together:</p>
-                <ul>
-                    <li><code>position: relative;</code>: "I am the reference point." (Usually set on the Parent
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p>These two almost always work together:</p>
+<ul>
+<li><code>position: relative;</code>: "I am the reference point." (Usually set on the Parent
                         Container).</li>
-                    <li><code>position: absolute;</code>: "I move freely inside my parent." (Set on the Child).</li>
-                </ul>
-                <p><em>Rule of Thumb:</em> If you want to overlay text on an image, the Image Container gets
+<li><code>position: absolute;</code>: "I move freely inside my parent." (Set on the Child).</li>
+</ul>
+<p><em>Rule of Thumb:</em> If you want to overlay text on an image, the Image Container gets
                     <code>relative</code>, the Text gets <code>absolute</code>.
                 </p>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
-                3. Fixed & Sticky</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <ul>
-                    <li><code>position: fixed;</code>: Glued to the browser window. Even if you scroll, it stays there.
+</div>
+</details>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+                3. Fixed &amp; Sticky</summary>
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<ul>
+<li><code>position: fixed;</code>: Glued to the browser window. Even if you scroll, it stays there.
                         (Used for Chat Bubbles, Nav Bars).</li>
-                    <li><code>position: sticky;</code>: Scrolls until it hits a threshold, then sticks.</li>
-                </ul>
-            </div>
-        </details>
-    </div>
-
-    <!-- 3. TEACH BY EXAMPLE -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            👀 Look & Learn: The Overlay</h2>
-        <p>This is the most common use case: Placing a text caption ON TOP of an image.</p>
-
-        <div style="margin-bottom: 20px;">
-            <a href="../samples/sample_04_positioning.html" target="_blank"
-                style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold;">🔗
+<li><code>position: sticky;</code>: Scrolls until it hits a threshold, then sticks.</li>
+</ul>
+</div>
+</details>
+</div>
+<!-- 3. TEACH BY EXAMPLE -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn: The Overlay</h2>
+<p>This is the most common use case: Placing a text caption ON TOP of an image.</p>
+<div style="margin-bottom: 20px;">
+<a href="../samples/sample_04_positioning.html" style="display: inline-block; background-color: #28a745; color: #282828; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold;" target="_blank"><span aria-label="Link Symbol" role="img">🔗</span>
                 View Live Sample: The Concert Poster</a>
-        </div>
-
-        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
-            <pre
-                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+</div>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
 /* 1. THE PARENT (The Frame) */
 .card-container {
     position: relative; /* Defines the boundaries */
@@ -137,178 +112,155 @@
     color: white;
     padding: 5px;
 }
-            </pre>
-            <div style="padding: 15px;">
-                <strong>Observation:</strong>
-                <ul>
-                    <li>If we removed <code>position: relative</code> from the parent, the caption would fly out to the
+            </pre></div>
+<div style="padding: 15px;">
+<strong>Observation:</strong>
+<ul>
+<li>If we removed <code>position: relative</code> from the parent, the caption would fly out to the
                         bottom of the entire webpage!</li>
-                    <li><code>bottom</code> and <code>left</code> are coordinate pins.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- 4. GUIDED PRACTICE -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            💻 Project: The Magazine Cover</h2>
-        <p>You are the editor of "Code Monthly". You need to design a clickable magazine cover using absolute
+<li><code>bottom</code> and <code>left</code> are coordinate pins.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 4. GUIDED PRACTICE -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Personal Computer" role="img">💻</span> Project: The Magazine Cover</h2>
+<p>You are the editor of "Code Monthly". You need to design a clickable magazine cover using absolute
             positioning.</p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
-        <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
-            <li><strong>Setup:</strong> Create <code>cover.html</code>. Find a high-quality vertical portrait image (use
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;"><span aria-label="Clipboard" role="img">📋</span> Directions</h3>
+<ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
+<li><strong>Setup:</strong> Create <code>cover.html</code>. Find a high-quality vertical portrait image (use
                 Unsplash).</li>
-            <li><strong>Structure:</strong>
-                <ul>
-                    <li>Create a `div` with class <code>cover-container</code>.</li>
-                    <li>Inside it, place your `img` (The Cover Model).</li>
-                    <li>Inside it, place an `h1` (The Title: "CODE").</li>
-                    <li>Inside it, place a `div` with class `badge` (The Price/Date).</li>
-                </ul>
-            </li>
-            <li><strong>The CSS (Positioning):</strong>
-                <ul>
-                    <li>Set <code>.cover-container</code> to <code>position: relative</code>.</li>
-                    <li><strong>The Title:</strong> Use
+<li><strong>Structure:</strong>
+<ul>
+<li>Create a `div` with class <code>cover-container</code>.</li>
+<li>Inside it, place your `img` (The Cover Model).</li>
+<li>Inside it, place an `h1` (The Title: "CODE").</li>
+<li>Inside it, place a `div` with class `badge` (The Price/Date).</li>
+</ul>
+</li>
+<li><strong>The CSS (Positioning):</strong>
+<ul>
+<li>Set <code>.cover-container</code> to <code>position: relative</code>.</li>
+<li><strong>The Title:</strong> Use
                         <code>position: absolute; top: 20px; width: 100%; text-align: center;</code> to center it at the
                         top.
                     </li>
-                    <li><strong>The Badge:</strong> Use <code>position: absolute; bottom: 50px; right: 20px;</code> to
+<li><strong>The Badge:</strong> Use <code>position: absolute; bottom: 50px; right: 20px;</code> to
                         pin it to the corner. Make it round (`border-radius: 50%`) and red!</li>
-                </ul>
-            </li>
-            <li><strong>Challenge:</strong> Make the image behave nicely. Give the container a fixed width (e.g., 400px)
+</ul>
+</li>
+<li><strong>Challenge:</strong> Make the image behave nicely. Give the container a fixed width (e.g., 400px)
                 and ensure the image is `width: 100%`.</li>
-        </ol>
-
-        <div
-            style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
-            <strong>Pro Tip:</strong> Text over images can be hard to read. Use
+</ol>
+<div style="font-size: 90%; color: #333333; background-color: #fff; border: 1px solid #e0dff2; border-left: 5px solid #4b3190; padding: 8px; margin-top: 20px;">
+<strong>Pro Tip:</strong> Text over images can be hard to read. Use
             <code>text-shadow: 2px 2px 5px black;</code> to make your white text pop against any background.
         </div>
-    </div>
-
-    <!-- 5. DIG DEEPER -->
-    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+</div>
+<!-- 5. DIG DEEPER -->
+<div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             ⛏️ Dig Deeper</h2>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
-        <ul>
-            <li style="margin-bottom: 10px;">🔗 <a
-                    href="https://css-tricks.com/absolute-positioning-inside-relative-positioning/" target="_blank"
-                    style="color: #582C83; font-weight: bold;">CSS-Tricks: Absolute inside Relative (Visual Guide)</a>
-            </li>
-        </ul>
-
-
-    </div>
-
-    <!-- 6. RUBRIC -->
-    <div
-        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            🏆 Grading Rubric</h2>
-
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
-            <thead>
-                <tr>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;"><span aria-label="Link Symbol" role="img">🔗</span> Resources</h3>
+<ul>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://css-tricks.com/absolute-positioning-inside-relative-positioning/" style="color: #582C83; font-weight: bold;" target="_blank">CSS-Tricks: Absolute inside Relative (Visual Guide)</a>
+</li>
+</ul>
+</div>
+<!-- 6. RUBRIC -->
+<div style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Trophy" role="img">🏆</span> Grading Rubric</h2>
+<table border="1" style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;"><caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Data Table</caption>
+<thead>
+<tr>
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Criteria</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Distinguished</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Proficient</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Emerging</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Positioning Strategy <br>
-                        <span style="font-size:0.8em; color:#666;">(10 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Positioning Strategy <br/>
+<span style="font-size:0.8em; color:#666;">(10 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
                             Layout</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>10 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>10 pts</strong><br/>
                         Correct implementation of the Container (Relative) / Child (Absolute) relationship.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>7-9 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>7-9 pts</strong><br/>
                         Used positioning, but missed the "relative" on parent, causing child to fly off screen or align
                         to body.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-6 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-6 pts</strong><br/>
                         Used margins or floats instead of positioning.
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Visual Layers <br>
-                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Visual Layers <br/>
+<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
                             Z-Index</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>5 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>5 pts</strong><br/>
                         Text is readable over the image (using shadows, overlay, or high contrast). Z-index handled
                         correctly.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>3-4 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>3-4 pts</strong><br/>
                         Text is positioned but hard to read against the background.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-2 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-2 pts</strong><br/>
                         Text is hidden behind image or unreadable.
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Badge Placement <br>
-                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Badge Placement <br/>
+<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
                             Coordinates</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>5 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>5 pts</strong><br/>
                         "Price" Badge is positioned in a corner using bottom/right coordinates effectively.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>3-4 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>3-4 pts</strong><br/>
                         Badge is positioned manually using pixels approx, not pinned to corner.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-2 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-2 pts</strong><br/>
                         No badge included.
                     </td>
-                </tr>
-                <tr>
-                    <td colspan="3"
-                        style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+</tr>
+<tr>
+<td colspan="3" style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
                         Score:</td>
-                    <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
+<td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
                         pts</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- FOOTER -->
-    <footer
-        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
-        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
-    </footer>
-
+</tr>
+</tbody>
+</table>
 </div>
+<!-- FOOTER -->
+<footer style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        © 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+</div></div>

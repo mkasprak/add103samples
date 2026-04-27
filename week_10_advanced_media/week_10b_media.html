@@ -1,56 +1,44 @@
-<!-- 
+<div class_="main-content" lang="en"><!-- 
     CANVAS LESSON: WEEK 10B
     Topic: Audio & Video
 -->
-<div style="font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; color: #333;">
-
-    <!-- HEADER BLOCK -->
-    <div
-        style="background-color: #4b3190; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
-        <h1 style="margin: 0;">🦆 Module 10B: Multimedia</h1>
-        <p style="margin: 5px 0 0 0; color: #ddd;">Lights, Camera, Action</p>
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 950px; margin: 0 auto; color: #333;">
+<!-- HEADER BLOCK -->
+<div style="background-color: #4b3190; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0;"><span aria-label="Duck" role="img">🦆</span> Module 10B: Multimedia</h2>
+<p style="margin: 5px 0 0 0; color: #ddd;">Lights, Camera, Action</p>
+</div>
+<!-- STATS BADGE -->
+<div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
+        ⏱️ Time: 45 Minutes | <span aria-label="Trophy" role="img">🏆</span> Points: 10 | <span aria-label="Calendar" role="img">📅</span> Due: Sunday 11:59PM
     </div>
-
-    <!-- STATS BADGE -->
-    <div
-        style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
-        ⏱️ Time: 45 Minutes | 🏆 Points: 10 | 📅 Due: Sunday 11:59PM
-    </div>
-
-    <!-- MAIN INTRODUCTION -->
-    <div style="padding: 20px; background-color: white; border: 1px solid #ddd; border-top: none;">
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">👋 Overview</h3>
-        <p>
+<!-- MAIN INTRODUCTION -->
+<div style="padding: 20px; background-color: white; border: 1px solid #ddd; border-top: none;">
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Waving Hand Sign" role="img">👋</span> Overview</h3>
+<p>
             The web isn't just text. HTML5 introduced native support for audio and video without needing plugins like
             Flash (RIP). Today we will build a custom media player and learn how to use background videos effectively.
         </p>
-
-        <!-- THE MISSION BOX -->
-        <div style="background-color: #f9f9f9; border-left: 5px solid #4b3190; padding: 15px; margin: 20px 0;">
-            <h4 style="margin-top: 0; color: #4b3190;">🎯 The Mission</h4>
-            <p>
+<!-- THE MISSION BOX -->
+<div style="background-color: #f9f9f9; border-left: 5px solid #4b3190; padding: 15px; margin: 20px 0;">
+<h4 style="margin-top: 0; color: #4b3190;"><span aria-label="Direct Hit" role="img">🎯</span> The Mission</h4>
+<p>
                 Create a "Media Lounge" page with Audio and Video elements.
             </p>
-            <ul>
-                <li><strong>Requirement 1:</strong> Embed an audio file with controls.</li>
-                <li><strong>Requirement 2:</strong> Embed a video file with a custom <code>poster</code> image.</li>
-                <li><strong>Requirement 3:</strong> Create a silent, autoplaying background video header.</li>
-            </ul>
-        </div>
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">📺 Instructions & Videos</h3>
-
-        <div style="margin-bottom: 20px;">
-            <h4>1. Native Media in HTML5</h4>
-            <p><em>(Video Placeholder: Explaining codecs and tags)</em></p>
-        </div>
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">💻 Code Sample</h3>
-
-        <div
-            style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto;">
-            <pre style="margin: 0;">
+<ul>
+<li><strong>Requirement 1:</strong> Embed an audio file with controls.</li>
+<li><strong>Requirement 2:</strong> Embed a video file with a custom <code>poster</code> image.</li>
+<li><strong>Requirement 3:</strong> Create a silent, autoplaying background video header.</li>
+</ul>
+</div>
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Television" role="img">📺</span> Instructions &amp; Videos</h3>
+<div style="margin-bottom: 20px;">
+<h4>1. Native Media in HTML5</h4>
+<p><em>(Video Placeholder: Explaining codecs and tags)</em></p>
+</div>
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Personal Computer" role="img">💻</span> Code Sample</h3>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
 &lt;!-- AUDIO PLAYER --&gt;
 &lt;audio controls&gt;
     &lt;source src="podcast.mp3" type="audio/mpeg"&gt;
@@ -68,96 +56,88 @@
     &lt;source src="background.mp4" type="video/mp4"&gt;
 &lt;/video&gt;
             </pre>
-        </div>
-
-        <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
-            <summary style="cursor: pointer; font-weight: bold; color: #4b3190;">🦆 Dig Deeper: Autoplay Policies
+</div>
+<details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+<summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Autoplay Policies
             </summary>
-            <p style="margin-top: 10px;">
+<p style="margin-top: 10px;">
                 Browsers (especially Chrome and Safari) generally block video from autoclaving unless it is
                 <strong>muted</strong>. Always include the <code>muted</code> attribute if you want your video to start
                 automatically.
             </p>
-        </details>
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">📤 Submission</h3>
-        <p>
+</details>
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Outbox Tray" role="img">📤</span> Submission</h3>
+<p>
             Upload your file named <code>week_10b_media.html</code>.
         </p>
-
-    </div>
-
-    <!-- RUBRIC TABLE -->
-    <div style="margin-top: 20px;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            📊 Grading Rubric</h2>
-        <table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 20px; font-size: 0.9em;">
-            <thead style="background-color: #4b3190; color: white;">
-                <tr>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Criteria (LO9: Media)</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Distinguished (100%)</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Proficient (85%)</th>
-                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Emerging (70%)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
-                        Video Embed<br>
-                        <span style="font-weight: normal; font-size: 0.85em; color: #666;">(4 pts)</span>
-                    </td>
-                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
+</div>
+<!-- RUBRIC TABLE -->
+<div style="margin-top: 20px;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Bar Chart" role="img">📊</span> Grading Rubric</h2>
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 20px; font-size: 0.9em;"><caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Data Table</caption>
+<thead style="background-color: #4b3190; color: white;">
+<tr>
+<th scope="col" style="padding: 12px; border: 1px solid #ddd; width: 25%;">Criteria (LO9: Media)</th>
+<th scope="col" style="padding: 12px; border: 1px solid #ddd; width: 25%;">Distinguished (100%)</th>
+<th scope="col" style="padding: 12px; border: 1px solid #ddd; width: 25%;">Proficient (85%)</th>
+<th scope="col" style="padding: 12px; border: 1px solid #ddd; width: 25%;">Emerging (70%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
+                        Video Embed<br/>
+<span style="font-weight: normal; font-size: 0.85em; color: #666;">(4 pts)</span>
+</td>
+<td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
                         Implements `&lt;video&gt;` with `controls`. Includes a custom `poster` image. Fallback text
                         provided.
                     </td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">
+<td style="padding: 12px; border: 1px solid #ddd;">
                         Implements `&lt;video&gt;` with `controls`. Missing poster image or fallback content.
                     </td>
-                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
+<td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
                         Video tag missing or broken source path.
                     </td>
-                </tr>
-                <tr style="background-color: #f9f9f9;">
-                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
-                        Background Video<br>
-                        <span style="font-weight: normal; font-size: 0.85em; color: #666;">(4 pts)</span>
-                    </td>
-                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
+</tr>
+<tr style="background-color: #f9f9f9;">
+<td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
+                        Background Video<br/>
+<span style="font-weight: normal; font-size: 0.85em; color: #666;">(4 pts)</span>
+</td>
+<td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
                         Video autoplays, loops, and is muted (`autoplay loop muted`). Text overlay is readable (good
                         contrast).
                     </td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">
+<td style="padding: 12px; border: 1px solid #ddd;">
                         Video works but misses attributes (e.g. not muted, so won't autoplay in Chrome). Text overlay
                         has contrast issues.
                     </td>
-                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
+<td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
                         Background video broken or behaves as a standard player.
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
-                        Audio<br>
-                        <span style="font-weight: normal; font-size: 0.85em; color: #666;">(2 pts)</span>
-                    </td>
-                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
+                        Audio<br/>
+<span style="font-weight: normal; font-size: 0.85em; color: #666;">(2 pts)</span>
+</td>
+<td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
                         Audio player works correctly. `controls` attribute present.
                     </td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">
+<td style="padding: 12px; border: 1px solid #ddd;">
                         Audio tag present but file path is incorrect or format not supported.
                     </td>
-                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
+<td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
                         No audio element.
                     </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- FOOTER -->
-    <div
-        style="text-align: center; margin-top: 30px; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
-        &copy; 2026 Meri Kasprak, Ph.D. 🦆 | In collaboration with Gemini ✨
-    </div>
-
+</tr>
+</tbody>
+</table>
 </div>
+<!-- FOOTER -->
+<div style="text-align: center; margin-top: 30px; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
+        © 2026 Meri Kasprak, Ph.D. <span aria-label="Duck" role="img">🦆</span> | In collaboration with Gemini ✨
+    </div>
+</div></div>

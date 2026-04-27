@@ -1,63 +1,50 @@
-<!-- 
+<div class_="main-content" lang="en"><!-- 
     CANVAS LESSON: WEEK 12A
     Topic: Live Deployment
 -->
-<div style="font-family: 'Segoe UI', sans-serif; max-width: 800px; margin: 0 auto; color: #333;">
-
-    <!-- HEADER BLOCK -->
-    <div
-        style="background-color: #4b3190; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
-        <h1 style="margin: 0;">🦆 Module 12A: Going Live</h1>
-        <p style="margin: 5px 0 0 0; color: #ddd;">Hello World (For Real)</p>
+<div style="font-family: 'Segoe UI', sans-serif; max-width: 950px; margin: 0 auto; color: #333;">
+<!-- HEADER BLOCK -->
+<div style="background-color: #4b3190; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0;"><span aria-label="Duck" role="img">🦆</span> Module 12A: Going Live</h2>
+<p style="margin: 5px 0 0 0; color: #ddd;">Hello World (For Real)</p>
+</div>
+<!-- STATS BADGE -->
+<div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
+        ⏱️ Time: 30m Study / 30m Project | <span aria-label="Trophy" role="img">🏆</span> Points: 10 | <span aria-label="Calendar" role="img">📅</span> Due: Sunday 11:59PM
     </div>
-
-    <!-- STATS BADGE -->
-    <div
-        style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
-        ⏱️ Time: 30m Study / 30m Project | 🏆 Points: 10 | 📅 Due: Sunday 11:59PM
-    </div>
-
-    <!-- MAIN INTRODUCTION -->
-    <div style="padding: 20px; background-color: white; border: 1px solid #ddd; border-top: none;">
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">👋 Overview</h3>
-        <p>
+<!-- MAIN INTRODUCTION -->
+<div style="padding: 20px; background-color: white; border: 1px solid #ddd; border-top: none;">
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Waving Hand Sign" role="img">👋</span> Overview</h3>
+<p>
             You have a folder of files on your computer. That is not a website. A website lives on a server. Today we
             revisit our deployment pipeline to ensure your latest creations (Weeks 2-11) are actually visible to the
             public.
         </p>
-
-        <!-- THE MISSION BOX -->
-        <div style="background-color: #f9f9f9; border-left: 5px solid #4b3190; padding: 15px; margin: 20px 0;">
-            <h4 style="margin-top: 0; color: #4b3190;">🎯 The Mission</h4>
-            <p>
+<!-- THE MISSION BOX -->
+<div style="background-color: #f9f9f9; border-left: 5px solid #4b3190; padding: 15px; margin: 20px 0;">
+<h4 style="margin-top: 0; color: #4b3190;"><span aria-label="Direct Hit" role="img">🎯</span> The Mission</h4>
+<p>
                 Perform a full synchronization of your local environment to the live production server.
             </p>
-            <ul>
-                <li><strong>Requirement 1:</strong> Commit all outstanding changes to GitHub.</li>
-                <li><strong>Requirement 2:</strong> Pull changes to cPanel.</li>
-                <li><strong>Requirement 3:</strong> Verify that your "Index Hub" links to all weekly assignments
+<ul>
+<li><strong>Requirement 1:</strong> Commit all outstanding changes to GitHub.</li>
+<li><strong>Requirement 2:</strong> Pull changes to cPanel.</li>
+<li><strong>Requirement 3:</strong> Verify that your "Index Hub" links to all weekly assignments
                     correctly.</li>
-            </ul>
-        </div>
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">📺 Instructions & Videos</h3>
-
-        <div style="margin-bottom: 20px;">
-            <h4>1. The Deployment Checklist</h4>
-            <p><em>(Video Placeholder: Walkthrough of "Push -> Pull -> Verify")</em></p>
-        </div>
-
-        <div style="margin-bottom: 20px;">
-            <h4>2. Troubleshooting 404s and 403s</h4>
-            <p><em>(Video Placeholder: Fixing permissions and broken links)</em></p>
-        </div>
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">💻 Code Sample</h3>
-
-        <div
-            style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto;">
-            <pre style="margin: 0;">
+</ul>
+</div>
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Television" role="img">📺</span> Instructions &amp; Videos</h3>
+<div style="margin-bottom: 20px;">
+<h4>1. The Deployment Checklist</h4>
+<p><em>(Video Placeholder: Walkthrough of "Push -&gt; Pull -&gt; Verify")</em></p>
+</div>
+<div style="margin-bottom: 20px;">
+<h4>2. Troubleshooting 404s and 403s</h4>
+<p><em>(Video Placeholder: Fixing permissions and broken links)</em></p>
+</div>
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Personal Computer" role="img">💻</span> Code Sample</h3>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
 # TERMINAL COMMANDS (Review)
 
 # 1. Check what changed
@@ -72,56 +59,49 @@ git commit -m "Week 12 deployment update"
 # 4. Upload to Cloud
 git push
             </pre>
-        </div>
-
-        <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
-            <summary style="cursor: pointer; font-weight: bold; color: #4b3190;">🦆 Dig Deeper: Continuous Deployment
+</div>
+<details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+<summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Continuous Deployment
                 (CD)</summary>
-            <p style="margin-top: 10px;">
+<p style="margin-top: 10px;">
                 In the professional world, we don't manually log in to cPanel to pull changes. We use "Actions" or
                 "Pipelines" (like GitHub Actions) to automatically deploy code whenever we push to the main branch. This
                 is called CI/CD (Continuous Integration / Continuous Deployment).
             </p>
-        </details>
-
-        <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;">📤 Submission</h3>
-        <p>
+</details>
+<h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Outbox Tray" role="img">📤</span> Submission</h3>
+<p>
             Upload a screenshot of your live homepage with the Week 1-11 links working. Name it
             <code>week_12a_proof.png</code>.
         </p>
-
-    </div>
-
-    <!-- RUBRIC TABLE -->
-    <div style="margin-top: 20px;">
-        <table style="width: 100%; border-collapse: collapse; text-align: left;">
-            <caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Grading Rubric</caption>
-            <thead style="background-color: #4b3190; color: white;">
-                <tr>
-                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Criteria</th>
-                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Points</th>
-                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Deployment Success</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">Live site is accessible and updated.</td>
-                </tr>
-                <tr style="background-color: #f9f9f9;">
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Link Integrity</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">All menu links work (no 404s).</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- FOOTER -->
-    <div
-        style="text-align: center; margin-top: 30px; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
-        &copy; 2026 Meri Kasprak, Ph.D. 🦆 | In collaboration with Gemini ✨
-    </div>
-
 </div>
+<!-- RUBRIC TABLE -->
+<div style="margin-top: 20px;">
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+<caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Grading Rubric</caption>
+<thead style="background-color: #4b3190; color: white;">
+<tr>
+<th scope="col" style="padding: 10px; border: 1px solid #ddd;">Criteria</th>
+<th scope="col" style="padding: 10px; border: 1px solid #ddd;">Points</th>
+<th scope="col" style="padding: 10px; border: 1px solid #ddd;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Deployment Success</td>
+<td style="padding: 10px; border: 1px solid #ddd;">5 pts</td>
+<td style="padding: 10px; border: 1px solid #ddd;">Live site is accessible and updated.</td>
+</tr>
+<tr style="background-color: #f9f9f9;">
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Link Integrity</td>
+<td style="padding: 10px; border: 1px solid #ddd;">5 pts</td>
+<td style="padding: 10px; border: 1px solid #ddd;">All menu links work (no 404s).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- FOOTER -->
+<div style="text-align: center; margin-top: 30px; font-size: 0.8em; color: #666; border-top: 1px solid #eee; padding-top: 10px;">
+        © 2026 Meri Kasprak, Ph.D. <span aria-label="Duck" role="img">🦆</span> | In collaboration with Gemini ✨
+    </div>
+</div></div>

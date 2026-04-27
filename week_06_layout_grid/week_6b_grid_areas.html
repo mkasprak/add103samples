@@ -1,95 +1,73 @@
-<div
-    style="max-width: 800px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-
-    <!-- HEADER -->
-    <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-        <h1 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 6B: Spanning & Grid Areas
-        </h1>
-        <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
+<div class_="main-content" lang="en"><div style="max-width: 950px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<!-- HEADER -->
+<header style="background-color: #582C83; color: #ffffff; padding: 30px;">
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 6B: Spanning &amp; Grid Areas
+        </h2>
+<div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
             Design | Spring 2026</div>
-    </header>
-
-    <!-- QM ALIGNMENT STRIP -->
-    <div
-        style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
-        <span style="font-size: 1.2rem; margin-right: 10px;">🎯</span>
-        <span><strong>Learning Objective Alignment:</strong> Layout (LO3) — "Create asymmetrical layouts by spanning
+</header>
+<!-- QM ALIGNMENT STRIP -->
+<div style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
+<span style="font-size: 1.2rem; margin-right: 10px;"><span aria-label="Direct Hit" role="img">🎯</span></span>
+<span><strong>Learning Objective Alignment:</strong> Layout (LO3) — "Create asymmetrical layouts by spanning
             grid items across tracks."</span>
+</div>
+<!-- STATS BADGE -->
+<div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
+        ⏱️ Time: 15m Study / 90m Project | <span aria-label="Trophy" role="img">🏆</span> Points: 20 | <span aria-label="Calendar" role="img">📅</span> Due: Sunday 11:59PM
     </div>
-
-    <!-- STATS BADGE -->
-    <div
-        style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
-        ⏱️ Time: 15m Study / 90m Project | 🏆 Points: 20 | 📅 Due: Sunday 11:59PM
-    </div>
-
-    <!-- 1. OVERVIEW -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+<!-- 1. OVERVIEW -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-        <p>A simple checkerboard grid is nice, but real design is asymmetrical. Sometimes you want a "Hero" image to
+<p>A simple checkerboard grid is nice, but real design is asymmetrical. Sometimes you want a "Hero" image to
             span across the top, or a "Feature" to take up two columns.</p>
-        <p>This week, we build the foundation for our future JavaScript project: <strong>The Interactive
+<p>This week, we build the foundation for our future JavaScript project: <strong>The Interactive
                 Gallery</strong>. Today, we build the layout. In Week 11, we will bring it to life.</p>
-
-        <div
-            style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
-            <strong>♿ Accessibility Note:</strong> When we span items, we change the visual flow. Always verify that the
+<div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
+<strong>♿ Accessibility Note:</strong> When we span items, we change the visual flow. Always verify that the
             Tab Order (using the keyboard) matches the visual logic of the page.
         </div>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;">🎥 Watch the Lesson</h3>
-        <div
-            style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
-            <strong>[VIDEO PLACEHOLDER]</strong><br>
-            Topic: Grid Child Properties (Spanning)<br>
-            <em>(User to embed Panopto/YouTube Iframe here)</em>
-        </div>
-    </div>
-
-    <!-- 2. THE TEXTBOOK (DEEP DIVE) -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            📖 The Textbook: Child Properties</h2>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Topic: Grid Child Properties (Spanning)<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
+</div>
+<!-- 2. THE TEXTBOOK (DEEP DIVE) -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Open Book" role="img">📖</span> The Textbook: Child Properties</h2>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 1. Grid Column (Spanning)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p>You can tell a child to stretch across multiple lines.</p>
-                <ul>
-                    <li><code>grid-column: span 2;</code> (Make this item 2 columns wide).</li>
-                    <li><code>grid-column: 1 / -1;</code> (Start at line 1, end at the last line. Full width!).</li>
-                </ul>
-            </div>
-        </details>
-
-        <details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
-            <summary
-                style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p>You can tell a child to stretch across multiple lines.</p>
+<ul>
+<li><code>grid-column: span 2;</code> (Make this item 2 columns wide).</li>
+<li><code>grid-column: 1 / -1;</code> (Start at line 1, end at the last line. Full width!).</li>
+</ul>
+</div>
+</details>
+<details style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px;">
+<summary style="background-color: #f8f9fa; padding: 15px 20px; cursor: pointer; font-weight: 600; color: #582C83;">
                 2. Grid Row (Height Spanning)</summary>
-            <div style="padding: 20px; line-height: 1.8; color: #444;">
-                <p>Same thing, but vertical.</p>
-                <ul>
-                    <li><code>grid-row: span 2;</code> (Make this item 2 rows tall).</li>
-                </ul>
-            </div>
-        </details>
-    </div>
-
-    <!-- 3. TEACH BY EXAMPLE -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            👀 Look & Learn: The "Magazine" Layout</h2>
-        <p>Notice how Item 1 dominates the layout.</p>
-
-        <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
-            <pre
-                style="background-color: #282c34; color: #abb2bf; padding: 20px; font-family: 'Consolas', monospace; overflow-x: auto; border-radius: 4px; margin: 0; white-space: pre-wrap;">
+<div style="padding: 20px; line-height: 1.8; color: #444;">
+<p>Same thing, but vertical.</p>
+<ul>
+<li><code>grid-row: span 2;</code> (Make this item 2 rows tall).</li>
+</ul>
+</div>
+</details>
+</div>
+<!-- 3. TEACH BY EXAMPLE -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn: The "Magazine" Layout</h2>
+<p>Notice how Item 1 dominates the layout.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
 .magazine-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -106,179 +84,159 @@
 .minor-article {
     background: #eee;
 }
-            </pre>
-            <div style="padding: 15px;">
-                <strong>Observation:</strong>
-                <ul>
-                    <li>The `.feature-article` becomes a big square block.</li>
-                    <li>The `.minor-article` items will automatically flow around it to fill the empty gaps.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- 4. GUIDED PRACTICE -->
-    <div style="padding: 30px; border-bottom: 1px solid #eee;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            💻 Project: The Static Gallery (Part 1)</h2>
-        <p class="highlight" style="background-color: #e8f0fe; padding: 10px; border-left: 4px solid #1967d2;">
-            <strong>⚠️ Context:</strong> This is <strong>Part 1</strong> of your Semester Project. In Week 11, we will
+            </pre></div>
+<div style="padding: 15px;">
+<strong>Observation:</strong>
+<ul>
+<li>The `.feature-article` becomes a big square block.</li>
+<li>The `.minor-article` items will automatically flow around it to fill the empty gaps.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 4. GUIDED PRACTICE -->
+<div style="padding: 30px; border-bottom: 1px solid #eee;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Personal Computer" role="img">💻</span> Project: The Static Gallery (Part 1)</h2>
+<p class="highlight" style="background-color: #e8f0fe; padding: 10px; border-left: 4px solid #1967d2;">
+<strong>⚠️ Context:</strong> This is <strong>Part 1</strong> of your Semester Project. In Week 11, we will
             make this interactive. Today, we build the layout.
         </p>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">📋 Directions</h3>
-        <ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
-            <li><strong>The Setup:</strong>
-                <ul>
-                    <li>Create `gallery_v1.html`.</li>
-                    <li>Download 5 distinct images (Nature/Architecture). Label them `thumb1.jpg` to `thumb5.jpg`.</li>
-                </ul>
-            </li>
-            <li><strong>The HTML Structure:</strong>
-                <ul>
-                    <li>Wrapper: `<div class="gallery-container">`</li>
-                    <li>The Hero: `<div class="main-display"> <img src="thumb1.jpg" id="current"> </div>`</li>
-                    <li>The Thumbnails: 5 `div`s with class `thumb`, each containing one small image.</li>
-                </ul>
-            </li>
-            <li><strong>The Grid Layout:</strong>
-                <ul>
-                    <li>Set `.gallery-container` to <code>display: grid;</code>.</li>
-                    <li>Columns: <code>repeat(5, 1fr)</code> (Five columns across).</li>
-                    <li>Gap: <code>10px</code>.</li>
-                </ul>
-            </li>
-            <li><strong>The Spanning Logic:</strong>
-                <ul>
-                    <li>Target `.main-display`: This needs to be BIG. Make it span all 5 columns
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;"><span aria-label="Clipboard" role="img">📋</span> Directions</h3>
+<ol style="font-family: Arial, sans-serif; color: #333333; margin-top: 6px;">
+<li><strong>The Setup:</strong>
+<ul>
+<li>Create `gallery_v1.html`.</li>
+<li>Download 5 distinct images (Nature/Architecture). Label them `thumb1.jpg` to `thumb5.jpg`.</li>
+</ul>
+</li>
+<li><strong>The HTML Structure:</strong>
+<ul>
+<li>Wrapper: `<div class="gallery-container">`</div></li>
+<li>The Hero: `<div class="main-display"> </div>`</li>
+<li>The Thumbnails: 5 `div`s with class `thumb`, each containing one small image.</li>
+</ul>
+</li>
+<li><strong>The Grid Layout:</strong>
+<ul>
+<li>Set `.gallery-container` to <code>display: grid;</code>.</li>
+<li>Columns: <code>repeat(5, 1fr)</code> (Five columns across).</li>
+<li>Gap: <code>10px</code>.</li>
+</ul>
+</li>
+<li><strong>The Spanning Logic:</strong>
+<ul>
+<li>Target `.main-display`: This needs to be BIG. Make it span all 5 columns
                         (<code>grid-column: 1 / -1;</code>). Increase its height (e.g., 400px).</li>
-                    <li>Target `.thumb`: These sit in the row below. No special CSS needed, they will naturally fill the
+<li>Target `.thumb`: These sit in the row below. No special CSS needed, they will naturally fill the
                         5 columns.</li>
-                </ul>
-            </li>
-            <li><strong>Visual Polish:</strong> Add <code>cursor: pointer;</code> to the thumbnails so they look
+</ul>
+</li>
+<li><strong>Visual Polish:</strong> Add <code>cursor: pointer;</code> to the thumbnails so they look
                 clickable (even though they don't work yet!). Ad borders or hover effects to hint at interactivity.</li>
-        </ol>
-    </div>
-
-    <!-- 5. DIG DEEPER -->
-    <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+</ol>
+</div>
+<!-- 5. DIG DEEPER -->
+<div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             ⛏️ Dig Deeper</h2>
-
-        <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;">🔗 Resources</h3>
-        <ul>
-            <li style="margin-bottom: 10px;">🔗 <a href="https://grid.layoutit.com/" target="_blank"
-                    style="color: #582C83; font-weight: bold;">Layout It! Grid Generator</a> (A visual tool to build
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 18px;"><span aria-label="Link Symbol" role="img">🔗</span> Resources</h3>
+<ul>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://grid.layoutit.com/" style="color: #582C83; font-weight: bold;" target="_blank">Layout It! Grid Generator</a> (A visual tool to build
                 grids code-free).</li>
-        </ul>
-
-
-    </div>
-
-    <!-- 6. RUBRIC -->
-    <div
-        style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
-        <h2
-            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            🏆 Grading Rubric</h2>
-
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
-            <thead>
-                <tr>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+</ul>
+</div>
+<!-- 6. RUBRIC -->
+<div style="margin-top: 40px; border-top: 5px solid #582C83; padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 30px;">
+<h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            <span aria-label="Trophy" role="img">🏆</span> Grading Rubric</h2>
+<table border="1" style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;"><caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Data Table</caption>
+<thead>
+<tr>
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Criteria</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Distinguished</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Proficient</th>
-                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+<th scope="col" style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Emerging</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Grid Structure <br>
-                        <span style="font-size:0.8em; color:#666;">(10 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Grid Structure <br/>
+<span style="font-size:0.8em; color:#666;">(10 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
                             CSS Grid</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>10 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>10 pts</strong><br/>
                         Correctly implements a 5-column grid (or as specified) with explicit tracks.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>7-9 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>7-9 pts</strong><br/>
                         Grid functionality works but column count is incorrect (e.g., 4 columns or implicit tracks).
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-6 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-6 pts</strong><br/>
                         Grid fails to load or display columns.
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Spanning (Areas) <br>
-                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Spanning (Areas) <br/>
+<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
                             Layout</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>5 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>5 pts</strong><br/>
                         The "Main Display" correctly spans across all 5 columns (or creates a clear hierarchy) using
                         `span` or named areas.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>3-4 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>3-4 pts</strong><br/>
                         Spanning attempted but off by one column (leaving gaps).
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-2 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-2 pts</strong><br/>
                         No spanning used; items fill single cells only.
                     </td>
-                </tr>
-                <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                        Code Preparation <br>
-                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
-                        <span
-                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Code Preparation <br/>
+<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
                             Architecture</span>
-                    </td>
-                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-                        <strong>5 pts</strong><br>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>5 pts</strong><br/>
                         The HTML ID/Class structure (e.g., `id="current"`) is present and ready for future
                         scripting/styling.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>3-4 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>3-4 pts</strong><br/>
                         IDs present but misspelled or applied to wrong elements.
                     </td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">
-                        <strong>0-2 pts</strong><br>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-2 pts</strong><br/>
                         Required IDs missing.
                     </td>
-                </tr>
-                <tr>
-                    <td colspan="3"
-                        style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+</tr>
+<tr>
+<td colspan="3" style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
                         Score:</td>
-                    <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
+<td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
                         pts</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- FOOTER -->
-    <footer
-        style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
-        &copy; 2026 Dr. Meri Kasprak in collaboration with Gemini
-    </footer>
-
+</tr>
+</tbody>
+</table>
 </div>
+<!-- FOOTER -->
+<footer style="background-color: #333; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 40px;">
+        © 2026 Dr. Meri Kasprak in collaboration with Gemini
+    </footer>
+</div></div>
