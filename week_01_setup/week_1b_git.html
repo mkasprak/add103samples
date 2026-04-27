@@ -175,46 +175,94 @@ The Internet (Live Site)
             <caption
                 style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
                 Grading Rubric</caption>
-            <thead>
-                <tr>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
-                        Criteria</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Points</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Repo Setup:</strong> Public
-                        <code>ADD103</code> repository exists on GitHub with <code>manifesto.html</code> inside.
-                    </td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Live Deploy:</strong> The live link loads
-                        successfully without 404 errors.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>The Update:</strong> The live file
-                        contains the timestamp update (proving a second commit was made).</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>15 pts</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-            </tbody>
-        </table>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
+                <thead>
+                    <tr>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Criteria</th>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Distinguished</th>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Proficient</th>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Emerging</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                            Repo Setup <br>
+                            <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                            <span
+                                style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO5:
+                                GitHub</span>
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                            <strong>5 pts</strong><br>
+                            Public <code>ADD103</code> repository exists on GitHub with <code>manifesto.html</code>
+                            inside.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>3-4 pts</strong><br>
+                            Repo exists but is Private (needs invite) or file structure is slightly off.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>0-2 pts</strong><br>
+                            Repo not found or empty.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                            Live Deploy <br>
+                            <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                            <span
+                                style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO5:
+                                Deployment</span>
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                            <strong>5 pts</strong><br>
+                            The live link loads successfully without 404 errors.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>3-4 pts</strong><br>
+                            Calculated URL is correct but 404s (sync issue).
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>0-2 pts</strong><br>
+                            No live link provided.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                            The Update (Commit) <br>
+                            <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                            <span
+                                style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO5:
+                                Git Flow</span>
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                            <strong>5 pts</strong><br>
+                            The live file contains the timestamp update (proving a second commit was made).
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>3-4 pts</strong><br>
+                            Update is present locally but not pushed to live.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>0-2 pts</strong><br>
+                            No update made to the file.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"
+                            style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+                            Score:</td>
+                        <td
+                            style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">
+                            15 pts</td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 
     <!-- FOOTER -->

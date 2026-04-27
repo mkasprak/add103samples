@@ -185,46 +185,91 @@
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             🏆 Grading Rubric</h2>
 
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
-            <caption
-                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
-                Grading Rubric</caption>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
             <thead>
                 <tr>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Criteria</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Points</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Notes</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Distinguished</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Proficient</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Emerging</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Grid Structure:</strong> Correctly
-                        implements a 5-column grid.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Grid Structure <br>
+                        <span style="font-size:0.8em; color:#666;">(10 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
+                            CSS Grid</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>10 pts</strong><br>
+                        Correctly implements a 5-column grid (or as specified) with explicit tracks.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>7-9 pts</strong><br>
+                        Grid functionality works but column count is incorrect (e.g., 4 columns or implicit tracks).
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-6 pts</strong><br>
+                        Grid fails to load or display columns.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Spanning:</strong> The "Main Display"
-                        correctly spans across all 5 columns (or creates a clear hierarchy).</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Spanning (Areas) <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO3:
+                            Layout</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        The "Main Display" correctly spans across all 5 columns (or creates a clear hierarchy) using
+                        `span` or named areas.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        Spanning attempted but off by one column (leaving gaps).
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        No spanning used; items fill single cells only.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Preparation:</strong> The HTML ID
-                        structure (`id="current"`) is ready for JavaScript injection later.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Code Preparation <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
+                            Architecture</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        The HTML ID/Class structure (e.g., `id="current"`) is present and ready for future
+                        scripting/styling.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        IDs present but misspelled or applied to wrong elements.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        Required IDs missing.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>20 pts</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td colspan="3"
+                        style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+                        Score:</td>
+                    <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
+                        pts</td>
                 </tr>
             </tbody>
         </table>

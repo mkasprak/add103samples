@@ -176,46 +176,89 @@
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             🏆 Grading Rubric</h2>
 
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
-            <caption
-                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
-                Grading Rubric</caption>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
             <thead>
                 <tr>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Criteria</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Points</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Notes</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Distinguished</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Proficient</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Emerging</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Fluid Grid:</strong> The grid changes
-                        column count at least 3 times (1 -> 2 -> 3/4).</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Breakpoint Strategy <br>
+                        <span style="font-size:0.8em; color:#666;">(10 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO4:
+                            Breakpoints</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>10 pts</strong><br>
+                        At least 3 distinct layouts (mobile, tablet, desktop) implemented effectively.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>7-9 pts</strong><br>
+                        Breakpoints exist but changes are minimal or one view looks broken.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-6 pts</strong><br>
+                        Fewer than 3 layouts or breakpoints ignored.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Mobile First:</strong> The default CSS
-                        targets the smallest screen (1 column), and queries ADD complexity.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Mobile First Architecture <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO4:
+                            Mobile First</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        The default CSS targets the smallest screen (1 column), and queries ADD complexity (min-width).
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        Mix of max-width and min-width causing logic gaps.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        Designed for desktop first, overriding for mobile (anti-pattern).
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>No Broken Layout:</strong> At no point
-                        during resize does the horizontal scrollbar appear.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Stability (No Horizontal Scroll) <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO4:
+                            Robustness</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        At no point during resize does the horizontal scrollbar appear.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        Momentary horizontal scroll at specific widths but generally stable.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        Persistent horizontal scrolling (content overflow).
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>20 pts</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td colspan="3"
+                        style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+                        Score:</td>
+                    <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
+                        pts</td>
                 </tr>
             </tbody>
         </table>

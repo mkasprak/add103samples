@@ -204,46 +204,89 @@ body {
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             🏆 Grading Rubric</h2>
 
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
-            <caption
-                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
-                Grading Rubric</caption>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
             <thead>
                 <tr>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Criteria</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Points</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Notes</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Distinguished</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Proficient</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Emerging</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Syntax:</strong> Correctly uses
-                        `min-width` media queries (Mobile First approach).</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Media Query Syntax <br>
+                        <span style="font-size:0.8em; color:#666;">(10 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO4:
+                            Queries</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>10 pts</strong><br>
+                        Correctly uses `min-width` media queries (Mobile First approach) at standard breakpoints.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>7-9 pts</strong><br>
+                        Queries work but use `max-width` (Desktop First) against instructions, or syntax is sloppy.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-6 pts</strong><br>
+                        Syntax error prevents queries from running.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Transformation:</strong> The layout
-                        changes significantly (Column -> Row) when resized.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Layout Transformation <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO4:
+                            Adaptation</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        The layout changes significantly (e.g., Column -> Row) when resized.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        Only minor changes (e.g. font size) occur, layout remains static.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        No visual change on resize.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Viewport Tag:</strong> The HTML file
-                        includes the required meta viewport tag appropriately.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Viewport Tag <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO4:
+                            Mobile</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        The HTML file includes the required meta viewport tag appropriately.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        Tag present but has syntax errors (e.g. missing scale).
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        Viewport tag missing (site looks tiny on mobile).
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>20 pts</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td colspan="3"
+                        style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+                        Score:</td>
+                    <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
+                        pts</td>
                 </tr>
             </tbody>
         </table>

@@ -193,46 +193,90 @@ button {
             style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             🏆 Grading Rubric</h2>
 
-        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem;">
-            <caption
-                style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
-                Grading Rubric</caption>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
             <thead>
                 <tr>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
                         Criteria</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Points</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Notes</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Distinguished</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Proficient</th>
+                    <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                        Emerging</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>CSS Variables:</strong> At least 2 custom
-                        properties (<code>--name</code>) defined in <code>:root</code> and used.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">10 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        CSS Variables <br>
+                        <span style="font-size:0.8em; color:#666;">(10 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2:
+                            Variables</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>10 pts</strong><br>
+                        At least 2 custom properties (<code>--name</code>) defined in <code>:root</code> and used
+                        effectively throughout.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>7-9 pts</strong><br>
+                        Variables defined but not used consistently (mixed with hex codes).
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-6 pts</strong><br>
+                        No variables used.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Accessibility:</strong> Final colors pass
-                        WCAG AA Contrast standards (readable).</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Contrast & Accessibility <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
+                            Accessibility</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        Final colors pass WCAG AA Contrast standards (readable).
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        Most text corresponds, but some light-on-light or dark-on-dark issues.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        Major contrast failures making text unreadable.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Modern Syntax:</strong> Evidence of
-                        gradients or RGBA transparency.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                        Modern Syntax <br>
+                        <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                        <span
+                            style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2:
+                            Advanced CSS</span>
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                        <strong>5 pts</strong><br>
+                        Evidence of modern features like gradients, RGBA transparency, or HSL.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>3-4 pts</strong><br>
+                        Basic colors only, or syntax errors in gradient definitions.
+                    </td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">
+                        <strong>0-2 pts</strong><br>
+                        Only used standard named colors (e.g., 'red', 'blue').
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>20 pts</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
+                    <td colspan="3"
+                        style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+                        Score:</td>
+                    <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">20
+                        pts</td>
                 </tr>
             </tbody>
         </table>

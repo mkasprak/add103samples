@@ -93,31 +93,67 @@
 
     <!-- RUBRIC TABLE -->
     <div style="margin-top: 20px;">
-        <table style="width: 100%; border-collapse: collapse; text-align: left;">
-            <caption style="text-align: left; font-weight: bold; margin-bottom: 10px;">Grading Rubric</caption>
+        <h2
+            style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
+            📊 Grading Rubric</h2>
+        <table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 20px; font-size: 0.9em;">
             <thead style="background-color: #4b3190; color: white;">
                 <tr>
-                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Criteria</th>
-                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Points</th>
-                    <th scope="col" style="padding: 10px; border: 1px solid #ddd;">Notes</th>
+                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Criteria (LO9: Media)</th>
+                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Distinguished (100%)</th>
+                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Proficient (85%)</th>
+                    <th style="padding: 12px; border: 1px solid #ddd; width: 25%;">Emerging (70%)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Resolution Switching</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">4 pts</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">Correct use of <code>srcset</code>.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
+                        Resolution Switching<br>
+                        <span style="font-weight: normal; font-size: 0.85em; color: #666;">(4 pts)</span>
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
+                        Correctly implements `srcset` with multiple densities (1x, 2x) OR widths. Browser selects
+                        appropriate image.
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">
+                        Implements `srcset` but syntax has minor errors (e.g. missing `w` descriptors) or image paths
+                        are shaky.
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
+                        Uses standard `img src` only. No resolution switching implemented.
+                    </td>
                 </tr>
                 <tr style="background-color: #f9f9f9;">
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Art Direction</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">4 pts</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;"><code>&lt;picture&gt;</code> tag changes image at
-                        breakpoint.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
+                        Art Direction<br>
+                        <span style="font-weight: normal; font-size: 0.85em; color: #666;">(4 pts)</span>
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
+                        Uses `&lt;picture&gt;` tag. Image crop changes dramatically at the specified breakpoint (e.g.
+                        wide to square).
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">
+                        Uses `&lt;picture&gt;` tag but differences between sources are subtle or breakpoint choice is
+                        ineffective.
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
+                        No `&lt;picture&gt;` tag used or fails to swap sources.
+                    </td>
                 </tr>
                 <tr>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Accessibility</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">2 pts</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">All images have <code>alt</code> text.</td>
+                    <td style="padding: 12px; border: 1px solid #ddd; font-weight: bold;">
+                        Accessibility<br>
+                        <span style="font-weight: normal; font-size: 0.85em; color: #666;">(2 pts)</span>
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #f0f9ff;">
+                        All images include descriptive `alt` text. Decorative images (if any) use `alt=""`.
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">
+                        Most images have `alt` text, but some are missing or generic ("image").
+                    </td>
+                    <td style="padding: 12px; border: 1px solid #ddd; background-color: #fff5f5;">
+                        Missing `alt` attributes on images.
+                    </td>
                 </tr>
             </tbody>
         </table>

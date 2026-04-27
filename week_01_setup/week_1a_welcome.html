@@ -149,45 +149,93 @@ Documents/
             <caption
                 style="font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; text-align: left; color: #582C83;">
                 Grading Rubric</caption>
-            <thead>
-                <tr>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 60%">
-                        Criteria</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Points</th>
-                    <th scope="col"
-                        style="background-color: #582C83; color: #ffffff; padding: 12px; text-align: left; border: 1px solid #582C83; width: 20%">
-                        Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Naming Conventions:</strong> File is
-                        named <code>manifesto.html</code> (all lowercase). Folder structure is correct.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Content:</strong> All 4 questions are
-                        answered fully and creatively.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Render:</strong> The file opens
-                        successfully in Chrome without errors.</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;">5 pts</td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-                <tr>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>Total</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"><strong>15 pts</strong></td>
-                    <td style="padding: 12px; border: 1px solid #ddd;"></td>
-                </tr>
-            </tbody>
-        </table>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9rem;">
+                <thead>
+                    <tr>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Criteria</th>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Distinguished</th>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Proficient</th>
+                        <th style="background-color: #582C83; color: #fff; padding: 10px; border: 1px solid #4a2570;">
+                            Emerging</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                            Naming Conventions <br>
+                            <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                            <span
+                                style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO1:
+                                Files</span>
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                            <strong>5 pts</strong><br>
+                            File is named <code>manifesto.html</code> (lowercase). Folder structure is correct.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>3-4 pts</strong><br>
+                            File content is correct but naming is messy (e.g., uppercase or spaces).
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>0-2 pts</strong><br>
+                            File is missing or named completely incorrectly (unidentifiable).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                            Content Quality <br>
+                            <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                            <span
+                                style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
+                                Professionalism</span>
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                            <strong>5 pts</strong><br>
+                            All 4 questions are answered fully and creatively.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>3-4 pts</strong><br>
+                            Answers are present but brief or one question is missing.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>0-2 pts</strong><br>
+                            Content is largely missing or lorem ipsum text remains.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                            Render Test <br>
+                            <span style="font-size:0.8em; color:#666;">(5 pts)</span><br>
+                            <span
+                                style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
+                                Deployment</span>
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+                            <strong>5 pts</strong><br>
+                            The file opens successfully in Chrome without errors.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>3-4 pts</strong><br>
+                            File opens but layout is broken or encoding issues are present.
+                        </td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">
+                            <strong>0-2 pts</strong><br>
+                            File does not open or is not an HTML file.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"
+                            style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
+                            Score:</td>
+                        <td
+                            style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">
+                            15 pts</td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 
     <!-- FOOTER -->
