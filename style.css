@@ -1,0 +1,198 @@
+/* =============================================
+   ADD 103 — Web Development Fundamentals
+   Samples Index Stylesheet
+   ============================================= */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Page Wrapper --- */
+.page-wrapper {
+    max-width: 950px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border-top: 10px solid #FFC629;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Header --- */
+.site-header {
+    background-color: #582C83;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.site-header p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    opacity: 0.9;
+    color: #FFC629;
+}
+
+/* --- Intro Banner --- */
+.intro-banner {
+    background-color: #fdbb30;
+    color: #4b3190;
+    padding: 12px 30px;
+    font-weight: bold;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+/* --- Main Content --- */
+main {
+    padding: 30px;
+}
+
+main > p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* --- Details / Week Blocks --- */
+details {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+details[open] {
+    box-shadow: 0 2px 8px rgba(88, 44, 131, 0.15);
+}
+
+summary {
+    background-color: #582C83;
+    color: #ffffff;
+    padding: 14px 20px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '▶';
+    font-size: 0.75rem;
+    color: #FFC629;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+summary .week-badge {
+    background-color: #FFC629;
+    color: #582C83;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* --- Project Links Inside Details --- */
+.project-list {
+    padding: 16px 20px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-left: 4px solid #582C83;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.15s, border-left-color 0.15s;
+}
+
+.project-link:hover {
+    background-color: #f0eaf8;
+    border-left-color: #FFC629;
+    color: #582C83;
+}
+
+.project-link .project-icon {
+    font-size: 1.2rem;
+}
+
+.project-link .project-name {
+    flex: 1;
+}
+
+.project-link .project-tag {
+    font-size: 0.75rem;
+    color: #888;
+    background-color: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+/* --- Footer --- */
+.site-footer {
+    background-color: #333;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: #FFC629;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Code styling (for students to reference) --- */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Courier New', monospace;
+}
