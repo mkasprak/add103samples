@@ -1,0 +1,14 @@
+﻿/* Site Audit
+   ADD 103 Web Development Fundamentals
+   ===================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
