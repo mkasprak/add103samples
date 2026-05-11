@@ -23,14 +23,21 @@
 <p>HTML provides the structure, but <strong>CSS (Cascading Style Sheets)</strong> provides the voice. The fonts
             you choose, the colors you apply, and the size of your text dramatically change how a user "hears" your
             content.</p>
-<p>This is also your <strong>GitHub kickoff week</strong>: you will create your first repository and push your CSS
-            work so your edits have a version history.</p>
+<p>This is also the week you start <strong>writing CSS</strong>. You already have GitHub set up from Week 1 — this week, push your CSS work to the same <code>ADD103</code> repository.</p>
 <p>Today, we will learn the basics of CSS selectors and dive deep into <strong>Typography</strong>, including
             how to import professional fonts from Google.</p>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
 <strong>♿ Accessibility Note:</strong> Always pair visuals with text. A red error message is useless to a
             colorblind user unless it also says "Error".
         </div>
+<!-- DUCKTOR QUACKSALOT -->
+<div style="background-color: #f3effe; border-left: 5px solid #582C83; border-radius: 0 8px 8px 0; padding: 15px 20px; margin: 20px 0; display: flex; align-items: flex-start; gap: 15px;">
+<img src="[URL_DUCKTOR_QUACKSALOT]" alt="Ducktor Quacksalot — an anthropomorphic duck in MCC purple and gold, with reddish-brown hair, blue eyes, and glasses" style="width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0; object-fit: cover; border: 3px solid #582C83;" />
+<div>
+<strong style="color: #582C83;">🦆 Ducktor Quacksalot says:</strong><br/>
+<em>CSS is a conversation between you and the browser. Open DevTools (F12) and watch your styles apply in real time. That live feedback loop is the fastest way to understand what’s actually happening.</em>
+</div>
+</div>
 <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
 <div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
 <strong>[VIDEO PLACEHOLDER]</strong><br/>
@@ -86,6 +93,14 @@
                 View Live Sample: The Bistro Menu</a>
 </div>
 <p>System fonts like Arial are boring. Professional designers use <strong>Google Fonts</strong>.</p>
+<div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 4px; margin-bottom: 20px;">
+<strong>📌 Scaffolding Note — Where do styles live?</strong> There are three ways to write CSS. We start simple and build up:
+<ol style="margin: 10px 0 0 0;">
+<li><strong>Inline</strong> — <code>style="..."</code> attribute directly on an element. Fine for one-offs, messy at scale.</li>
+<li><strong>Internal</strong> — a <code>&lt;style&gt;</code> tag inside <code>&lt;head&gt;</code>. Great for learning — everything is in one file. <em>We use this first.</em></li>
+<li><strong>External</strong> — a separate <code>.css</code> file linked with <code>&lt;link&gt;</code>. This is the professional standard. <em>We’ll switch to this once you’re comfortable with the syntax.</em></li>
+</ol>
+</div>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
             Step 1: The Setup (HTML)</h3>
 <p>First, you must "import" the font. This always goes in the <code>&lt;head&gt;</code> of your HTML file,
@@ -175,8 +190,7 @@ git push
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
             Step 1: The Content (HTML)</h3>
 <ol>
-<li>Create a GitHub repository named <code>ADD103</code> (if not already created) and clone it locally.</li>
-<li>Create <code>style-guide.html</code> and `style.css`.</li>
+<li>Open your <code>ADD103</code> repository in VS Code (already cloned from Week 1). Create <code>style-guide.html</code> and <code>style.css</code> inside a <code>week_03</code> folder.</li>
 <li>Link them together.</li>
 <li>In HTML, write an <code>&lt;h1&gt;</code> that says "My Brand Styles".</li>
 <li>Write an <code>&lt;h2&gt;</code> for "Sub-Heading Example".</li>

@@ -1,7 +1,7 @@
 <div class_="main-content" lang="en"><div style="max-width: 950px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 <!-- HEADER -->
 <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 1B: Publishing with cPanel
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 1B: GitHub → cPanel: Your Deployment Pipeline
         </h2>
 <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
             Design | Spring 2026</div>
@@ -20,39 +20,51 @@
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-<p>Professional developers do not leave files trapped on a laptop. We publish to a server and verify that pages
-            load for real users.</p>
-<p>Today you will use cPanel File Manager to publish your first page and validate the live URL pipeline.</p>
+<p>You have code on GitHub. Now let’s make it <strong>live</strong> on the internet.</p>
+<p>Today you connect your GitHub repo to your InMotion hosting account using <strong>cPanel Git Version Control</strong>. After this setup, every <code>git push</code> you make will deploy automatically — no dragging files, no zip uploads, ever again.</p>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
 <strong>♿ Accessibility Note:</strong> If cPanel text is difficult to read, increase browser zoom,
             use Reader Mode where possible, and rely on keyboard navigation.
         </div>
+<!-- DUCKTOR QUACKSALOT -->
+<div style="background-color: #f3effe; border-left: 5px solid #582C83; border-radius: 0 8px 8px 0; padding: 15px 20px; margin: 20px 0; display: flex; align-items: flex-start; gap: 15px;">
+<img src="[URL_DUCKTOR_QUACKSALOT]" alt="Ducktor Quacksalot — an anthropomorphic duck in MCC purple and gold, with reddish-brown hair, blue eyes, and glasses" style="width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0; object-fit: cover; border: 3px solid #582C83;" />
+<div>
+<strong style="color: #582C83;">🦆 Ducktor Quacksalot says:</strong><br/>
+<em>The git push → cPanel pull → live URL loop is the same workflow used at real web teams. Master it this week and you’ll use it every week for the rest of the course — and your career!</em>
+</div>
+</div>
 <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
 <div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
 <strong>[VIDEO PLACEHOLDER]</strong><br/>
-            Topic: cPanel File Manager + Live URL Verification<br/>
+            Topic: GitHub → cPanel Git Version Control: Live Deployment Setup<br/>
 <em>(User to embed Panopto/YouTube Iframe here)</em>
 </div>
 </div>
 <!-- 2. TEACH BY EXAMPLE -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn: The Hosting Pipeline</h2>
-<p>This is how your code travels from your brain to the world.</p>
+            <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn: The Deployment Pipeline</h2>
+<p>This is how your code travels from VS Code to the live internet — and it’s the same pipeline professionals use.</p>
 <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
 <div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
-YOU (Local Files)
-⬇ (Upload)
-cPanel File Manager
-⬇ (public_html)
+VS Code (Your Laptop)
+↓ git push
+
+GitHub.com (The Cloud Backup)
+↓ cPanel pulls your latest commit
+
+public_html/ADD103/ (Your Server)
+↓
 Live Website URL
             </pre></div>
 <div style="padding: 15px;">
-<strong>The Logic:</strong>
+<strong>How it works:</strong>
 <ul>
-<li><strong>public_html:</strong> The folder the web server actually publishes.</li>
-<li><strong>Path Discipline:</strong> Folder names and file names must match exactly.</li>
-<li><strong>Verification:</strong> Every upload must be tested at the live URL.</li>
+<li><strong>git push:</strong> Sends your saved code from your computer to GitHub.</li>
+<li><strong>cPanel Git Version Control:</strong> A tool in your hosting dashboard that watches your GitHub repo and copies new commits to your live server.</li>
+<li><strong>public_html:</strong> The folder your web server reads. Files in here are visible at your live URL.</li>
+<li><strong>You only do the cPanel setup once.</strong> After that, push → pull → live is your entire workflow.</li>
 </ul>
 </div>
 </div>
@@ -61,28 +73,42 @@ Live Website URL
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             <span aria-label="Personal Computer" role="img">💻</span> Project: First Live Publish</h2>
-<p>You will publish your first working page to your personal hosting account.</p>
+<p>We set up the connection once, then prove it works by pushing an update.</p>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Phase 1: The Launch</h3>
+            Phase 1: Set Up cPanel Git Version Control</h3>
 <ol>
-<li>Log in to cPanel and open <strong>File Manager</strong>.</li>
-<li>Create folders: <code>public_html/ADD103/week_01</code>.</li>
-<li>Upload <code>manifesto.html</code> from Lesson 1A into <code>week_01</code>.</li>
-<li>Set folder permissions to <strong>755</strong> if needed.</li>
-<li>Open your live URL and verify the page loads with no 403/404 errors.</li>
+<li>Log in to your InMotion <strong>cPanel</strong> account (your instructor will provide your login URL and credentials).</li>
+<li>In the <strong>Files</strong> section, click <strong>Git Version Control</strong>.</li>
+<li>Click the blue <strong>Create</strong> button.</li>
+<li>Toggle <strong>“Clone a Repository”</strong> to ON.</li>
+<li>In the <strong>Clone URL</strong> field, paste your GitHub repo URL:<br/><code>https://github.com/yourusername/ADD103.git</code></li>
+<li>In the <strong>Repository Path</strong> field, type:<br/><code>/home/youraccount/public_html/ADD103</code><br/><em style="font-size:0.9em; color:#666;">(Replace <code>youraccount</code> with your cPanel username — visible in the top-right of the cPanel dashboard.)</em></li>
+<li>Click <strong>Create</strong>. cPanel will download your GitHub repo to the server. You’ll see a green success message.</li>
+<li>Click <strong>Manage</strong> → the <strong>Pull or Deploy</strong> tab → click <strong>“Update from Remote”</strong>.</li>
+<li>Open your live URL in a new tab:<br/><code>https://yourdomain.com/ADD103/manifesto.html</code><br/>Does your Manifesto page load? If yes — 🎉 you’ve deployed your first website.</li>
 </ol>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Phase 2: The Update (Publish Again)</h3>
-<p>A website is never finished. Publish an update to prove your workflow.</p>
+            Phase 2: Prove the Workflow (Push an Update)</h3>
+<p>A website is never finished. Let’s confirm your full loop works — edit, push, pull, live.</p>
 <ol>
-<li>Back on your computer, open `manifesto.html`.</li>
-<li>Add a new line at the bottom:
-                <code>"Timestamp: I have successfully deployed this site on [Date]!"</code>
-</li>
-<li>Save, then re-upload the updated file to the same cPanel folder.</li>
-<li>Go to your live URL. <strong>Refresh the page.</strong></li>
+<li>Back in VS Code, open <code>manifesto.html</code>.</li>
+<li>Add this line at the bottom of your <code>&lt;body&gt;</code>:<br/><code>&lt;p&gt;Deployed on [Date]. The pipeline works!&lt;/p&gt;</code></li>
+<li>Save (Ctrl+S). Then in the VS Code Terminal:</li>
 </ol>
-<p><em>Did the new text appear? If so, you have mastered the infinite loop of web development.</em></p>
+<div style="background-color: #121212; color: #e0e0e0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95rem; margin: 10px 30px;">
+<span style="color:#98c379;">git add .</span><br/>
+<span style="color:#98c379;">git commit -m "Add deployment timestamp"</span><br/>
+<span style="color:#98c379;">git push</span>
+</div>
+<ol start="4">
+<li>Go back to <strong>cPanel → Git Version Control → Manage → Pull or Deploy → Update from Remote</strong>.</li>
+<li>Refresh your live URL. Did the new timestamp line appear? ✅ You have now mastered the infinite loop of web development.</li>
+</ol>
+<div style="background-color: #fff3cd; border: 1px solid #ffc107; padding: 15px; border-radius: 4px; margin-top: 20px;">
+<strong>💡 Pro Tip: Bookmark these two tabs.</strong> You will open them every single week:<br/>
+1️⃣ Your GitHub repo — to confirm your push arrived.<br/>
+2️⃣ cPanel Git Version Control — to pull it live.
+</div>
 </div>
 <!-- 4. DIG DEEPER -->
 <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
@@ -90,7 +116,8 @@ Live Website URL
             ⛏️ Dig Deeper (Resources)</h2>
 <p>Mastering hosting workflows is the first step to shipping real work online.</p>
 <ul>
-<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://www.inmotionhosting.com/support/website/cpanel-file-manager/" style="color: #582C83; font-weight: bold;" target="_blank">InMotion: cPanel File Manager Guide</a></li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://www.inmotionhosting.com/support/website/git-version-control-cpanel/" style="color: #582C83; font-weight: bold;" target="_blank">InMotion: cPanel Git Version Control Guide</a></li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" style="color: #582C83; font-weight: bold;" target="_blank">GitHub Docs: Hello World (Your First Repo)</a></li>
 <li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" style="color: #582C83; font-weight: bold;" target="_blank">MDN: Dealing with Files</a></li>
 <li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL" style="color: #582C83; font-weight: bold;" target="_blank">MDN: What is a URL?</a></li>
 </ul>

@@ -9,8 +9,7 @@
 <!-- QM ALIGNMENT STRIP -->
 <div style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
 <span style="font-size: 1.2rem; margin-right: 10px;"><span aria-label="Direct Hit" role="img">🎯</span></span>
-<span><strong>Learning Objective Alignment:</strong> Advanced Tools (LO7) — "Use professional development tools
-            (VS Code, Chrome DevTools, GitHub) for version control."</span>
+<span><strong>Learning Objective Alignment:</strong> Files &amp; Deployment (LO1, LO8) — "Create a structured project folder, write your first HTML file, and push it to GitHub."</span>
 </div>
 <!-- STATS BADGE -->
 <div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
@@ -28,10 +27,18 @@
 <strong>♿ Accessibility Note:</strong> cPanel can be used with keyboard navigation and screen readers;
             use zoom and browser accessibility tools if default text is difficult to read.
         </div>
+<!-- DUCKTOR QUACKSALOT -->
+<div style="background-color: #f3effe; border-left: 5px solid #582C83; border-radius: 0 8px 8px 0; padding: 15px 20px; margin: 20px 0; display: flex; align-items: flex-start; gap: 15px;">
+<img src="[URL_DUCKTOR_QUACKSALOT]" alt="Ducktor Quacksalot — an anthropomorphic duck in MCC purple and gold, with reddish-brown hair, blue eyes, and glasses" style="width: 80px; height: 80px; border-radius: 50%; flex-shrink: 0; object-fit: cover; border: 3px solid #582C83;" />
+<div>
+<strong style="color: #582C83;">🦆 Ducktor Quacksalot says:</strong><br/>
+<em>Every professional developer uses VS Code, GitHub, and a live server. You’re not just a student — you’re a developer in training from Day 1. Welcome to the real thing.</em>
+</div>
+</div>
 <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
 <div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
 <strong>[VIDEO PLACEHOLDER]</strong><br/>
-            Topic: InMotion cPanel Login &amp; File Manager Setup<br/>
+            Topic: VS Code Install, GitHub Account Setup &amp; Cloning Your First Repo<br/>
 <em>(User to embed Panopto/YouTube Iframe here)</em>
 </div>
 </div>
@@ -102,11 +109,22 @@ Documents/
 <p>We are going to start this semester by setting your intentions. You will create a webpage that lists your
             goals for this course.</p>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 1: The Setup</h3>
+            Step 1: Install Your Tools &amp; Create Your Repo</h3>
+<div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+<strong>⚙️ One-time installs (do this before anything else):</strong>
+<ol style="margin: 10px 0 0 0;">
+<li>Download and install <a href="https://code.visualstudio.com/" style="color:#582C83; font-weight:bold;" target="_blank" rel="noopener">VS Code</a> — the professional code editor we will use all semester. It is free.</li>
+<li>Create a free account at <a href="https://github.com" style="color:#582C83; font-weight:bold;" target="_blank" rel="noopener">GitHub.com</a>. Use a professional username (your name or initials).</li>
+</ol>
+</div>
 <ol>
-<li>Log in to your personal InMotion <strong>cPanel</strong> account and open <strong>File Manager</strong>.</li>
-<li>Create your <code>ADD103/week_01</code> folder structure.</li>
-<li>Create a new file named <code>manifesto.html</code>.</li>
+<li>On GitHub.com, click the green <strong>New</strong> button to create a repository. Name it exactly <code>ADD103</code>. Set it to <strong>Public</strong>. Check <strong>"Add a README file"</strong>. Click <strong>Create repository</strong>.</li>
+<li>Click the green <strong>Code</strong> button → copy the HTTPS URL (e.g., <code>https://github.com/yourusername/ADD103.git</code>).</li>
+<li>Open VS Code. Press <strong>Ctrl+`</strong> (backtick, top-left of keyboard) to open the Terminal panel at the bottom.</li>
+<li>In the terminal, navigate to your Documents folder: <code>cd ~/Documents</code></li>
+<li>Clone your repo: <code>git clone https://github.com/yourusername/ADD103.git</code> (use your actual URL). Press Enter. A folder named <code>ADD103</code> will appear in Documents.</li>
+<li>In VS Code: <strong>File → Open Folder</strong> → select that <code>ADD103</code> folder.</li>
+<li>In the Explorer panel (left sidebar), right-click → <strong>New File</strong> → name it <code>manifesto.html</code>.</li>
 </ol>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
             Step 2: The Content</h3>
@@ -118,13 +136,15 @@ Documents/
 <code>My "Power Animal" for coding is a [Animal] because [Reason].</code>
 </div>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 3: The Verification</h3>
-<ol>
-<li>Save the file.</li>
-<li>Find the file in your actual folder (Finder/Explorer).</li>
-<li>Double-click it to open it in Chrome.</li>
-<li>Does it look right? (It will be plain text, that is expected!)</li>
-</ol>
+            Step 3: Push to GitHub</h3>
+<p>Save the file (Ctrl+S), then run these three commands in the VS Code Terminal, one at a time:</p>
+<div style="background-color: #121212; color: #e0e0e0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95rem; margin: 10px 0;">
+<span style="color:#98c379;">git add .</span><br/>
+<span style="color:#98c379;">git commit -m "Week 1A: manifesto"</span><br/>
+<span style="color:#98c379;">git push</span>
+</div>
+<p>Then visit <strong>github.com/yourusername/ADD103</strong> and confirm your <code>manifesto.html</code> file appears there. ✅</p>
+<p style="background-color: #e8f4ff; border-left: 4px solid #582C83; padding: 10px; border-radius: 0 4px 4px 0;"><em>📌 In Lesson 1B, we connect your GitHub repo to your live InMotion website. Every future <code>git push</code> will automatically update your live site — no more manual uploads ever.</em></p>
 </div>
 <!-- 4. DIG DEEPER -->
 <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
@@ -201,22 +221,22 @@ Documents/
 </tr>
 <tr>
 <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                            Render Test <br/>
+                            GitHub Sync <br/>
 <span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
-<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO8:
                                 Deployment</span>
 </td>
 <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
 <strong>5 pts</strong><br/>
-                            The file opens successfully in Chrome without errors.
+                            <code>manifesto.html</code> appears in the public <code>ADD103</code> GitHub repo with all 4 answers filled in.
                         </td>
 <td style="padding: 10px; border: 1px solid #ddd;">
 <strong>3-4 pts</strong><br/>
-                            File opens but layout is broken or encoding issues are present.
+                            File is on GitHub but content is incomplete or repo is Private.
                         </td>
 <td style="padding: 10px; border: 1px solid #ddd;">
 <strong>0-2 pts</strong><br/>
-                            File does not open or is not an HTML file.
+                            File not found on GitHub or repo does not exist.
                         </td>
 </tr>
 <tr>
