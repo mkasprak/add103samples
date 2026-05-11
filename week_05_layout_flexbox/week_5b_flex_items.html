@@ -116,6 +116,32 @@
 </ul>
 </li>
 <li><strong>Layout (The Parent):</strong>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: Flex Item Growth and Priority</h3>
+<p>Use this pattern when one item should expand more than others in a row layout.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Standard cards grow equally */
+.card {
+    flex: 1 1 220px;   /* grow=1, shrink=1, basis=220px */
+}
+
+/* Featured card gets extra share of available space */
+.card-featured {
+    flex: 2 1 220px;   /* grow=2 gives this item more room */
+    border: 2px solid #7c3aed;
+}
+            </pre></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Controlling item growth with flex shorthand<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <ul>
 <li>Set `.hero` to <code>display: flex; align-items: center;</code>.</li>
 </ul>

@@ -47,6 +47,36 @@
 <li>Mobile (Resize browser or use phone)</li>
 </ul>
 </div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Example: QA Report Entry Format</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+Issue 1: Broken navigation link
+- Page tested: about.html
+- Reproduction steps: Click "Contact" in main nav
+- Expected: Opens contact.html
+- Actual: 404 error
+- Suggested fix: Update href to "contact.html"
+
+Issue 2: Mobile text overflow
+- Page tested: index.html at 375px width
+- Reproduction steps: Load homepage and inspect hero heading
+- Expected: Heading wraps within viewport
+- Actual: Heading overflows right edge
+- Suggested fix: Add media query reducing h1 size on small screens
+
+Issue 3: Low contrast button text
+- Page tested: pricing.html
+- Reproduction steps: View CTA button in hero section
+- Expected: Readable text contrast
+- Actual: Pale text on light yellow button
+- Suggested fix: Darken text color to #1f2937
+            </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Writing actionable QA feedback peers can actually fix<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Validation</summary>
 <p style="margin-top: 10px;">

@@ -129,6 +129,31 @@ nav {
 </ul>
 </li>
 <li><strong>The CSS (Parent):</strong>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: Flex Container Blueprint</h3>
+<p>This example demonstrates core container settings that control alignment, spacing, and wrapping.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+/* Parent becomes a flex container */
+.toolbar {
+    display: flex;              /* Places children in one row by default */
+    justify-content: space-between; /* Spreads items across main axis */
+    align-items: center;        /* Aligns items on cross axis */
+    gap: 1rem;                  /* Adds clean spacing between children */
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+}
+
+/* On narrow screens, allow wrapping instead of overflow */
+.toolbar {
+    flex-wrap: wrap;
+}
+            </pre></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Main axis vs cross axis in a flex container<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <ul>
 <li>Target <code>.gallery-row</code>.</li>
 <li>Set <code>display: flex;</code>.</li>

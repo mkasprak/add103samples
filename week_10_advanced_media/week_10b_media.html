@@ -57,6 +57,32 @@
 &lt;/video&gt;
             </pre>
 </div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Example: Accessible Media Section with Captions</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+&lt;section aria-labelledby="media-title"&gt;
+    &lt;h2 id="media-title"&gt;Media Lounge&lt;/h2&gt;
+
+    &lt;!-- Audio with fallback text --&gt;
+    &lt;audio controls&gt;
+        &lt;source src="audio/interview.mp3" type="audio/mpeg"&gt;
+        Your browser does not support embedded audio.
+    &lt;/audio&gt;
+
+    &lt;!-- Video with poster + captions track for accessibility --&gt;
+    &lt;video controls poster="images/interview-poster.jpg" width="720"&gt;
+        &lt;source src="video/interview.mp4" type="video/mp4"&gt;
+        &lt;track src="video/interview-captions.vtt" kind="captions" srclang="en" label="English" default&gt;
+        Your browser does not support embedded video.
+    &lt;/video&gt;
+&lt;/section&gt;
+                        </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+                        Example Walkthrough: Building accessible audio/video embeds with caption support<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Autoplay Policies
             </summary>

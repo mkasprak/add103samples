@@ -1,12 +1,12 @@
 <div class_="main-content" lang="en"><!-- 
     CANVAS LESSON: WEEK 12B
-    Topic: Site Audit
+    Topic: Agent Output Audit
 -->
 <div style="font-family: 'Segoe UI', sans-serif; max-width: 950px; margin: 0 auto; color: #333;">
 <!-- HEADER BLOCK -->
 <div style="background-color: #4b3190; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
-<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0;"><span aria-label="Duck" role="img">🦆</span> Module 12B: The Audit</h2>
-<p style="margin: 5px 0 0 0; color: #ddd;">Quality Assurance</p>
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0;"><span aria-label="Duck" role="img">🦆</span> Module 12B: Agent Output QA</h2>
+<p style="margin: 5px 0 0 0; color: #ddd;">Critique, Fix, Document</p>
 </div>
 <!-- STATS BADGE -->
 <div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
@@ -16,57 +16,88 @@
 <div style="padding: 20px; background-color: white; border: 1px solid #ddd; border-top: none;">
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Waving Hand Sign" role="img">👋</span> Overview</h3>
 <p>
-            It's not enough for code to "work." It must be fast, accessible, and follow best practices. Today we use
-            Google's industry-standard tool, <strong>Lighthouse</strong>, to grade our own work.
+            AI-generated code can look correct while hiding weak semantics, poor accessibility, or bloated markup.
+            Today we audit agent-generated Bootstrap work with <strong>Lighthouse</strong> and manual code review.
         </p>
 <!-- THE MISSION BOX -->
 <div style="background-color: #f9f9f9; border-left: 5px solid #4b3190; padding: 15px; margin: 20px 0;">
 <h4 style="margin-top: 0; color: #4b3190;"><span aria-label="Direct Hit" role="img">🎯</span> The Mission</h4>
 <p>
-                Run a Lighthouse Audit on your live site and fix the issues.
+                Run a quality audit on your agent-assisted Bootstrap page and refactor issues.
             </p>
 <ul>
 <li><strong>Requirement 1:</strong> Achieve a score of 90+ in Accessibility.</li>
 <li><strong>Requirement 2:</strong> Achieve a score of 90+ in Best Practices.</li>
-<li><strong>Requirement 3:</strong> Submit a report of what you fixed (e.g., added alt text, increased
-                    contrast).</li>
+<li><strong>Requirement 3:</strong> Document at least 3 agent-generated issues you corrected.
+                </li>
 </ul>
 </div>
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Television" role="img">📺</span> Instructions &amp; Videos</h3>
 <div style="margin-bottom: 20px;">
-<h4>1. Using Chrome DevTools Lighthouse</h4>
-<p><em>(Video Placeholder: How to run the audit)</em></p>
+<h4>1. Auditing Agent Output with Lighthouse</h4>
+<p><em>(Video Placeholder: Performance and accessibility checks for Bootstrap pages)</em></p>
 </div>
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Personal Computer" role="img">💻</span> Code Sample</h3>
 <div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto;">
 <pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
-&lt;!-- COMMON FIX: MISSING ALT TEXT --&gt;
-&lt;!-- Bad (Score Penalty) --&gt;
-&lt;img src="logo.png"&gt;
+&lt;!-- COMMON AGENT FIX: NON-DESCRIPTIVE BUTTON --&gt;
+&lt;!-- Weak --&gt;
+&lt;button class="btn btn-primary"&gt;Click Here&lt;/button&gt;
 
-&lt;!-- Good (Score Boost) --&gt;
-&lt;img src="logo.png" alt="Company Name Logo"&gt;
+&lt;!-- Better --&gt;
+&lt;button class="btn btn-primary" aria-label="Submit contact form"&gt;Send Message&lt;/button&gt;
 
-&lt;!-- COMMON FIX: LOW CONTRAST --&gt;
-&lt;!-- Bad --&gt;
-&lt;p style="color: grey; background: white;"&gt;Can you read this?&lt;/p&gt;
+&lt;!-- COMMON AGENT FIX: MISSING FORM LABEL --&gt;
+&lt;!-- Weak --&gt;
+&lt;input class="form-control" placeholder="Email"&gt;
 
-&lt;!-- Good --&gt;
-&lt;p style="color: black; background: white;"&gt;Can you read this?&lt;/p&gt;
+&lt;!-- Better --&gt;
+&lt;label for="email" class="form-label"&gt;Email address&lt;/label&gt;
+&lt;input id="email" class="form-control" type="email"&gt;
             </pre>
+</div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Audit Example: What To Check Line By Line</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+# AGENT OUTPUT QA CHECKLIST
+
+# 1) Semantics
+- Is there exactly one &lt;main&gt; landmark?
+- Do headings follow a logical order (h1, h2, h3)?
+
+# 2) Forms
+- Does every input have a paired &lt;label for="..."&gt;?
+- Are input types specific (email, tel, text)?
+
+# 3) Buttons and links
+- Do CTAs use clear text (avoid "Click Here")?
+- Are aria-label values meaningful when needed?
+
+# 4) Visual quality
+- Run Lighthouse and record Accessibility score.
+- Fix contrast warnings and rerun.
+
+# 5) Reflection
+- Document what the agent produced.
+- Document what you changed and why.
+            </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Auditing agent output with a repeatable QA checklist<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
 </div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: SEO</summary>
 <p style="margin-top: 10px;">
-                Lighthouse also checks SEO (Search Engine Optimization). While we focus on Accessibility today, getting
-                a 100 in SEO ensures Google ranks your page higher in search results. The #1 rule? Have a unique
-                <code>&lt;title&gt;</code> and <code>&lt;meta name="description"&gt;</code> for every page.
+                Use this workflow when working with agents: generate, inspect, test, and refactor. AI speed is only
+                valuable when paired with human quality control.
             </p>
 </details>
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Outbox Tray" role="img">📤</span> Submission</h3>
 <p>
-            Upload a PDF named <code>week_12b_audit_report.pdf</code> containing screenshots of your Lighthouse scores
-            Before and After.
+            Upload a PDF named <code>week_12b_audit_report.pdf</code> containing Lighthouse screenshots and a
+            before/after list of at least 3 code improvements.
         </p>
 </div>
 <!-- RUBRIC TABLE -->
@@ -95,6 +126,11 @@
 <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Report Quality</td>
 <td style="padding: 10px; border: 1px solid #ddd;">3 pts</td>
 <td style="padding: 10px; border: 1px solid #ddd;">Clear "Before &amp; After" screenshots shown.</td>
+</tr>
+<tr style="background-color: #f9f9f9;">
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Documented Code Fixes</td>
+<td style="padding: 10px; border: 1px solid #ddd;">3 pts</td>
+<td style="padding: 10px; border: 1px solid #ddd;">At least 3 specific agent-generated issues are identified and corrected with explanation.</td>
 </tr>
 </tbody>
 </table>

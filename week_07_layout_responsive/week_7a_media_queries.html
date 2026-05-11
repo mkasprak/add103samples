@@ -126,6 +126,37 @@ body {
 </ul>
 </li>
 <li><strong>Default CSS (Mobile):</strong>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: Mobile-First Breakpoint Pattern</h3>
+<p>Start with small-screen defaults, then progressively enhance for wider viewports.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+/* Base (mobile first) */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;   /* Single column on phones */
+    gap: 1rem;
+}
+
+/* Tablet and larger */
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+/* Desktop and larger */
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+}
+            </pre></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Scaling one layout across three breakpoints<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <ul>
 <li>Set `.card` to <code>display: flex; flex-direction: column; text-align: center;</code>.</li>
 <li>We want the image ON TOP, centered, and the text BELOW it. This is standard mobile design.</li>

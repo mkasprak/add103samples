@@ -1,7 +1,7 @@
 <div class_="main-content" lang="en"><div style="max-width: 950px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 <!-- HEADER -->
 <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 1B: The Time Capsule (Git)
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 1B: Publishing with cPanel
         </h2>
 <div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
             Design | Spring 2026</div>
@@ -20,39 +20,39 @@
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-<p>Professional developers don't just "save" files. We build histories. <strong>Git</strong> is a time machine.
-            It allows you to save "checkpoints" of your code so you can always go back if you break something.</p>
-<p>Today you will set up your GitHub account and build a content pipeline to your live server.</p>
+<p>Professional developers do not leave files trapped on a laptop. We publish to a server and verify that pages
+            load for real users.</p>
+<p>Today you will use cPanel File Manager to publish your first page and validate the live URL pipeline.</p>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
-<strong>♿ Accessibility Note:</strong> GitHub's interface now supports dark mode and high-contrast themes,
-            making it more accessible for users with visual impairments.
+<strong>♿ Accessibility Note:</strong> If cPanel text is difficult to read, increase browser zoom,
+            use Reader Mode where possible, and rely on keyboard navigation.
         </div>
 <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
 <div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
 <strong>[VIDEO PLACEHOLDER]</strong><br/>
-            Topic: Git &amp; GitHub Setup<br/>
+            Topic: cPanel File Manager + Live URL Verification<br/>
 <em>(User to embed Panopto/YouTube Iframe here)</em>
 </div>
 </div>
 <!-- 2. TEACH BY EXAMPLE -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn: The Data Pipeline</h2>
+            <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn: The Hosting Pipeline</h2>
 <p>This is how your code travels from your brain to the world.</p>
 <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
 <div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
-YOU (Local) 
-⬇ (Push)
-GitHub (The Cloud) 
-⬇ (Pull/Clone)
-The Internet (Live Site)
+YOU (Local Files)
+⬇ (Upload)
+cPanel File Manager
+⬇ (public_html)
+Live Website URL
             </pre></div>
 <div style="padding: 15px;">
 <strong>The Logic:</strong>
 <ul>
-<li><strong>Repo:</strong> A folder that is tracked by Git.</li>
-<li><strong>Commit:</strong> A "Save Point" in history.</li>
-<li><strong>Push:</strong> Uploading your commits to the cloud.</li>
+<li><strong>public_html:</strong> The folder the web server actually publishes.</li>
+<li><strong>Path Discipline:</strong> Folder names and file names must match exactly.</li>
+<li><strong>Verification:</strong> Every upload must be tested at the live URL.</li>
 </ul>
 </div>
 </div>
@@ -60,60 +60,26 @@ The Internet (Live Site)
 <!-- 3. GUIDED PRACTICE -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
-            <span aria-label="Personal Computer" role="img">💻</span> Project: The Time Capsule</h2>
-<p>You will create a repository and prove you can update it live.</p>
+            <span aria-label="Personal Computer" role="img">💻</span> Project: First Live Publish</h2>
+<p>You will publish your first working page to your personal hosting account.</p>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
             Phase 1: The Launch</h3>
 <ol>
-<li>Create a <strong>Public</strong> GitHub repo named <code>ADD103</code>.</li>
-<li>Connect it to cPanel:
-                <details style="margin-top: 10px; border: 1px solid #ccc; padding: 15px; border-radius: 5px; background-color: #f9f9f9;">
-<summary style="cursor: pointer; font-weight: bold; color: #582C83;">Click for cPanel Connection
-                        Guide ⬇️</summary>
-<h4 style="color: #4b3190; margin-top: 15px;">Step A: Get the Clone URL</h4>
-<ol style="font-size: 0.9em;">
-<li>Go to your repo on GitHub.</li>
-<li>Click the green <strong>Code</strong> button.</li>
-<li>Select <strong>HTTPS</strong>.</li>
-<li>Copy the URL (e.g., <code>https://github.com/user/ADD103.git</code>).</li>
-</ol>
-<h4 style="color: #4b3190; margin-top: 15px;">Step B: Git Version Control in cPanel</h4>
-<ol style="font-size: 0.9em;">
-<li>Log in to cPanel and find <strong>Git Version Control</strong>.</li>
-<li>Click <strong>Create</strong>.</li>
-<li><strong>Clone URL:</strong> Paste your GitHub URL.</li>
-<li><strong>Repository Path:</strong> Enter <code>public_html/ADD103</code>.</li>
-<li><strong>Repository Name:</strong> Enter <code>ADD103</code>.</li>
-<li>Click <strong>Create</strong>.</li>
-</ol>
-<h4 style="color: #4b3190; margin-top: 15px;">Step C: Fix Permissions (Crucial!)</h4>
-<div style="background-color: #fff3cd; border: 1px solid #ffc107; padding: 10px; margin: 10px 0; font-size: 0.9em;">
-                        ⚠️ <strong>Warning:</strong> Git uploads files with restricted permissions. You must fix this or
-                        your site will return 403 Forbidden.
-                    </div>
-<ol style="font-size: 0.9em;">
-<li>Go to <strong>File Manager</strong> in cPanel.</li>
-<li>Navigate to <code>public_html/ADD103</code>.</li>
-<li>Select all files/folders.</li>
-<li>Right-click -&gt; <strong>Permissions</strong> or <strong>Change Permissions</strong>.</li>
-<li>Set to <strong>755</strong> (User: RWE, Group: RE, World: RE).</li>
-</ol>
-</details>
-</li>
-<li>Upload your <code>manifesto.html</code> from Lesson 1A.</li>
-<li>Verify it appears on your live student URL (e.g.,
-                <em>yourname.mccstudent.com/ADD103/week_01/manifesto.html</em>).
-            </li>
+<li>Log in to cPanel and open <strong>File Manager</strong>.</li>
+<li>Create folders: <code>public_html/ADD103/week_01</code>.</li>
+<li>Upload <code>manifesto.html</code> from Lesson 1A into <code>week_01</code>.</li>
+<li>Set folder permissions to <strong>755</strong> if needed.</li>
+<li>Open your live URL and verify the page loads with no 403/404 errors.</li>
 </ol>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Phase 2: The Update (Breaking the Seal)</h3>
-<p>A website is never finished. We need to change it.</p>
+            Phase 2: The Update (Publish Again)</h3>
+<p>A website is never finished. Publish an update to prove your workflow.</p>
 <ol>
 <li>Back on your computer, open `manifesto.html`.</li>
 <li>Add a new line at the bottom:
                 <code>"Timestamp: I have successfully deployed this site on [Date]!"</code>
 </li>
-<li>Save, Commit, and Push the change to GitHub.</li>
+<li>Save, then re-upload the updated file to the same cPanel folder.</li>
 <li>Go to your live URL. <strong>Refresh the page.</strong></li>
 </ol>
 <p><em>Did the new text appear? If so, you have mastered the infinite loop of web development.</em></p>
@@ -122,13 +88,11 @@ The Internet (Live Site)
 <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             ⛏️ Dig Deeper (Resources)</h2>
-<p>Mastering Git is the single most valuable skill for getting hired.</p>
+<p>Mastering hosting workflows is the first step to shipping real work online.</p>
 <ul>
-<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://learngitbranching.js.org/" style="color: #582C83; font-weight: bold;" target="_blank">Learn Git Branching</a> (A visual, addictive puzzle game
-                to learn Git)</li>
-<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://education.github.com/pack" style="color: #582C83; font-weight: bold;" target="_blank">GitHub Student Developer Pack</a> (Get free pro tools
-                with your .edu email)</li>
-<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://docs.github.com/en/get-started" style="color: #582C83; font-weight: bold;" target="_blank">GitHub Docs: Hello World</a></li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://www.inmotionhosting.com/support/website/cpanel-file-manager/" style="color: #582C83; font-weight: bold;" target="_blank">InMotion: cPanel File Manager Guide</a></li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files" style="color: #582C83; font-weight: bold;" target="_blank">MDN: Dealing with Files</a></li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL" style="color: #582C83; font-weight: bold;" target="_blank">MDN: What is a URL?</a></li>
 </ul>
 </div>
 <!-- 5. RUBRIC -->

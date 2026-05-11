@@ -62,6 +62,33 @@
 &lt;/picture&gt;
             </pre>
 </div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Example: Production-Ready Responsive Image Block</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+&lt;!-- Use picture for art direction + modern format fallback --&gt;
+&lt;picture&gt;
+        &lt;!-- Small-screen crop in WebP for faster loading --&gt;
+        &lt;source media="(max-width: 600px)" srcset="images/hero-mobile.webp" type="image/webp"&gt;
+
+        &lt;!-- Large-screen crop in WebP --&gt;
+        &lt;source media="(min-width: 601px)" srcset="images/hero-desktop.webp" type="image/webp"&gt;
+
+        &lt;!-- Fallback image for browsers with limited format support --&gt;
+        &lt;img
+            src="images/hero-desktop.jpg"
+            srcset="images/hero-mobile.jpg 600w, images/hero-desktop.jpg 1400w"
+            sizes="(max-width: 600px) 100vw, 1400px"
+            alt="Students collaborating around laptops in design studio"
+            loading="lazy"
+        &gt;
+&lt;/picture&gt;
+                        </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+                        Example Walkthrough: Art direction, format fallbacks, and lazy loading in one image block<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: WebP vs JPG</summary>
 <p style="margin-top: 10px;">

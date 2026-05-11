@@ -11,25 +11,29 @@
 ## 🟢 Phase 1: Foundations (The "Code" Phase)
 
 ### Week 1: The Environment
-*   **Day 1 (1A): Welcome & Hello World**
+*   **Day 1 (1A): Welcome & Hosting Access**
     *   Syllabus review.
-    *   VS Code installation.
-    *   "Hello World" HTML page locally.
-*   **Day 2 (1B): Version Control (Git)**
-    *   Sign up for GitHub.
-    *   Setting up the `ADD103` repo.
-    *   Connecting to cPanel (Legacy Instruction compliance).
+*   InMotion hosting login and cPanel orientation.
+*   Verify personal `public_html` access.
+*   **Day 2 (1B): cPanel Publishing Pipeline**
+*   File Manager workflow and permissions.
+*   Upload first HTML page to personal live space.
+*   Confirm live URL and troubleshoot 403/404.
 
 ### Week 2: Content Structure (HTML5)
 *   **Day 3 (2A): Semantics & SEO**
+    *   VS Code onboarding (workspace, files, code completion).
     *   `<header>`, `<nav>`, `<main>`, `<footer>` anatomy.
     *   Accessibility: Alt text, ARIA landmarks.
 *   **Day 4 (2B): Content Elements**
     *   Lists (<code>ul</code>, <code>ol</code>), Links, and Images.
+    *   VS Code editing workflow (split view, Emmet, formatting).
     *   File paths (absolute vs relative).
 
 ### Week 3: Styling Basics (CSS)
-*   **Day 5 (3A): Intro to CSS**
+*   **Day 5 (3A): Intro to CSS + GitHub Start**
+    *   Create GitHub account and first class repository.
+    *   First commit/push from local workflow.
     *   Internal vs External stylesheets.
     *   Select by Tag, Class, and ID.
 *   **Day 6 (3B): The Box Model**
@@ -98,13 +102,13 @@
     *   Transitions (`hover` effects).
     *   Keyframes basics.
 
-### Week 12: Deployment & Optimization
-*   **Day 23 (12A): Live Deployment**
-    *   GitHub Pages & cPanel Sync check.
-    *   Custom Domain Names (conceptual).
-*   **Day 24 (12B): Site Audit**
-    *   Lighthouse scores (Performance, Accessibility).
-    *   Code cleanup.
+### Week 12: Agent-Assisted Bootstrap Studio
+*   **Day 23 (12A): Bootstrap with Agents**
+*   Prompting agents for layout scaffolds and components.
+*   Integrate agent output into student-authored Bootstrap pages.
+*   **Day 24 (12B): Agent Output Audit**
+*   Lighthouse + accessibility review of agent-generated code.
+*   Refactor weak patterns and document prompt decisions.
 
 ---
 

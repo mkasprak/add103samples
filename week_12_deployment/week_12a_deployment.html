@@ -1,12 +1,12 @@
 <div class_="main-content" lang="en"><!-- 
     CANVAS LESSON: WEEK 12A
-    Topic: Live Deployment
+    Topic: Agent-Assisted Bootstrap
 -->
 <div style="font-family: 'Segoe UI', sans-serif; max-width: 950px; margin: 0 auto; color: #333;">
 <!-- HEADER BLOCK -->
 <div style="background-color: #4b3190; color: white; padding: 20px; text-align: center; border-radius: 10px 10px 0 0;">
-<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0;"><span aria-label="Duck" role="img">🦆</span> Module 12A: Going Live</h2>
-<p style="margin: 5px 0 0 0; color: #ddd;">Hello World (For Real)</p>
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0;"><span aria-label="Duck" role="img">🦆</span> Module 12A: Agents + Bootstrap Build Lab</h2>
+<p style="margin: 5px 0 0 0; color: #ddd;">Prompt, Generate, Refactor</p>
 </div>
 <!-- STATS BADGE -->
 <div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
@@ -16,63 +16,87 @@
 <div style="padding: 20px; background-color: white; border: 1px solid #ddd; border-top: none;">
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Waving Hand Sign" role="img">👋</span> Overview</h3>
 <p>
-            You have a folder of files on your computer. That is not a website. A website lives on a server. Today we
-            revisit our deployment pipeline to ensure your latest creations (Weeks 2-11) are actually visible to the
-            public.
+            Today we switch to an <strong>agent-assisted workflow</strong> in VS Code. You will use structured prompts
+            to scaffold Bootstrap layouts, then make professional edits so the code is clear, responsive, and accessible.
         </p>
 <!-- THE MISSION BOX -->
 <div style="background-color: #f9f9f9; border-left: 5px solid #4b3190; padding: 15px; margin: 20px 0;">
 <h4 style="margin-top: 0; color: #4b3190;"><span aria-label="Direct Hit" role="img">🎯</span> The Mission</h4>
 <p>
-                Perform a full synchronization of your local environment to the live production server.
+                Build a responsive Bootstrap page using agent assistance and human review.
             </p>
 <ul>
-<li><strong>Requirement 1:</strong> Commit all outstanding changes to GitHub.</li>
-<li><strong>Requirement 2:</strong> Pull changes to cPanel.</li>
-<li><strong>Requirement 3:</strong> Verify that your "Index Hub" links to all weekly assignments
-                    correctly.</li>
+<li><strong>Requirement 1:</strong> Prompt an agent to scaffold a Bootstrap page layout.</li>
+<li><strong>Requirement 2:</strong> Keep at least 3 generated components (navbar, cards, form, etc.) and improve them.</li>
+<li><strong>Requirement 3:</strong> Submit an accept/reject log explaining what you changed and why.</li>
 </ul>
 </div>
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Television" role="img">📺</span> Instructions &amp; Videos</h3>
 <div style="margin-bottom: 20px;">
-<h4>1. The Deployment Checklist</h4>
-<p><em>(Video Placeholder: Walkthrough of "Push -&gt; Pull -&gt; Verify")</em></p>
+<h4>1. Writing Better Prompts for Bootstrap</h4>
+<p><em>(Video Placeholder: Prompt patterns for sections, navbars, and responsive grids)</em></p>
 </div>
 <div style="margin-bottom: 20px;">
-<h4>2. Troubleshooting 404s and 403s</h4>
-<p><em>(Video Placeholder: Fixing permissions and broken links)</em></p>
+<h4>2. Refactoring Agent Output</h4>
+<p><em>(Video Placeholder: Remove bloat, fix semantics, and improve accessibility)</em></p>
 </div>
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Personal Computer" role="img">💻</span> Code Sample</h3>
 <div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto;">
 <pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
-# TERMINAL COMMANDS (Review)
+# AGENT PROMPT TEMPLATE
 
-# 1. Check what changed
-git status
+Build a Bootstrap 5 landing page with:
+- sticky navbar
+- hero section with CTA
+- 3 feature cards
+- contact form
 
-# 2. Stage all files
-git add .
+Constraints:
+- semantic HTML
+- accessible labels and alt text
+- mobile-first responsive behavior
 
-# 3. Save snapshot with specific message
-git commit -m "Week 12 deployment update"
-
-# 4. Upload to Cloud
-git push
+# STUDENT FOLLOW-UP
+# 1. Keep what works
+# 2. Refactor what is unclear
+# 3. Document why you changed each part
             </pre>
+</div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Refactor Example (Before vs After)</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+&lt;!-- BEFORE: generic heading and vague CTA from agent output --&gt;
+&lt;section class="container py-5"&gt;
+    &lt;h2&gt;Welcome&lt;/h2&gt;
+    &lt;p&gt;We do cool things.&lt;/p&gt;
+    &lt;a class="btn btn-primary" href="#"&gt;Click Here&lt;/a&gt;
+&lt;/section&gt;
+
+&lt;!-- AFTER: explicit purpose, stronger copy, better accessibility --&gt;
+&lt;section class="container py-5" aria-labelledby="hero-title"&gt;
+    &lt;h2 id="hero-title"&gt;Build Your First Bootstrap Portfolio&lt;/h2&gt;
+    &lt;p&gt;Use reusable components, responsive grid rules, and accessibility-first defaults.&lt;/p&gt;
+    &lt;a class="btn btn-primary" href="#contact" aria-label="Jump to contact form"&gt;Start the Project&lt;/a&gt;
+&lt;/section&gt;
+                        </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+                        Example Walkthrough: Critiquing and refactoring agent-generated Bootstrap code<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
 </div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Continuous Deployment
                 (CD)</summary>
 <p style="margin-top: 10px;">
-                In the professional world, we don't manually log in to cPanel to pull changes. We use "Actions" or
-                "Pipelines" (like GitHub Actions) to automatically deploy code whenever we push to the main branch. This
-                is called CI/CD (Continuous Integration / Continuous Deployment).
+                Professional teams use AI coding assistants, but strong developers always review generated code for
+                readability, accessibility, and maintainability before shipping.
             </p>
 </details>
 <h3 style="color: #4b3190; border-bottom: 2px solid #fdbb30; padding-bottom: 5px;"><span aria-label="Outbox Tray" role="img">📤</span> Submission</h3>
 <p>
-            Upload a screenshot of your live homepage with the Week 1-11 links working. Name it
-            <code>week_12a_proof.png</code>.
+            Submit your Bootstrap page URL plus a one-page PDF named <code>week_12a_agent_log.pdf</code> showing:
+            the prompt used, generated snippet, and your refactored final result.
         </p>
 </div>
 <!-- RUBRIC TABLE -->
@@ -88,14 +112,19 @@ git push
 </thead>
 <tbody>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Deployment Success</td>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Agent Prompt Quality</td>
 <td style="padding: 10px; border: 1px solid #ddd;">5 pts</td>
-<td style="padding: 10px; border: 1px solid #ddd;">Live site is accessible and updated.</td>
+<td style="padding: 10px; border: 1px solid #ddd;">Prompt is specific, constrained, and reproducible.</td>
 </tr>
 <tr style="background-color: #f9f9f9;">
-<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Link Integrity</td>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Bootstrap Implementation</td>
 <td style="padding: 10px; border: 1px solid #ddd;">5 pts</td>
-<td style="padding: 10px; border: 1px solid #ddd;">All menu links work (no 404s).</td>
+<td style="padding: 10px; border: 1px solid #ddd;">Page is responsive and components are correctly integrated.</td>
+</tr>
+<tr>
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Refactor Reflection Quality</td>
+<td style="padding: 10px; border: 1px solid #ddd;">5 pts</td>
+<td style="padding: 10px; border: 1px solid #ddd;">Student clearly explains accepted suggestions, rejected suggestions, and why changes were made.</td>
 </tr>
 </tbody>
 </table>

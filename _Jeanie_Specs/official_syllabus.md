@@ -18,15 +18,16 @@
 5.  **[Accessibility]** Implement WCAG 2.1 accessibility standards to ensure web content is usable by all.
 6.  **[Optimization]** Optimize media images and code for performance and SEO.
 7.  **[Tools]** Use professional development tools (VS Code, Chrome DevTools, GitHub) for version control and debugging.
-8.  **[Deploy]** Publish and manage live websites using hosting platforms (GitHub Pages).
+8.  **[Deploy]** Publish and manage live websites using hosting platforms (InMotion cPanel + Git workflows).
 
 ---
 
 ## 🗺️ Period 2: Course Outline & Topic Map
 
 ### Unit 0: The Setup (Logistics)
-*   **Tools**: VS Code, Extensions (Live Server, Prettier), Browser DevTools.
-*   **Version Control**: Introduction to Git and GitHub.
+*   **Week 1 Hosting**: InMotion cPanel login, `public_html`, and permissions.
+*   **Week 2 Tools**: VS Code, Extensions, and code completion workflow.
+*   **Week 3 Version Control**: Introduction to Git and GitHub.
 
 ### Unit 1: The Structure (HTML5)
 *   **Semantics**: Header, Nav, Main, Footer, Article, Section.
@@ -50,6 +51,7 @@
 *   **Components**: Navbars, Cards, Modals, Carousels.
 *   **Utilities**: Spacing, Colors, Flex utils.
 *   **Customization**: Overriding Bootstrap variable defaults.
+*   **Agent Pairing**: Using coding agents to scaffold Bootstrap and then refactor for quality.
 
 ### Unit 5: The Launch (Final Project)
 *   **Process**: Wireframing to Code.

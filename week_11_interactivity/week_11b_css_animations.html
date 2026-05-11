@@ -70,6 +70,45 @@
 }
             </pre>
 </div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Example: Accessible Hover + Motion Preference</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+.feature-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover and keyboard focus share the same interaction style */
+.feature-card:hover,
+.feature-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.cta {
+    animation: pulse 1.8s ease-in-out infinite;
+}
+
+/* Respect reduced-motion preference for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .feature-card,
+    .cta {
+        transition: none;
+        animation: none;
+    }
+}
+            </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Building expressive animation with reduced-motion safety
+<br/><em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Easing Functions
             </summary>

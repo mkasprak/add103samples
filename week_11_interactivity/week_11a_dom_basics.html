@@ -83,6 +83,39 @@
 &lt;/style&gt;
             </pre>
 </div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Example: Safer Toggle with ARIA State</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+&lt;button id="modeBtn" aria-pressed="false"&gt;Enable Dark Mode&lt;/button&gt;
+&lt;p id="statusText"&gt;Theme is currently Light.&lt;/p&gt;
+
+&lt;script&gt;
+    // Cache elements so we do not query the DOM repeatedly
+    const modeBtn = document.getElementById('modeBtn');
+    const statusText = document.getElementById('statusText');
+
+    modeBtn.addEventListener('click', () =&gt; {
+        // Toggle visual state class on body
+        document.body.classList.toggle('dark-theme');
+
+        // Determine current state after toggling
+        const darkIsOn = document.body.classList.contains('dark-theme');
+
+        // Keep accessibility state synchronized with visual state
+        modeBtn.setAttribute('aria-pressed', String(darkIsOn));
+
+        // Update visible copy to match state
+        modeBtn.textContent = darkIsOn ? 'Enable Light Mode' : 'Enable Dark Mode';
+        statusText.textContent = darkIsOn ? 'Theme is currently Dark.' : 'Theme is currently Light.';
+    });
+&lt;/script&gt;
+                        </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+                        Example Walkthrough: Synchronizing visual and accessibility state in DOM interactions<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Where does script go?
             </summary>

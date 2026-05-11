@@ -23,6 +23,8 @@
 <p>HTML provides the structure, but <strong>CSS (Cascading Style Sheets)</strong> provides the voice. The fonts
             you choose, the colors you apply, and the size of your text dramatically change how a user "hears" your
             content.</p>
+<p>This is also your <strong>GitHub kickoff week</strong>: you will create your first repository and push your CSS
+            work so your edits have a version history.</p>
 <p>Today, we will learn the basics of CSS selectors and dive deep into <strong>Typography</strong>, including
             how to import professional fonts from Google.</p>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
@@ -125,6 +127,46 @@ h1 {
             </div>
 </div>
 </div>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: CSS + GitHub Workflow</h3>
+<p>Use this mini workflow to style your page and save progress safely in GitHub.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+/* style.css */
+
+/* Global readability defaults */
+body {
+    font-family: 'Roboto', sans-serif; /* Font loaded from Google Fonts */
+    background-color: #f7f7fb;          /* Soft neutral background */
+    color: #1f2937;                      /* High-contrast body text */
+    line-height: 1.7;
+}
+
+/* Strong visual hierarchy for page title */
+h1 {
+    color: #1d4ed8;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Terminal commands for version history */
+# 1) Review changed files
+git status
+
+# 2) Stage updates
+git add .
+
+# 3) Create clear snapshot message
+git commit -m "Week 3A typography and color pass"
+
+# 4) Publish to GitHub
+git push
+            </pre></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Styling choices and first commit flow<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <!-- 4. GUIDED PRACTICE -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
@@ -133,6 +175,7 @@ h1 {
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
             Step 1: The Content (HTML)</h3>
 <ol>
+<li>Create a GitHub repository named <code>ADD103</code> (if not already created) and clone it locally.</li>
 <li>Create <code>style-guide.html</code> and `style.css`.</li>
 <li>Link them together.</li>
 <li>In HTML, write an <code>&lt;h1&gt;</code> that says "My Brand Styles".</li>

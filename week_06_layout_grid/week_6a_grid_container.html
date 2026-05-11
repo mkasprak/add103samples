@@ -124,6 +124,32 @@
 </ul>
 </li>
 <li><strong>The Grid:</strong>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: Grid Container Tracks</h3>
+<p>This setup creates a clean two-column layout with explicit control over columns and spacing.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+.layout {
+    display: grid;                          /* Turns container into grid */
+    grid-template-columns: 240px 1fr;       /* Sidebar + flexible content */
+    grid-template-rows: auto 1fr auto;      /* Header, content, footer */
+    gap: 1rem;
+    min-height: 100vh;
+}
+
+.header {
+    grid-column: 1 / -1; /* Span all columns */
+}
+
+.footer {
+    grid-column: 1 / -1; /* Footer also spans all columns */
+}
+            </pre></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Defining grid tracks and spanning rows/columns<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <ul>
 <li>Set `.photo-wall` to <code>display: grid;</code>.</li>
 <li>Set columns to <code>repeat(3, 1fr)</code>. (3 Columns).</li>

@@ -110,6 +110,46 @@ button {
 </div>
 </div>
 </div>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: Accessible Color System</h3>
+<p>This example shows how to define a color system once and reuse it safely with contrast-aware choices.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+/* 1) Global color tokens */
+:root {
+    --bg-main: #f8fafc;       /* Soft background for long reading */
+    --surface: #ffffff;       /* Cards/panels */
+    --text-main: #0f172a;     /* High-contrast body text */
+    --brand-primary: #582c83; /* Course brand purple */
+    --accent-cta: #f59e0b;    /* Action color for buttons */
+}
+
+/* 2) Page-level defaults */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+/* 3) Reusable card component */
+.panel {
+    background-color: var(--surface);
+    border-left: 6px solid var(--brand-primary);
+    padding: 1rem;
+}
+
+/* 4) Call-to-action style */
+.cta {
+    background-color: var(--accent-cta);
+    color: #111827; /* Dark text keeps contrast strong on amber */
+    border: none;
+    padding: 0.75rem 1rem;
+}
+            </pre></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Building and testing a reusable color-token system<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <!-- 4. GUIDED PRACTICE -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">

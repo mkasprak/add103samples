@@ -47,6 +47,51 @@
 <li>Is the spacing consistent? (Don't mix px and rem randomly)</li>
 </ul>
 </div>
+<h4 style="color: #4b3190; margin-top: 20px;">Detailed Example: Brand Polish CSS Pass</h4>
+<div style="background-color: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; overflow-x: auto; margin-top: 10px;">
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+/* 1) Brand tokens for consistency */
+:root {
+    --brand-primary: #4b3190;
+    --brand-accent: #fdbb30;
+    --text-dark: #1f2937;
+    --bg-soft: #f8fafc;
+}
+
+/* 2) Global typography and spacing rhythm */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background: var(--bg-soft);
+    line-height: 1.7;
+}
+
+/* 3) High-clarity button states */
+.btn-primary {
+    background: var(--brand-primary);
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #3e2779;
+    transform: translateY(-2px);
+}
+
+/* 4) Mobile safety pass */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    .hero { padding: 1rem; }
+}
+                        </pre>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+                        Example Walkthrough: Final visual polish and responsive cleanup pass<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <details style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
 <summary style="cursor: pointer; font-weight: bold; color: #4b3190;"><span aria-label="Duck" role="img">🦆</span> Dig Deeper: Mobile Check</summary>
 <p style="margin-top: 10px;">

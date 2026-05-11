@@ -104,6 +104,40 @@
 </div>
 </div>
 </div>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: Reading the Box Model with Intent</h3>
+<p>Use this pattern when building repeated cards so spacing is predictable and maintainable.</p>
+<div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
+<div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
+/* Card style reused by multiple products */
+.product-card {
+    width: 280px;                 /* Content width */
+    padding: 1rem;                /* Inner breathing room */
+    border: 2px solid #d1d5db;    /* Visible edge */
+    margin: 1rem;                 /* Space outside each card */
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+/* Headline spacing inside card */
+.product-card h3 {
+    margin-top: 0;                /* Remove default extra top margin */
+    margin-bottom: 0.5rem;
+}
+
+/* Button spacing and click target sizing */
+.product-card button {
+    padding: 0.625rem 1rem;       /* Better tap target */
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+}
+            </pre></div>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO PLACEHOLDER]</strong><br/>
+            Example Walkthrough: Padding vs margin in reusable card components<br/>
+<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
 <!-- 4. THE INSPECTOR -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
