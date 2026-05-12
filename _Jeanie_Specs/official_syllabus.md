@@ -1,6 +1,8 @@
 # 📜 MCC ADD-103: Official Course Syllabus
-**Course Title:** Introduction to Web Design
-**Term:** Spring 2026
+**Course Title:** Fundamental Web Development
+**Term:** Fall 2026 (08/17/2026 – 12/12/2026)
+**Credits:** 3
+**Section:** 002
 **Instructor:** Meri Kasprak, Ph.D.
 
 > **🎯 Quality Matters Alignment**
@@ -11,52 +13,53 @@
 ## Compass Period 1: Course Learning Objectives
 *Upon completion of the course, students will be able to:*
 
-1.  **[Structure]** Create properly structured HTML5 documents using semantic elements.
-2.  **[Style]** Apply CASCADING STYLE SHEETS (CSS) to control the visual presentation of web pages.
-3.  **[Layout]** particular modern layout techniques (Flexbox, Grid) to create responsive designs that work on mobile and desktop.
-4.  **[Frameworks]** Utilize front-end frameworks (Bootstrap 5) to rapidly prototype and build consistent UIs.
-5.  **[Accessibility]** Implement WCAG 2.1 accessibility standards to ensure web content is usable by all.
-6.  **[Optimization]** Optimize media images and code for performance and SEO.
-7.  **[Tools]** Use professional development tools (VS Code, Chrome DevTools, GitHub) for version control and debugging.
-8.  **[Deploy]** Publish and manage live websites using hosting platforms (InMotion cPanel + Git workflows).
+1.  **[Files]** Manage files on a web server.
+2.  **[Structure]** Hand code basic HTML structures.
+3.  **[Responsive]** Implement responsive websites.
+4.  **[Usability]** Apply usability guidelines to websites.
+5.  **[Style]** Use Cascading Style Sheets (CSS) to control the designs of websites.
+6.  **[AI]** Explore the use of AI in website development.
+7.  **[Frameworks]** Use a web framework to implement responsive design.
 
 ---
 
 ## 🗺️ Period 2: Course Outline & Topic Map
 
-### Unit 0: The Setup (Logistics)
-*   **Week 1 Hosting**: InMotion cPanel login, `public_html`, and permissions.
-*   **Week 2 Tools**: VS Code, Extensions, and code completion workflow.
-*   **Week 3 Version Control**: Introduction to Git and GitHub.
+### Phase 1: Just Build (Weeks 1–3) — No Toolchain Anxiety
+*   **File Organization**: File naming rules, folder structure, project setup.
+*   **HTML Structure**: Boilerplate, headings, paragraphs, `<title>`, semantic elements.
+*   **Content Creation**: Links, images, lists, tables.
+*   **Writing for the Web**: SEO, metadata, `<meta>` tags, Open Graph.
+*   **Editing Images**: Formats (JPG/PNG/WebP), optimization with Squoosh, descriptive alt text.
 
-### Unit 1: The Structure (HTML5)
-*   **Semantics**: Header, Nav, Main, Footer, Article, Section.
-*   **Content**: Images, Links, Lists, Tables (for data).
-*   **SEO**: Metadata, Headings hierarchy.
-*   **A11y**: Alt text, ARIA roles basics.
+### Phase 2: Make It Look Good (Weeks 4–6) — CSS Core
+*   **CSS Fundamentals**: Selectors (tag, class, ID), external stylesheets, the cascade.
+*   **Version Control Intro**: GitHub account setup and web UI upload (no terminal).
+*   **Formatting Text**: Google Fonts, `font-size`, `line-height`, typographic hierarchy.
+*   **Color & Usability**: Hex/RGB/HSL, WCAG contrast, WebAIM Contrast Checker.
+*   **The Box Model**: Padding, border, margin, `box-sizing`, Chrome DevTools.
+*   **CSS Positioning**: Static, relative, absolute, fixed, sticky.
 
-### Unit 2: The Style (CSS Core)
-*   **Fundamentals**: The Box Model (Padding, Border, Margin).
-*   **Typography**: Google Fonts, Web-safe fonts, text properties.
-*   **Color**: Hex, RGB, HSL, Opacity, Gradients.
-*   **Selectors**: Classes vs IDs, Pseudo-classes (:hover), Combinators.
+### Phase 3: Go Live (Weeks 7–8) — Deployment & Accessibility
+*   **File Management using FTP**: cPanel File Manager, `public_html`, permissions, 403/404 troubleshooting.
+*   **Version Control**: Git terminal (`init`, `add`, `commit`, `push`), GitHub→cPanel pipeline.
+*   **Accessibility**: WCAG 2.1, WAVE audit, ARIA basics, keyboard navigation.
 
-### Unit 3: The Layout (Modern CSS)
-*   **Responsive**: Media Queries, Breakpoints, Mobile-First approach.
-*   **Flexbox**: Axis, Alignment, Distribution, Wrapping.
-*   **CSS Grid**: define columns/rows, areas, explicit vs implicit grids.
+### Phase 4: Modern Layout (Weeks 9–11) — Responsive Design
+*   **Flexbox**: Container and item properties, wrapping, nesting.
+*   **CSS Grid**: `grid-template-columns`, fr units, Grid Areas, Holy Grail layout.
+*   **Responsive Design**: `@media` queries, breakpoints, mobile-first workflow.
+*   **Responsive Images**: `srcset`, `<picture>`, WebP, native HTML5 media.
 
-### Unit 4: The Framework (Bootstrap & UI)
-*   **System**: The 12-column grid system.
-*   **Components**: Navbars, Cards, Modals, Carousels.
-*   **Utilities**: Spacing, Colors, Flex utils.
-*   **Customization**: Overriding Bootstrap variable defaults.
-*   **Agent Pairing**: Using coding agents to scaffold Bootstrap and then refactor for quality.
+### Phase 5: Pro Tools (Weeks 12–13) — Frameworks & AI
+*   **Frameworks**: Bootstrap 5 CDN, 12-column grid, responsive components (Navbar, Cards).
+*   **AI in Web Development**: Prompting for scaffolding, auditing AI output, Lighthouse + WAVE review, refactoring.
 
-### Unit 5: The Launch (Final Project)
-*   **Process**: Wireframing to Code.
-*   **Optimization**: Image formats (WebP), Minification.
-*   **Portfolio**: Building the final personal portfolio site.
+### Phase 6: Final Portfolio Project (Weeks 14–16)
+*   **Planning**: Wireframing, content outline, project proposal.
+*   **Build**: HTML skeleton → layout implementation → styling → mobile-first polish.
+*   **QA & Deploy**: WAVE audit, Lighthouse, peer review, live deployment.
+*   **Presentations**: Live site demo with design rationale.
 
 ---
 
@@ -82,6 +85,8 @@
 ---
 
 ## 📂 Implementation Notes for Jeanie
-*   **Assessment Alignment**: Every assignment prompt must cite one of the 8 objectives.
+*   **Assessment Alignment**: Every assignment prompt must cite one of the 7 official objectives.
 *   **Mobile-First**: All code examples must be mobile-responsive by default.
-*   **Project-Based**: Learning should happen through building real pages, not just abstract exercises.
+*   **Project-Based**: Learning should happen through building real pages, not abstract exercises.
+*   **Toolchain Ramp-Up**: Do not introduce Git terminal, cPanel, or deployment until Week 7. Students use VS Code + browser only for Weeks 1–3, and GitHub web UI in Week 4.
+*   **AI Accountability**: The "Show Your Work" rule applies to all AI-assisted code. Students must be able to explain every line they submit.
