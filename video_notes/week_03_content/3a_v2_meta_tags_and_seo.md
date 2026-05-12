@@ -1,4 +1,4 @@
-﻿# Meta Tags, SEO & the Viewport
+# Meta Tags, SEO & the Viewport
 
 | Field | Value |
 |-------|-------|

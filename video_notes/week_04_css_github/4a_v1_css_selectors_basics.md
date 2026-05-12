@@ -1,4 +1,4 @@
-﻿# CSS Selectors: Tag, Class & ID
+# CSS Selectors: Tag, Class & ID
 
 | Field | Value |
 |-------|-------|

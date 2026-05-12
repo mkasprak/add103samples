@@ -1,4 +1,4 @@
-﻿# CSS Grid vs Flexbox: What Each One Solves
+# CSS Grid vs Flexbox: What Each One Solves
 
 | Field | Value |
 |-------|-------|

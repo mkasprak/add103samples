@@ -1,4 +1,4 @@
-﻿# Midterm Project: Requirements & Rubric Walkthrough
+# Midterm Project: Requirements & Rubric Walkthrough
 
 | Field | Value |
 |-------|-------|

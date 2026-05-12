@@ -1,4 +1,4 @@
-﻿# Connecting GitHub to cPanel: The Full Pipeline
+# Connecting GitHub to cPanel: The Full Pipeline
 
 | Field | Value |
 |-------|-------|

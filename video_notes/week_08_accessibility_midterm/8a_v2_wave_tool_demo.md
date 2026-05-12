@@ -1,4 +1,4 @@
-﻿# Running & Reading a WAVE Accessibility Report
+# Running & Reading a WAVE Accessibility Report
 
 | Field | Value |
 |-------|-------|

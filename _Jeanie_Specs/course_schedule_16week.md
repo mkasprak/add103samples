@@ -1,4 +1,4 @@
-﻿#  ADD-103: Fundamental Web Development  16-Week Course Schedule
+#  ADD-103: Fundamental Web Development  16-Week Course Schedule
 **Term:** Fall 2026 (16 Weeks)
 **Cadence:** 2 Days/Week (e.g., Mon/Wed or Tue/Thu)
 **Total Sessions:** 30 Lessons + Finals Week

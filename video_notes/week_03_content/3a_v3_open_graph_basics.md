@@ -1,4 +1,4 @@
-﻿# Open Graph Tags: Social Sharing Previews
+# Open Graph Tags: Social Sharing Previews
 
 | Field | Value |
 |-------|-------|

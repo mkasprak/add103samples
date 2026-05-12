@@ -1,4 +1,4 @@
-﻿# Building a Typographic Hierarchy
+# Building a Typographic Hierarchy
 
 | Field | Value |
 |-------|-------|

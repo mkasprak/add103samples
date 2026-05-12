@@ -38,7 +38,7 @@
 - Stats badge on all lesson pages: verify point values match Canvas assignment before publishing
 - Video placeholders: all Panopto embeds must use the Canvas-approved Panopto LTI, not raw iframe, per MCC policy
 - All lesson pages use MCC branding: `#582C83` (purple), `#FFC629` (gold)
-- Ducktor Quacksalot image URL: replace all `[URL_DUCKTOR_QUACKSALOT]` placeholders once final asset is uploaded to Canvas Files
+- Ducktor Merry Quacksalot image URL: replace all `[URL_DUCKTOR_QUACKSALOT]` placeholders once final asset is uploaded to Canvas Files
 
 ---
 

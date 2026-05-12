@@ -1,4 +1,4 @@
-﻿# Mobile-First: Writing Small Styles First
+# Mobile-First: Writing Small Styles First
 
 | Field | Value |
 |-------|-------|

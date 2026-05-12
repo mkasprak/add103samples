@@ -1,4 +1,4 @@
-﻿# What Flexbox Solves & the Two Axes
+# What Flexbox Solves & the Two Axes
 
 | Field | Value |
 |-------|-------|

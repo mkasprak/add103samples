@@ -1,4 +1,4 @@
-﻿# Nesting Flexboxes: Building a Card Grid
+# Nesting Flexboxes: Building a Card Grid
 
 | Field | Value |
 |-------|-------|

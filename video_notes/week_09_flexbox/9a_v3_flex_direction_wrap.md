@@ -1,4 +1,4 @@
-﻿# flex-direction & flex-wrap: Building a Nav Bar
+# flex-direction & flex-wrap: Building a Nav Bar
 
 | Field | Value |
 |-------|-------|

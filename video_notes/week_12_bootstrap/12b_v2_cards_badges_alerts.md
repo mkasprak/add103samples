@@ -1,4 +1,4 @@
-﻿# Bootstrap Components: Cards, Badges & Alerts
+# Bootstrap Components: Cards, Badges & Alerts
 
 | Field | Value |
 |-------|-------|

@@ -1,4 +1,4 @@
-﻿# Responsive Images: srcset & sizes Attributes
+# Responsive Images: srcset & sizes Attributes
 
 | Field | Value |
 |-------|-------|

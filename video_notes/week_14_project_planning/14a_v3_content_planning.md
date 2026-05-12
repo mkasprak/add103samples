@@ -1,4 +1,4 @@
-﻿# Content Planning: Copy, Images & Links
+# Content Planning: Copy, Images & Links
 
 | Field | Value |
 |-------|-------|

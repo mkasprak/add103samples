@@ -1,4 +1,4 @@
-﻿# Running Lighthouse in Chrome DevTools
+# Running Lighthouse in Chrome DevTools
 
 | Field | Value |
 |-------|-------|

@@ -1,4 +1,4 @@
-﻿# Normal Flow: Block vs Inline Elements
+# Normal Flow: Block vs Inline Elements
 
 | Field | Value |
 |-------|-------|

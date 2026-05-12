@@ -1,4 +1,4 @@
-﻿# Prompting Strategies for Web Code
+# Prompting Strategies for Web Code
 
 | Field | Value |
 |-------|-------|

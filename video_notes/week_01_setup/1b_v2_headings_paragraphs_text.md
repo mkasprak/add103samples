@@ -1,4 +1,4 @@
-﻿# Headings, Paragraphs & Text Formatting
+# Headings, Paragraphs & Text Formatting
 
 | Field | Value |
 |-------|-------|

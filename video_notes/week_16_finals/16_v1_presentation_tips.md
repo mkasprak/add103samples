@@ -1,4 +1,4 @@
-﻿# How to Demo Your Live Portfolio Site
+# How to Demo Your Live Portfolio Site
 
 | Field | Value |
 |-------|-------|

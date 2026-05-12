@@ -1,4 +1,4 @@
-﻿# CSS Color: Hex, RGB, RGBA & HSL
+# CSS Color: Hex, RGB, RGBA & HSL
 
 | Field | Value |
 |-------|-------|

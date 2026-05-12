@@ -1,4 +1,4 @@
-﻿# Why Semantic HTML Matters (SEO + Accessibility)
+# Why Semantic HTML Matters (SEO + Accessibility)
 
 | Field | Value |
 |-------|-------|

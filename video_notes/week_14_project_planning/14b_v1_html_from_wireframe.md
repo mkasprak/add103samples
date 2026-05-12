@@ -1,4 +1,4 @@
-﻿# Translating a Wireframe into HTML Structure
+# Translating a Wireframe into HTML Structure
 
 | Field | Value |
 |-------|-------|

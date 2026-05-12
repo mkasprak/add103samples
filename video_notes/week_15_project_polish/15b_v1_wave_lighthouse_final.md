@@ -1,4 +1,4 @@
-﻿# Final Audit: WAVE + Lighthouse Walkthrough
+# Final Audit: WAVE + Lighthouse Walkthrough
 
 | Field | Value |
 |-------|-------|

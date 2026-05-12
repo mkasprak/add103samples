@@ -1,4 +1,4 @@
-﻿# Auto-Placement & the Implicit Grid
+# Auto-Placement & the Implicit Grid
 
 | Field | Value |
 |-------|-------|

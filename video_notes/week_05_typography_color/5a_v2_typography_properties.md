@@ -1,4 +1,4 @@
-﻿# font-size (rem vs px), line-height & letter-spacing
+# font-size (rem vs px), line-height & letter-spacing
 
 | Field | Value |
 |-------|-------|

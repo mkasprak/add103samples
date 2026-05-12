@@ -1,4 +1,4 @@
-﻿# Images in HTML: src, alt & File Types
+# Images in HTML: src, alt & File Types
 
 | Field | Value |
 |-------|-------|

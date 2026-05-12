@@ -1,4 +1,4 @@
-﻿# WCAG 2.1 Explained: Levels, Laws & Why It Matters
+# WCAG 2.1 Explained: Levels, Laws & Why It Matters
 
 | Field | Value |
 |-------|-------|

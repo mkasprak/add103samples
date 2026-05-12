@@ -1,4 +1,4 @@
-﻿# The <picture> Element & Art Direction
+# The <picture> Element & Art Direction
 
 | Field | Value |
 |-------|-------|

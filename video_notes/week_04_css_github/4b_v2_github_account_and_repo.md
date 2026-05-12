@@ -1,4 +1,4 @@
-﻿# Creating a GitHub Account & Your First Repository
+# Creating a GitHub Account & Your First Repository
 
 | Field | Value |
 |-------|-------|

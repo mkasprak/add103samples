@@ -1,4 +1,4 @@
-﻿# Flex Items: flex-grow, flex-shrink & flex-basis
+# Flex Items: flex-grow, flex-shrink & flex-basis
 
 | Field | Value |
 |-------|-------|

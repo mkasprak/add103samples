@@ -1,4 +1,4 @@
-﻿# What Is Version Control & Why Developers Use It
+# What Is Version Control & Why Developers Use It
 
 | Field | Value |
 |-------|-------|

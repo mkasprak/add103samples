@@ -1,4 +1,4 @@
-﻿# InMotion cPanel Login & Dashboard Orientation
+# InMotion cPanel Login & Dashboard Orientation
 
 | Field | Value |
 |-------|-------|

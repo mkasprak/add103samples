@@ -1,4 +1,4 @@
-﻿# CSS Position: static, relative, absolute, fixed, sticky
+# CSS Position: static, relative, absolute, fixed, sticky
 
 | Field | Value |
 |-------|-------|

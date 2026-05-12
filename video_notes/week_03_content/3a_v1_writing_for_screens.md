@@ -1,4 +1,4 @@
-﻿# Writing for the Web: How People Read Online
+# Writing for the Web: How People Read Online
 
 | Field | Value |
 |-------|-------|

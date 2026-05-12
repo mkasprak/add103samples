@@ -1,4 +1,4 @@
-﻿# Putting Grid & Flexbox to Work on Your Portfolio
+# Putting Grid & Flexbox to Work on Your Portfolio
 
 | Field | Value |
 |-------|-------|

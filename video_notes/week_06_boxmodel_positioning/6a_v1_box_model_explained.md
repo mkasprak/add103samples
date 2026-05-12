@@ -1,4 +1,4 @@
-﻿# The Box Model: Content, Padding, Border & Margin
+# The Box Model: Content, Padding, Border & Margin
 
 | Field | Value |
 |-------|-------|

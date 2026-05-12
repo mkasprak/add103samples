@@ -1,4 +1,4 @@
-﻿# Flex Container: justify-content, align-items & gap
+# Flex Container: justify-content, align-items & gap
 
 | Field | Value |
 |-------|-------|

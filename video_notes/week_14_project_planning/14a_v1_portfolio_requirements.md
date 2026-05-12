@@ -1,4 +1,4 @@
-﻿# Final Project: Requirements & Rubric Walkthrough
+# Final Project: Requirements & Rubric Walkthrough
 
 | Field | Value |
 |-------|-------|

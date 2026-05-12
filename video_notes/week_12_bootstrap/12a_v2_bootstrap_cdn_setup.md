@@ -1,4 +1,4 @@
-﻿# Linking Bootstrap via CDN & Your First Page
+# Linking Bootstrap via CDN & Your First Page
 
 | Field | Value |
 |-------|-------|

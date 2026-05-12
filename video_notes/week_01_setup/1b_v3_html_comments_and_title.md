@@ -1,4 +1,4 @@
-﻿# HTML Comments, the Title Tag & Browser Tabs
+# HTML Comments, the Title Tag & Browser Tabs
 
 | Field | Value |
 |-------|-------|

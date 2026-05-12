@@ -1,4 +1,4 @@
-﻿# Using the WebAIM Contrast Checker
+# Using the WebAIM Contrast Checker
 
 | Field | Value |
 |-------|-------|

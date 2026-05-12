@@ -1,4 +1,4 @@
-﻿# Live Refactor: Fixing AI-Generated Code
+# Live Refactor: Fixing AI-Generated Code
 
 | Field | Value |
 |-------|-------|

@@ -1,4 +1,4 @@
-﻿# How to Give Useful Peer Review Feedback
+# How to Give Useful Peer Review Feedback
 
 | Field | Value |
 |-------|-------|

@@ -1,4 +1,4 @@
-﻿# What Git Does: Commits, History & the Repo
+# What Git Does: Commits, History & the Repo
 
 | Field | Value |
 |-------|-------|

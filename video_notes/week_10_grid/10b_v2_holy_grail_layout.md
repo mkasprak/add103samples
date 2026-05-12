@@ -1,4 +1,4 @@
-﻿# Building the Holy Grail Layout with Grid
+# Building the Holy Grail Layout with Grid
 
 | Field | Value |
 |-------|-------|

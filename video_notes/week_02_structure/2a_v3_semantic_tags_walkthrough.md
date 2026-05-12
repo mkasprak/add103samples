@@ -1,4 +1,4 @@
-﻿# The Big 7 Semantic Tags Walkthrough
+# The Big 7 Semantic Tags Walkthrough
 
 | Field | Value |
 |-------|-------|

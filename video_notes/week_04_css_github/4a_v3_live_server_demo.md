@@ -1,4 +1,4 @@
-﻿# Using Live Server in VS Code
+# Using Live Server in VS Code
 
 | Field | Value |
 |-------|-------|

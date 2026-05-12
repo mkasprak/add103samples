@@ -1,4 +1,4 @@
-﻿# How to Wireframe a Portfolio Site
+# How to Wireframe a Portfolio Site
 
 | Field | Value |
 |-------|-------|

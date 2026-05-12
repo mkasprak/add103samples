@@ -1,4 +1,4 @@
-﻿# Common AI Mistakes in HTML & CSS
+# Common AI Mistakes in HTML & CSS
 
 | Field | Value |
 |-------|-------|

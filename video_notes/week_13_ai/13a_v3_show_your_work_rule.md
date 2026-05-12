@@ -1,4 +1,4 @@
-﻿# The Show Your Work Rule: AI & Academic Integrity
+# The Show Your Work Rule: AI & Academic Integrity
 
 | Field | Value |
 |-------|-------|

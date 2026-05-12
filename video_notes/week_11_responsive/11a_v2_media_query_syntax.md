@@ -1,4 +1,4 @@
-﻿# The @media Rule & Setting Breakpoints
+# The @media Rule & Setting Breakpoints
 
 | Field | Value |
 |-------|-------|

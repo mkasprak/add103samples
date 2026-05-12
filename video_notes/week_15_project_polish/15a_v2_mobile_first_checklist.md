@@ -1,4 +1,4 @@
-﻿# Mobile-First Checklist: Systematic Review
+# Mobile-First Checklist: Systematic Review
 
 | Field | Value |
 |-------|-------|

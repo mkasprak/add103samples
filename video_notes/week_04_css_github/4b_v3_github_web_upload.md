@@ -1,4 +1,4 @@
-﻿# Uploading Files to GitHub via the Web Interface
+# Uploading Files to GitHub via the Web Interface
 
 | Field | Value |
 |-------|-------|

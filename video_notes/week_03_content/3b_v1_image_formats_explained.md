@@ -1,4 +1,4 @@
-﻿# Image Formats: JPG vs PNG vs WebP
+# Image Formats: JPG vs PNG vs WebP
 
 | Field | Value |
 |-------|-------|

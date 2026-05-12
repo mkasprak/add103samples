@@ -1,4 +1,4 @@
-﻿# box-sizing: border-box & Why We Always Set It
+# box-sizing: border-box & Why We Always Set It
 
 | Field | Value |
 |-------|-------|

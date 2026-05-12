@@ -1,4 +1,4 @@
-﻿# WCAG Color Contrast: Why AA Matters
+# WCAG Color Contrast: Why AA Matters
 
 | Field | Value |
 |-------|-------|

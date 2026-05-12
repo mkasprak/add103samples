@@ -1,4 +1,4 @@
-﻿# Lists & Data Tables
+# Lists & Data Tables
 
 | Field | Value |
 |-------|-------|

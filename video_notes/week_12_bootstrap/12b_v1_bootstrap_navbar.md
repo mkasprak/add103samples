@@ -1,4 +1,4 @@
-﻿# Bootstrap Navbar with Responsive Hamburger Menu
+# Bootstrap Navbar with Responsive Hamburger Menu
 
 | Field | Value |
 |-------|-------|

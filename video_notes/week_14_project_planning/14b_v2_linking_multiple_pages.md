@@ -1,4 +1,4 @@
-﻿# Building & Linking a Multi-Page Site
+# Building & Linking a Multi-Page Site
 
 | Field | Value |
 |-------|-------|

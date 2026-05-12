@@ -1,4 +1,4 @@
-﻿# Optimizing Images with Squoosh.app
+# Optimizing Images with Squoosh.app
 
 | Field | Value |
 |-------|-------|

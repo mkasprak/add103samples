@@ -1,4 +1,4 @@
-﻿# Linking an External Stylesheet & the Cascade
+# Linking an External Stylesheet & the Cascade
 
 | Field | Value |
 |-------|-------|

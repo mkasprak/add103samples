@@ -1,4 +1,4 @@
-﻿# VS Code Workflow: Split View, Emmet & Format on Save
+# VS Code Workflow: Split View, Emmet & Format on Save
 
 | Field | Value |
 |-------|-------|

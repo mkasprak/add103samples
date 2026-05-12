@@ -1,4 +1,4 @@
-﻿# What Responsive Design Means & Why It Matters
+# What Responsive Design Means & Why It Matters
 
 | Field | Value |
 |-------|-------|

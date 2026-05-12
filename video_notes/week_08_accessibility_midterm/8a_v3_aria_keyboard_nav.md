@@ -1,4 +1,4 @@
-﻿# ARIA Basics & Keyboard Navigation Testing
+# ARIA Basics & Keyboard Navigation Testing
 
 | Field | Value |
 |-------|-------|

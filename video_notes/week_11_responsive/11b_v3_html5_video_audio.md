@@ -1,4 +1,4 @@
-﻿# Native HTML5 Video & Audio Players
+# Native HTML5 Video & Audio Players
 
 | Field | Value |
 |-------|-------|

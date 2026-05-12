@@ -1,4 +1,4 @@
-﻿# Writing Descriptive, Accessible Alt Text
+# Writing Descriptive, Accessible Alt Text
 
 | Field | Value |
 |-------|-------|

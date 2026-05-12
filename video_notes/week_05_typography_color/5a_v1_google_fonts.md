@@ -1,4 +1,4 @@
-﻿# Finding & Linking Google Fonts
+# Finding & Linking Google Fonts
 
 | Field | Value |
 |-------|-------|

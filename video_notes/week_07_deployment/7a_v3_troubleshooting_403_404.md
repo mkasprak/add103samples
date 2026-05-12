@@ -1,4 +1,4 @@
-﻿# Troubleshooting 403 & 404 Errors
+# Troubleshooting 403 & 404 Errors
 
 | Field | Value |
 |-------|-------|

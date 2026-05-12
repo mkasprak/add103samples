@@ -1,4 +1,4 @@
-﻿# The HTML Boilerplate Explained Line by Line
+# The HTML Boilerplate Explained Line by Line
 
 | Field | Value |
 |-------|-------|

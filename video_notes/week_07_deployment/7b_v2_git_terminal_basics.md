@@ -1,4 +1,4 @@
-﻿# Git Terminal: init, add, commit, push
+# Git Terminal: init, add, commit, push
 
 | Field | Value |
 |-------|-------|

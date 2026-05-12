@@ -1,4 +1,4 @@
-﻿# Bootstrap Grid: container, row & col Classes
+# Bootstrap Grid: container, row & col Classes
 
 | Field | Value |
 |-------|-------|

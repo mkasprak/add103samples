@@ -1,4 +1,4 @@
-﻿# grid-template-areas: Naming & Placing Regions
+# grid-template-areas: Naming & Placing Regions
 
 | Field | Value |
 |-------|-------|

@@ -1,4 +1,4 @@
-﻿# Links & File Paths: Absolute vs Relative
+# Links & File Paths: Absolute vs Relative
 
 | Field | Value |
 |-------|-------|

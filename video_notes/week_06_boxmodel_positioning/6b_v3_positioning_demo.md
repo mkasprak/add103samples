@@ -1,4 +1,4 @@
-﻿# Building a Sticky Nav & Absolute Badge Demo
+# Building a Sticky Nav & Absolute Badge Demo
 
 | Field | Value |
 |-------|-------|

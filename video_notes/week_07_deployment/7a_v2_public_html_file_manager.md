@@ -1,4 +1,4 @@
-﻿# File Manager: public_html, Upload & Permissions
+# File Manager: public_html, Upload & Permissions
 
 | Field | Value |
 |-------|-------|

@@ -1,4 +1,4 @@
-﻿# Grid vs Flexbox: A Decision Framework
+# Grid vs Flexbox: A Decision Framework
 
 | Field | Value |
 |-------|-------|

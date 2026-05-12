@@ -1,4 +1,4 @@
-﻿# Installing VS Code & Live Server Extension
+# Installing VS Code & Live Server Extension
 
 | Field | Value |
 |-------|-------|

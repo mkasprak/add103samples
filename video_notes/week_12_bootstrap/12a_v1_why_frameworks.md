@@ -1,4 +1,4 @@
-﻿# Why Frameworks Exist & What Bootstrap Solves
+# Why Frameworks Exist & What Bootstrap Solves
 
 | Field | Value |
 |-------|-------|

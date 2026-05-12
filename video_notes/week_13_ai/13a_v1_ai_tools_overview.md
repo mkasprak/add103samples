@@ -1,4 +1,4 @@
-﻿# What AI Coding Tools Can & Cannot Do
+# What AI Coding Tools Can & Cannot Do
 
 | Field | Value |
 |-------|-------|

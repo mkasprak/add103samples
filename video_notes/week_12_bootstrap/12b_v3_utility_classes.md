@@ -1,4 +1,4 @@
-﻿# Bootstrap Utility Classes: Spacing, Color & Flex
+# Bootstrap Utility Classes: Spacing, Color & Flex
 
 | Field | Value |
 |-------|-------|

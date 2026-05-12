@@ -1,4 +1,4 @@
-﻿# grid-template-columns: fr Units & repeat()
+# grid-template-columns: fr Units & repeat()
 
 | Field | Value |
 |-------|-------|

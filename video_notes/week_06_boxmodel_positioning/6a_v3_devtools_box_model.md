@@ -1,4 +1,4 @@
-﻿# Inspecting the Box Model in Chrome DevTools
+# Inspecting the Box Model in Chrome DevTools
 
 | Field | Value |
 |-------|-------|

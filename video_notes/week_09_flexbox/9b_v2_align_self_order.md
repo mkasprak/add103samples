@@ -1,4 +1,4 @@
-﻿# align-self & order: Individual Item Control
+# align-self & order: Individual Item Control
 
 | Field | Value |
 |-------|-------|

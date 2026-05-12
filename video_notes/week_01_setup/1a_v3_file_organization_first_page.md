@@ -1,4 +1,4 @@
-﻿# File Organization Rules & Your First HTML Page
+# File Organization Rules & Your First HTML Page
 
 | Field | Value |
 |-------|-------|
