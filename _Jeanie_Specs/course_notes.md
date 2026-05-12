@@ -2,8 +2,15 @@
 
 ## Canvas Structure Notes
 
-### Before You Begin Module
-- **Status:** NEEDED — not yet built in Canvas
+### Before You Begin Module — Resources Section
+- A **Resources** section should live in the Before You Begin module (pinned, always visible)
+- Pull real resources **from the course as it is written** — don't add anything that isn't actually used in a lesson
+- Anchor items to include when ready:
+  - Emmet Cheat Sheet (link from Week 1A Emmet section)
+  - W3Schools HTML reference (link from Week 1A Required Reading)
+  - Any other cheat sheets/references added during lesson builds
+- **Note:** This list will grow week by week. Come back and update it as each lesson is finalized.
+- Live Share setup guide (link to Microsoft docs or short video) — needed for online tutoring
 - A "Before You Begin" module should be the very first item students see when they enter the course shell.
 - **Must include:**
   - Link to MCC e-Portfolio: https://www.mchenry.edu/eportfolio/

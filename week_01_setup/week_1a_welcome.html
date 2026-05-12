@@ -21,7 +21,7 @@
 <p>Welcome to ADD-103! This semester you will learn to hand-code real websites from scratch — HTML, CSS, layout, responsive design, and deployment to a live server.</p>
 <p>Today we set up our workshop: install VS Code, install your first extensions, learn the file naming rules every developer uses, and write your very first HTML page.</p>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
-<strong>♿ Accessibility Note:</strong> VS Code has built-in screen reader support. Press <strong>Ctrl+=</strong> to zoom in and <strong>Ctrl+–</strong> to zoom out in the editor at any time.
+<strong>♿ Accessibility Note:</strong> VS Code has built-in screen reader support. Press <strong>Ctrl++</strong> to zoom in and <strong>Ctrl+–</strong> to zoom out in the editor at any time.
         </div>
 <!-- DUCKTOR QUACKSALOT -->
 <div style="background-color: #f3effe; border-left: 5px solid #582C83; border-radius: 0 8px 8px 0; padding: 15px 20px; margin: 20px 0; display: flex; align-items: flex-start; gap: 15px;">
@@ -144,7 +144,7 @@ Documents/
 </ol>
 </div>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 1½: Install Your Extensions</h3>
+            Step 2: Install Your Extensions</h3>
 <p>Extensions are add-ons that make VS Code smarter. Click the <strong>Extensions icon</strong> in the left sidebar (it looks like four squares) and search for each one below. Install them in this order:</p>
 <div style="background-color: #f3effe; border: 1px solid #c5b3f0; border-radius: 8px; padding: 18px; margin-bottom: 15px;">
 <ol style="margin: 0; padding-left: 20px;">
@@ -152,10 +152,11 @@ Documents/
 <li style="margin-bottom: 10px;"><strong>Code Spell Checker</strong> — Search: <code>streetsidesoftware.code-spell-checker</code>. Underlines misspelled words as you type. Essential.</li>
 <li style="margin-bottom: 10px;"><strong>Prettier – Code formatter</strong> — Search: <code>esbenp.prettier-vscode</code>. Automatically formats your code so it stays clean and readable.</li>
 <li style="margin-bottom: 10px;"><strong>Open in Default Browser</strong> — Search: <code>peakchen90.open-in-browser</code>. Right-click any HTML file → Open in Default Browser. No manual file navigation needed.</li>
+<li style="margin-bottom: 10px;"><strong>Live Share</strong> — Search: <code>ms-vsliveshare.vsliveshare</code>. Lets you collaborate on code in real time with your instructor or a classmate. Required for online tutoring sessions — install it now and you'll have it when you need it. 🤝</li>
 </ol>
 </div>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 1¾: Configure Prettier</h3>
+            Step 3: Configure Prettier</h3>
 <p>After installing Prettier, turn on automatic formatting. Go to <strong>File → Preferences → Settings</strong> (or <strong>Ctrl+,</strong>) and search for each setting:</p>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
 <ul style="margin: 0; padding-left: 20px;">
@@ -172,15 +173,25 @@ Documents/
 <p style="margin: 0;">VS Code is your workspace for this entire semester — make it yours. Explore the <strong>Welcome Screen</strong> (Help → Welcome) to discover tips, themes, and keyboard shortcuts. Try a color theme: open the Command Palette with <strong>Ctrl+Shift+P</strong> → type <em>Color Theme</em>. Popular choices: <em>Dracula</em>, <em>Winter is Coming</em>, <em>One Dark Pro</em>. None of this affects your grade — it just makes the space feel like yours. 🎨</p>
 </div>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 2: Create Your Project Folder</h3>
+            Step 4: Create Your Project Folder</h3>
+<p>Choose where to keep your course files. The goal is consistency — pick one location and always use it.</p>
+<div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px; padding: 15px; margin-bottom: 15px;">
+<strong>📁 Recommended locations:</strong>
+<ul style="margin: 10px 0 0 0;">
+<li style="margin-bottom: 6px;"><strong>Desktop</strong> — fast to get to, easy to find. Good if you always work on your own machine.</li>
+<li style="margin-bottom: 6px;"><strong>OneDrive or Google Drive</strong> — <em>strongly recommended if you work at school or on a shared computer.</em> Your files sync automatically. You never lose work when you close the lab machine. Create a shortcut to the ADD103 folder on your Desktop for quick access.</li>
+<li style="margin-bottom: 6px;"><strong>Documents</strong> — fine if you are always on the same personal computer.</li>
+</ul>
+<p style="margin: 10px 0 0 0; font-size: 0.9rem;">📌 <em>Wherever you choose: keep it. Don't move the folder mid-semester — relative links will break.</em></p>
+</div>
 <ol>
-<li>Open your <strong>Documents</strong> folder. Create a new folder named <code>ADD103</code> (no spaces).</li>
+<li>In your chosen location, create a new folder named <code>ADD103</code> (no spaces).</li>
 <li>Inside <code>ADD103</code>, create a folder named <code>manifesto</code> (lowercase).</li>
 <li>In VS Code: <strong>File → Open Folder</strong> → select the <code>manifesto</code> folder.</li>
 <li>In the Explorer panel (left sidebar), click the <strong>New File</strong> icon → name it <code>index.html</code>.</li>
 </ol>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 3: Use Emmet to Generate the Boilerplate</h3>
+            Step 5: Use Emmet to Generate the Boilerplate</h3>
 <ol>
 <li>Click inside your empty <code>index.html</code> file.</li>
 <li>Type <code>!</code> (just the exclamation mark).</li>
@@ -188,7 +199,7 @@ Documents/
 <li>The full HTML boilerplate appears instantly. Change the <code>&lt;title&gt;</code> to <code>My Developer Manifesto</code>.</li>
 </ol>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 4: Write Your Content</h3>
+            Step 6: Write Your Content</h3>
 <p>Inside the <code>&lt;body&gt;</code> tags, answer these four questions using <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> tags:</p>
 <div style="background-color: #f4f4f4; padding: 15px; border-left: 4px solid #582C83; margin: 15px 0;">
 <code>&lt;h1&gt;Hello World. My name is [Your Name].&lt;/h1&gt;</code><br/><br/>
@@ -197,12 +208,11 @@ Documents/
 <code>&lt;p&gt;My "power animal" for getting through hard code is a [Animal] because [Reason].&lt;/p&gt;</code>
 </div>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 5: View in the Browser</h3>
+            Step 7: View in the Browser</h3>
 <ol>
 <li>Save the file: <strong>Ctrl+S</strong> (Windows) or <strong>Cmd+S</strong> (Mac).</li>
-<li>Open your <strong>Documents → ADD103 → manifesto</strong> folder in Windows Explorer or Finder.</li>
-<li>Double-click <code>index.html</code>. It opens in your browser. That's your first web page.</li>
-<li>Go back to VS Code, make a change, save, then refresh the browser to see it update.</li>
+<li>In VS Code's Explorer panel, <strong>right-click the filename</strong> <code>index.html</code> → select <strong>Open in Default Browser</strong>. Your page opens instantly — no folder digging needed.</li>
+<li>Go back to VS Code, make a change, save (<strong>Ctrl+S</strong>), then refresh the browser to see it update.</li>
 </ol>
 <p style="background-color: #e8f4ff; border-left: 4px solid #582C83; padding: 10px; border-radius: 0 4px 4px 0;"><em>📌 In Week 1B we will look at more HTML tags. In Week 4 we will put this project on GitHub so you always have a backup in the cloud.</em></p>
 </div>
