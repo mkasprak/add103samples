@@ -1,15 +1,14 @@
-<div class_="main-content" lang="en"><div style="max-width: 950px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+<div class_="main-content" lan<em>You don't need to memorize the HTML boilerplate. You just need to know what it does. Type <code>!</code> then press <kbd>Tab</kbd> in VS Code and Emmet writes it for you — same tool professional developers use every day.</em>="en"><div style="max-width: 950px; margin: 0 auto; background-color: #ffffff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333333; border-top: 10px solid #FFC629; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 <!-- HEADER -->
 <header style="background-color: #582C83; color: #ffffff; padding: 30px;">
-<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 1A: Hosting Setup &amp; Access
+<!--ADA FIX: Forced h1 to H2--><h2 style="margin: 0; font-size: 2rem; letter-spacing: 0.5px; color: #ffffff;">Week 1A: Welcome &amp; Your First HTML Page
         </h2>
-<div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD 103: Introduction to Web
-            Design | Spring 2026</div>
+<div style="font-size: 1.1rem; opacity: 0.9; margin-top: 5px; font-weight: 300;">ADD-103: Fundamental Web Development | Fall 2026</div>
 </header>
 <!-- QM ALIGNMENT STRIP -->
 <div style="background-color: #f0f7ff; border-bottom: 1px solid #cce5ff; padding: 15px 30px; font-size: 0.9rem; color: #004085; display: flex; align-items: center;">
 <span style="font-size: 1.2rem; margin-right: 10px;"><span aria-label="Direct Hit" role="img">🎯</span></span>
-<span><strong>Learning Objective Alignment:</strong> Files &amp; Deployment (LO1, LO8) — "Create a structured project folder, write your first HTML file, and push it to GitHub."</span>
+<span><strong>Learning Objective Alignment:</strong> Files (LO1) + Hand Code HTML (LO2) — "Create a properly structured project folder and write your first HTML page in VS Code."</span>
 </div>
 <!-- STATS BADGE -->
 <div style="background-color: #fdbb30; color: #4b3190; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em;">
@@ -19,13 +18,10 @@
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             Overview</h2>
-<p>Welcome to ADD 103! You are not just learning "coding"; you are learning to define reality on a screen.</p>
-<p>Before we build, we must set up our workshop. This week, every student activates their
-            <strong>InMotion cPanel account</strong>, verifies login access, and confirms they can publish to a live
-            web directory.</p>
+<p>Welcome to ADD-103! This semester you will learn to hand-code real websites from scratch — HTML, CSS, layout, responsive design, and deployment to a live server.</p>
+<p>Today we set up our workshop: install VS Code, learn the file naming rules every developer uses, and write your very first HTML page. No GitHub, no terminal, no accounts — just you, a text editor, and a browser.</p>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; color: #1b5e20; padding: 15px; border-radius: 4px; margin-top: 20px;">
-<strong>♿ Accessibility Note:</strong> cPanel can be used with keyboard navigation and screen readers;
-            use zoom and browser accessibility tools if default text is difficult to read.
+<strong>♿ Accessibility Note:</strong> VS Code has built-in screen reader support. Use <strong>View → Appearance → Zoom In</strong> to increase the editor font size at any time.
         </div>
 <!-- DUCKTOR QUACKSALOT -->
 <div style="background-color: #f3effe; border-left: 5px solid #582C83; border-radius: 0 8px 8px 0; padding: 15px 20px; margin: 20px 0; display: flex; align-items: flex-start; gap: 15px;">
@@ -37,70 +33,86 @@
 </div>
 <h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Movie Camera" role="img">🎥</span> Watch the Lesson</h3>
 <div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
-<strong>[VIDEO PLACEHOLDER]</strong><br/>
-            Topic: VS Code Install, GitHub Account Setup &amp; Cloning Your First Repo<br/>
-<em>(User to embed Panopto/YouTube Iframe here)</em>
+<strong>[VIDEO 1 PLACEHOLDER]</strong><br/>
+            Topic: Welcome &amp; What We're Building This Semester<br/>
+<em>(Panopto/YouTube embed here)</em>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO 2 PLACEHOLDER — Self-record]</strong><br/>
+            Topic: Installing VS Code &amp; the Live Server Extension<br/>
+<em>(Panopto/YouTube embed here)</em>
+</div>
+<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
+<strong>[VIDEO 3 PLACEHOLDER]</strong><br/>
+            Topic: File Organization Rules &amp; Your First HTML Page<br/>
+<em>(Panopto/YouTube embed here)</em>
 </div>
 </div>
 <!-- 2. TEACH BY EXAMPLE -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             <span aria-label="Eyes" role="img">👀</span> Look &amp; Learn: The File Structure</h2>
-<p>Websites are fragile ecosystems. If you move a file, you break the link. Maintaining a strict structure is
-            critical. Here is how your computer should look by the end of today:</p>
+<p>Websites are fragile ecosystems. If you move a file, you break the link. Every project gets its own named folder. The file inside is always <code>index.html</code>. Images live inside their own project — not in a shared course folder. Here is how your computer should look by the end of today:</p>
 <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
 <div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
 Documents/
-└── ADD103/                      &lt;!-- Root Course Folder --&gt;
-    ├── week_01/                 &lt;!-- Subfolder for this week --&gt;
-    │   └── manifesto.html       &lt;!-- Your assignment --&gt;
+└── ADD103/                        &lt;!-- Root Course Folder --&gt;
     │
-    ├── week_02/                 &lt;!-- Future folders... --&gt;
+    ├── manifesto/                 &lt;!-- Project folder (named after the project) --&gt;
+    │   ├── index.html             &lt;!-- Always index.html inside --&gt;
+    │   └── images/                &lt;!-- Images belong to THIS project --&gt;
     │
-    └── images/                  &lt;!-- Dedicated folder for media --&gt;
+    ├── about-me/                  &lt;!-- Next project will get its own folder --&gt;
+    │   ├── index.html
+    │   └── images/
+    │
+    └── portfolio/                 &lt;!-- Final project will live here --&gt;
+        ├── index.html
+        └── images/
             </pre></div>
 <div style="padding: 15px;">
-<strong>Observation:</strong>
+<strong>The Three Rules:</strong>
 <ul>
-<li><strong>No Spaces:</strong> Notice we use <code>ADD103</code> and <code>week_01</code>
-                        (underscores). Computers hate spaces in filenames.</li>
-<li><strong>Lowercase:</strong> We prefer lowercase filenames (`manifesto.html`). It prevents server
-                        errors later.</li>
+<li><strong>No Spaces:</strong> Use <code>about-me</code> or <code>week_01</code> — never <code>about me</code>. Servers don't handle spaces well.</li>
+<li><strong>Lowercase Only:</strong> <code>index.html</code> not <code>Index.HTML</code>. Case mismatches cause 404 errors on live servers.</li>
+<li><strong>index.html is always the homepage:</strong> Servers look for this filename automatically. Every project folder gets one.</li>
 </ul>
 </div>
 </div>
 </div>
-<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> Detailed Example: First Live HTML File</h3>
-<p>Copy this full starter file into <code>manifesto.html</code>. The comments explain exactly what each line does.</p>
+<h3 style="color: #4b3190; font-family: Arial, sans-serif; margin-top: 25px;"><span aria-label="Open Book" role="img">📘</span> The Emmet Shortcut: Never Type Boilerplate Again</h3>
+<p>VS Code comes with a built-in tool called <strong>Emmet</strong>. It writes repetitive HTML for you. The most important shortcut you will learn today:</p>
 <div style="background-color: #fff; border: 2px solid #eee; border-radius: 8px; margin: 20px 0;">
 <div style="overflow-x: auto; margin-bottom: 20px;"><pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre;">
-&lt;!doctype html&gt;
+1. Create a new file named  index.html
+2. On the first empty line, type:   !
+3. Press:  Tab
+4. The entire HTML boilerplate appears instantly.
+            </pre></div>
+<div style="padding: 15px;">
+<p>Emmet generates this for you — you do not type it from scratch:</p>
+<pre style="background-color: #121212; color: #ffffff; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; white-space: pre; overflow-x: auto;">
+&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;!-- Ensures emoji and symbols render correctly --&gt;
     &lt;meta charset="UTF-8"&gt;
-    &lt;!-- Makes layout scale correctly on phones --&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;My Developer Manifesto&lt;/title&gt;
+    &lt;title&gt;Document&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;!-- Main heading for users and screen readers --&gt;
-    &lt;h1&gt;Hello World. My name is [Your Name].&lt;/h1&gt;
 
-    &lt;!-- Core reflection content --&gt;
-    &lt;p&gt;I am taking this course because [Reason].&lt;/p&gt;
-    &lt;p&gt;By the end of this semester, I want to build a website about [Topic].&lt;/p&gt;
-
-    &lt;!-- Deployment proof line so you can confirm updates live --&gt;
-    &lt;p&gt;Deployment timestamp: [Date]&lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-            </pre></div>
+&lt;/html&gt;</pre>
+<p style="margin-top: 15px;">Your only job: change <code>&lt;title&gt;Document&lt;/title&gt;</code> to something meaningful, then start writing content inside <code>&lt;body&gt;</code>.</p>
 </div>
-<div style="background-color: #f4f4f4; padding: 20px; border: 1px dashed #ccc; text-align: center; color: #666; margin: 20px 0;">
-<strong>[VIDEO PLACEHOLDER]</strong><br/>
-            Example Walkthrough: Building and publishing your first HTML file<br/>
-<em>(User to embed Panopto/YouTube Iframe here)</em>
+</div>
+<div style="background-color: #f3effe; border: 1px solid #c5b3f0; border-radius: 8px; padding: 20px; margin: 20px 0;">
+<strong style="color: #582C83;">🔗 Emmet Resources (no install needed — it's already in VS Code):</strong>
+<ul style="margin-top: 10px;">
+<li style="margin-bottom: 8px;"><a href="https://emmet.io" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">emmet.io</a> — The official Emmet website</li>
+<li style="margin-bottom: 8px;"><a href="https://docs.emmet.io/cheat-sheet/" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">Emmet Cheat Sheet</a> — Every shortcut on one page. Bookmark this.</li>
+<li style="margin-bottom: 8px;"><a href="https://code.visualstudio.com/docs/editor/emmet" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">VS Code Emmet Guide</a> — How Emmet works inside VS Code specifically</li>
+</ul>
 </div>
 <!-- 3. GUIDED PRACTICE -->
 <div style="padding: 30px; border-bottom: 1px solid #eee;">
@@ -109,53 +121,61 @@ Documents/
 <p>We are going to start this semester by setting your intentions. You will create a webpage that lists your
             goals for this course.</p>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 1: Install Your Tools &amp; Create Your Repo</h3>
+            Step 1: Install VS Code</h3>
 <div style="background-color: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
-<strong>⚙️ One-time installs (do this before anything else):</strong>
+<strong>⚙️ One-time install (do this before anything else):</strong>
 <ol style="margin: 10px 0 0 0;">
-<li>Download and install <a href="https://code.visualstudio.com/" style="color:#582C83; font-weight:bold;" target="_blank" rel="noopener">VS Code</a> — the professional code editor we will use all semester. It is free.</li>
-<li>Create a free account at <a href="https://github.com" style="color:#582C83; font-weight:bold;" target="_blank" rel="noopener">GitHub.com</a>. Use a professional username (your name or initials).</li>
+<li>Go to <a href="https://code.visualstudio.com/" style="color:#582C83; font-weight:bold;" target="_blank" rel="noopener">code.visualstudio.com</a> and download VS Code for your operating system. It is free.</li>
+<li>Run the installer. Accept all defaults.</li>
+<li>Open VS Code. Take a look around — we will use this every single week.</li>
 </ol>
 </div>
+<h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Step 2: Create Your Project Folder</h3>
 <ol>
-<li>On GitHub.com, click the green <strong>New</strong> button to create a repository. Name it exactly <code>ADD103</code>. Set it to <strong>Public</strong>. Check <strong>"Add a README file"</strong>. Click <strong>Create repository</strong>.</li>
-<li>Click the green <strong>Code</strong> button → copy the HTTPS URL (e.g., <code>https://github.com/yourusername/ADD103.git</code>).</li>
-<li>Open VS Code. Press <strong>Ctrl+`</strong> (backtick, top-left of keyboard) to open the Terminal panel at the bottom.</li>
-<li>In the terminal, navigate to your Documents folder: <code>cd ~/Documents</code></li>
-<li>Clone your repo: <code>git clone https://github.com/yourusername/ADD103.git</code> (use your actual URL). Press Enter. A folder named <code>ADD103</code> will appear in Documents.</li>
-<li>In VS Code: <strong>File → Open Folder</strong> → select that <code>ADD103</code> folder.</li>
-<li>In the Explorer panel (left sidebar), right-click → <strong>New File</strong> → name it <code>manifesto.html</code>.</li>
+<li>Open your <strong>Documents</strong> folder. Create a new folder named <code>ADD103</code> (no spaces).</li>
+<li>Inside <code>ADD103</code>, create a folder named <code>manifesto</code> (lowercase).</li>
+<li>In VS Code: <strong>File → Open Folder</strong> → select the <code>manifesto</code> folder.</li>
+<li>In the Explorer panel (left sidebar), click the <strong>New File</strong> icon → name it <code>index.html</code>.</li>
 </ol>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 2: The Content</h3>
-<p>Type the following HTML into your file, but fill in the bracketed info with your own answers:</p>
+            Step 3: Use Emmet to Generate the Boilerplate</h3>
+<ol>
+<li>Click inside your empty <code>index.html</code> file.</li>
+<li>Type <code>!</code> (just the exclamation mark).</li>
+<li>Press <kbd>Tab</kbd>.</li>
+<li>The full HTML boilerplate appears instantly. Change the <code>&lt;title&gt;</code> to <code>My Developer Manifesto</code>.</li>
+</ol>
+<h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
+            Step 4: Write Your Content</h3>
+<p>Inside the <code>&lt;body&gt;</code> tags, answer these four questions using <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> tags:</p>
 <div style="background-color: #f4f4f4; padding: 15px; border-left: 4px solid #582C83; margin: 15px 0;">
-<code>Hello World. My name is [Your Name].</code><br/><br/>
-<code>I am taking this course because [Reason].</code><br/><br/>
-<code>By the end of this semester, I want to build a website about [Topic].</code><br/><br/>
-<code>My "Power Animal" for coding is a [Animal] because [Reason].</code>
+<code>&lt;h1&gt;Hello World. My name is [Your Name].&lt;/h1&gt;</code><br/><br/>
+<code>&lt;p&gt;I am taking this course because [Reason].&lt;/p&gt;</code><br/><br/>
+<code>&lt;p&gt;By the end of this semester, I want to build a website about [Topic].&lt;/p&gt;</code><br/><br/>
+<code>&lt;p&gt;My "power animal" for getting through hard code is a [Animal] because [Reason].&lt;/p&gt;</code>
 </div>
 <h3 style="color: #444; margin-top: 25px; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 5px;">
-            Step 3: Push to GitHub</h3>
-<p>Save the file (Ctrl+S), then run these three commands in the VS Code Terminal, one at a time:</p>
-<div style="background-color: #121212; color: #e0e0e0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95rem; margin: 10px 0;">
-<span style="color:#98c379;">git add .</span><br/>
-<span style="color:#98c379;">git commit -m "Week 1A: manifesto"</span><br/>
-<span style="color:#98c379;">git push</span>
-</div>
-<p>Then visit <strong>github.com/yourusername/ADD103</strong> and confirm your <code>manifesto.html</code> file appears there. ✅</p>
-<p style="background-color: #e8f4ff; border-left: 4px solid #582C83; padding: 10px; border-radius: 0 4px 4px 0;"><em>📌 In Lesson 1B, we connect your GitHub repo to your live InMotion website. Every future <code>git push</code> will automatically update your live site — no more manual uploads ever.</em></p>
+            Step 5: View in the Browser</h3>
+<ol>
+<li>Save the file: <strong>Ctrl+S</strong> (Windows) or <strong>Cmd+S</strong> (Mac).</li>
+<li>Open your <strong>Documents → ADD103 → manifesto</strong> folder in Windows Explorer or Finder.</li>
+<li>Double-click <code>index.html</code>. It opens in your browser. That's your first web page.</li>
+<li>Go back to VS Code, make a change, save, then refresh the browser to see it update.</li>
+</ol>
+<p style="background-color: #e8f4ff; border-left: 4px solid #582C83; padding: 10px; border-radius: 0 4px 4px 0;"><em>📌 In Week 1B we will look at more HTML tags. In Week 4 we will put this project on GitHub so you always have a backup in the cloud.</em></p>
 </div>
 <!-- 4. DIG DEEPER -->
 <div style="background-color: #fff8e1; border-top: 4px solid #FFC629; padding: 30px;">
 <h2 style="color: #582C83; border-left: 5px solid #FFC629; padding-left: 15px; margin-top: 0; font-size: 1.6rem;">
             ⛏️ Dig Deeper (Resources)</h2>
-<p>Want to customize your editor like a pro?</p>
+<p>Want to go further with VS Code?</p>
 <ul>
-<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://marketplace.visualstudio.com/" style="color: #582C83; font-weight: bold;" target="_blank">VS Code Marketplace</a> (Explore Themes: Dracula, Winter
-                is Coming, Material Icon Theme)</li>
-<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://code.visualstudio.com/docs/getstarted/tips-and-tricks" style="color: #582C83; font-weight: bold;" target="_blank">VS Code Power User Tips</a></li>
-<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_software" style="color: #582C83; font-weight: bold;" target="_blank">MDN: Tools of the Trade</a></li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://emmet.io" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">emmet.io</a> — Official Emmet site</li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://docs.emmet.io/cheat-sheet/" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">Emmet Cheat Sheet</a> — Bookmark this now</li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://code.visualstudio.com/docs/editor/emmet" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">VS Code Emmet Guide</a> — How Emmet works inside VS Code</li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://marketplace.visualstudio.com/" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">VS Code Marketplace</a> — Explore themes (Dracula, Winter is Coming)</li>
+<li style="margin-bottom: 10px;"><span aria-label="Link Symbol" role="img">🔗</span> <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Installing_software" style="color: #582C83; font-weight: bold;" target="_blank" rel="noopener">MDN: Tools of the Trade</a></li>
 </ul>
 </div>
 <!-- 5. RUBRIC -->
@@ -181,69 +201,64 @@ Documents/
 <tbody>
 <tr>
 <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                            Naming Conventions <br/>
+                            Naming &amp; Folder Structure <br/>
 <span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
-<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO1:
-                                Files</span>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO1: Files</span>
 </td>
 <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
 <strong>5 pts</strong><br/>
-                            File is named <code>manifesto.html</code> (lowercase). Folder structure is correct.
+                            File is <code>index.html</code> inside a folder named <code>manifesto</code>, inside <code>ADD103</code>. All lowercase, no spaces.
                         </td>
 <td style="padding: 10px; border: 1px solid #ddd;">
 <strong>3-4 pts</strong><br/>
-                            File content is correct but naming is messy (e.g., uppercase or spaces).
+                            Content is correct but naming conventions are inconsistent (uppercase, spaces, or wrong filename).
                         </td>
 <td style="padding: 10px; border: 1px solid #ddd;">
 <strong>0-2 pts</strong><br/>
-                            File is missing or named completely incorrectly (unidentifiable).
+                            Folder structure is missing, file is not named <code>index.html</code>, or file cannot be located.
+                        </td>
+</tr>
+<tr style="background-color: #f9f9f9;">
+<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
+                            HTML Structure <br/>
+<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2: HTML</span>
+</td>
+<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
+<strong>5 pts</strong><br/>
+                            Valid boilerplate generated with Emmet. <code>&lt;title&gt;</code> updated. Content uses correct <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> tags inside <code>&lt;body&gt;</code>.
+                        </td>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>3-4 pts</strong><br/>
+                            Boilerplate present but <code>&lt;title&gt;</code> not updated, or tags are used incorrectly.
+                        </td>
+<td style="padding: 10px; border: 1px solid #ddd;">
+<strong>0-2 pts</strong><br/>
+                            No boilerplate, or content is plain text with no HTML tags.
                         </td>
 </tr>
 <tr>
 <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
                             Content Quality <br/>
 <span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
-<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO:
-                                Professionalism</span>
+<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO2: HTML</span>
 </td>
 <td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
 <strong>5 pts</strong><br/>
-                            All 4 questions are answered fully and creatively.
+                            All 4 prompts answered fully and thoughtfully. No placeholder text remains.
                         </td>
 <td style="padding: 10px; border: 1px solid #ddd;">
 <strong>3-4 pts</strong><br/>
-                            Answers are present but brief or one question is missing.
+                            Answers present but brief, or one prompt is missing.
                         </td>
 <td style="padding: 10px; border: 1px solid #ddd;">
 <strong>0-2 pts</strong><br/>
-                            Content is largely missing or lorem ipsum text remains.
+                            Content largely missing or bracket placeholders still in the file.
                         </td>
 </tr>
 <tr>
-<td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">
-                            GitHub Sync <br/>
-<span style="font-size:0.8em; color:#666;">(5 pts)</span><br/>
-<span style="font-size:0.8em; color:#004085; background-color:#e9f4ff; padding:2px 4px; border-radius:3px;">LO8:
-                                Deployment</span>
-</td>
-<td style="padding: 10px; border: 1px solid #ddd; background-color: #f9f9ff;">
-<strong>5 pts</strong><br/>
-                            <code>manifesto.html</code> appears in the public <code>ADD103</code> GitHub repo with all 4 answers filled in.
-                        </td>
-<td style="padding: 10px; border: 1px solid #ddd;">
-<strong>3-4 pts</strong><br/>
-                            File is on GitHub but content is incomplete or repo is Private.
-                        </td>
-<td style="padding: 10px; border: 1px solid #ddd;">
-<strong>0-2 pts</strong><br/>
-                            File not found on GitHub or repo does not exist.
-                        </td>
-</tr>
-<tr>
-<td colspan="3" style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total
-                            Score:</td>
-<td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">
-                            15 pts</td>
+<td colspan="3" style="text-align: right; padding: 10px; font-weight: bold; border: 1px solid #ddd;">Total Score:</td>
+<td style="padding: 10px; font-weight: bold; border: 1px solid #ddd; background-color: #f0f0f0;">15 pts</td>
 </tr>
 </tbody>
 </table>
