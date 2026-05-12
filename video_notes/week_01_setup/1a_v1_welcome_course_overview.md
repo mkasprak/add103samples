@@ -1,6 +1,47 @@
 # 1A  Video 1: Welcome & What We Are Building This Semester
 
-| Field | Value |
+| Fie## AI Host Directions
+
+Copy and paste this block directly into your Gemini Video prompt:
+
+---
+
+**GEMINI PROMPT — Video 1A-V1:**
+
+You are presenting an orientation video for a college web development course. Your tone is warm, direct, and encouraging — like a coach on the first day of practice, not a hype person. Speak clearly and at a moderate pace. This audience is mostly first-generation college students and career changers who may be nervous about technology.
+
+Follow this structure exactly:
+
+1. **Welcome (20 seconds):** Open with a calm, welcoming tone. Tell students this is a course where they will build real things that live on the internet — hand-coded, not templates.
+
+2. **What they will build (45 seconds):** Describe the progression: multiple websites, real HTML and CSS, finishing with a portfolio site they can use professionally. Show the image `coursearc.png` on screen during this segment — it is a visual timeline of the six course phases.
+
+3. **The course arc (45 seconds):** Walk through the six phases shown in `coursearc.png`. Reference it directly on screen. Say: "Here is your roadmap. Phase 1 is just you and VS Code. Each phase adds exactly one new professional tool. Nothing disappears — you keep everything you learn."
+
+4. **The one tool (30 seconds):** VS Code. Free. Professional. Used every week. That is the only install today.
+
+5. **Ducktor Quacksalot (30 seconds):** Show the Ducktor Quacksalot image on screen — an anthropomorphic duck in purple and gold, the course mascot. Introduce Ducktor and deliver this message: "Ducktor wants you to know — you will get stuck. That is not failure. That is the job. The skill we are building is how to get unstuck. We will practice that every week."
+
+6. **Call to action (20 seconds):** Direct students to watch the next two videos, then follow the steps below in the lesson page to install VS Code and write their first HTML page.
+
+**Visual assets to upload to Gemini alongside this prompt:**
+- `coursearc.png` — screenshot of the 6-phase course arc graphic (show on screen during segments 2 and 3)
+- Ducktor Quacksalot image (show on screen during segment 5)
+
+**Do not include:**
+- Semester names, dates, or instructor names
+- Any mention of grades, deadlines, or assignments
+- Anything that would make this video expire at the end of a term
+
+---
+
+## Production Notes
+
+- **Evergreen rule:** No semester name, no instructor name, no due dates anywhere — this video must work in any term without re-recording
+- **`coursearc.png`:** Take a screenshot of `video_notes/assets/6-phase-timeline.html` (open in browser, full screen, then screenshot). Save as `coursearc.png` in `video_notes/assets/`. Upload alongside the Gemini prompt.
+- **Ducktor asset:** Use the approved Ducktor Quacksalot image when available. If not ready, use a purple/gold placeholder card with the duck emoji 🦆 for now — re-record segment 5 once the final asset exists.
+- **Canvas placement:** VIDEO 1 embed in Week 1A lesson page, above the Required Reading box
+- **Panopto:** Upload final Gemini render to Panopto, then embed in Canvas using the Panopto LTI (not a raw iframe)lue |
 |-------|-------|
 | **Week** | Week 1A |
 | **Video** | Video 1 of 3 |
