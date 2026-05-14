@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Structure Diagram — ADD103</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border: 2px solid #582C83;
+            border-radius: 12px;
+            padding: 48px 60px;
+            max-width: 680px;
+            width: 100%;
+        }
+
+        .card-title {
+            color: #FFC629;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 16px;
+        }
+
+        .tree {
+            color: #e0e0e0;
+            font-size: 1.25rem;
+            line-height: 2.2;
+        }
+
+        .folder {
+            color: #FFC629;
+        }
+
+        .file {
+            color: #a8d8a8;
+        }
+
+        .comment {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .rule {
+            margin-top: 36px;
+            padding: 20px 24px;
+            background-color: #2a1a4a;
+            border-left: 5px solid #582C83;
+            border-radius: 0 8px 8px 0;
+            color: #d0b8f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .rule strong {
+            color: #FFC629;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-title">📁 Your ADD103 Folder Structure</div>
+        <div class="tree">
+<span class="folder">ADD103/</span>                         <span class="comment">&lt;!-- your root course folder --&gt;</span>
+│
+├── <span class="folder">manifesto/</span>                   <span class="comment">&lt;!-- one folder per project --&gt;</span>
+│   ├── <span class="file">index.html</span>               <span class="comment">&lt;!-- always index.html --&gt;</span>
+│   └── <span class="folder">images/</span>
+│
+├── <span class="folder">about-me/</span>
+│   ├── <span class="file">index.html</span>
+│   └── <span class="folder">images/</span>
+│
+└── <span class="folder">portfolio/</span>
+    ├── <span class="file">index.html</span>
+    └── <span class="folder">images/</span>
+        </div>
+        <div class="rule">
+            <strong>The Rule:</strong> Every project gets its own folder. The main file inside is always <strong>index.html</strong>. Images live inside their project folder — never loose in ADD103.
+        </div>
+    </div>
+</body>
+</html>
